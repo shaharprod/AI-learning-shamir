@@ -136,7 +136,7 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 0.65rem;
-    font-size: clamp(1.2rem, 2.4vw, 1.65rem);
+    font-size: var(--logo-brand-font-size);
     font-weight: 700;
     color: #000000;
     min-width: 0;
@@ -148,6 +148,7 @@ a:hover {
     gap: 0.5rem;
     min-width: 0;
     color: #000000;
+    font-size: var(--logo-brand-font-size);
 }
 
 .logo a:hover {
@@ -168,7 +169,7 @@ a:hover {
     overflow-wrap: break-word;
     word-break: break-word;
     color: #000000;
-    font-size: var(--logo-brand-font-size);
+    font-size: var(--logo-brand-font-size) !important;
     font-weight: 700;
     line-height: 1.2;
 }
@@ -179,7 +180,9 @@ a:hover {
     align-items: flex-start;
     gap: 0.25rem;
     min-width: 0;
+    max-width: 100%;
     text-align: right;
+    font-size: var(--logo-brand-font-size);
 }
 
 html[dir="ltr"] .logo-stack,
@@ -189,12 +192,12 @@ html[lang="en"] .logo-stack {
 }
 
 .logo-byline {
-    font-size: var(--logo-brand-font-size);
+    font-size: var(--logo-brand-font-size) !important;
     font-weight: 500;
     line-height: 1.2;
     color: #2b6df2;
     opacity: 1;
-    max-width: min(22rem, 92vw);
+    max-width: min(36rem, 96vw);
 }
 
 /* English: אותו גודל פונט לשתי שורות הלוגו + עיצוב כמו עברית (פס LTR) */
@@ -215,6 +218,7 @@ html[lang="en"] .logo {
 html[dir="ltr"] .logo a,
 html[lang="en"] .logo a {
     gap: 0.65rem;
+    font-size: var(--logo-brand-font-size);
 }
 
 html[dir="ltr"] .logo-icon,
@@ -237,15 +241,15 @@ html[lang="en"] .logo a:hover {
 html[dir="ltr"] .logo-text,
 html[lang="en"] .logo-text {
     color: #000000;
-    font-size: var(--logo-brand-font-size);
+    font-size: var(--logo-brand-font-size) !important;
     font-weight: 700;
     line-height: 1.2;
 }
 
 html[dir="ltr"] .logo-byline,
 html[lang="en"] .logo-byline {
-    font-size: var(--logo-brand-font-size);
-    max-width: min(22rem, 92vw);
+    font-size: var(--logo-brand-font-size) !important;
+    max-width: min(36rem, 96vw);
     color: #2b6df2;
     opacity: 1;
     font-weight: 500;
@@ -607,28 +611,30 @@ html[lang="en"] .logo-byline {
     }
 
     .logo-text {
-        font-size: var(--logo-brand-font-size);
+        font-size: var(--logo-brand-font-size) !important;
         font-weight: 700;
         line-height: 1.2;
     }
 
     .logo-byline {
-        font-size: var(--logo-brand-font-size);
-        max-width: min(20rem, 90vw);
+        font-size: var(--logo-brand-font-size) !important;
+        font-weight: 500;
+        max-width: min(34rem, 94vw);
         color: #2b6df2;
     }
 
     html[dir="ltr"] .logo-byline,
     html[lang="en"] .logo-byline {
-        font-size: var(--logo-brand-font-size);
-        max-width: min(20rem, 92vw);
+        font-size: var(--logo-brand-font-size) !important;
+        max-width: min(34rem, 94vw);
         color: #2b6df2;
         opacity: 1;
+        font-weight: 500;
     }
 
     html[dir="ltr"] .logo-text,
     html[lang="en"] .logo-text {
-        font-size: var(--logo-brand-font-size);
+        font-size: var(--logo-brand-font-size) !important;
     }
 
     .logo-icon {
@@ -805,12 +811,13 @@ html[lang="en"] .logo-byline {
 
     .logo-text,
     html[lang="en"] .logo-text {
-        font-size: var(--logo-brand-font-size);
+        font-size: var(--logo-brand-font-size) !important;
     }
 
     .logo-byline,
     html[lang="en"] .logo-byline {
-        font-size: var(--logo-brand-font-size);
+        font-size: var(--logo-brand-font-size) !important;
+        font-weight: 500;
     }
 
     .hero {
