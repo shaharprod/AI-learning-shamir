@@ -1,0 +1,6 @@
+העתק לכאן את קובץ התמונה ושנה את שמו ל: header-bg.png
+
+או הרץ בטרמינל (PowerShell) מהתיקייה הראשית של הפרויקט:
+
+mkdir images -Force
+Copy-Item -LiteralPath "C:\Users\User\Downloads\DALL·E 2024-02-18 08.58.45 - Design a vibrant and dynamic logo for AI Digital Media, featuring a stylized brain composed of circuit lines that morph into colorful digital media sy.png" -Destination "images\header-bg.png"

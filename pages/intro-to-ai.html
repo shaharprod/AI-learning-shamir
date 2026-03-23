@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202026-02-09%20160037.png">
+    <title>מבוא לבינה מלאכותית | אתר ללימוד בינה מלאכותית AI</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="article.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/colorful%20digital%20media%20sy.png" alt="לוגו" class="logo-icon">
+                    <span class="logo-text">לימוד בינה מלאכותית AI</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">בית</a></li>
+                <li class="dropdown">
+                    <a href="../index.html#topics" class="dropdown-toggle">שיעורים ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="intro-to-ai.html">1. מבוא ל-AI</a></li>
+                        <li><a href="ai-history.html">2. ההיסטוריה של AI</a></li>
+                        <li><a href="machine-learning.html">3. למידת מכונה</a></li>
+                        <li><a href="ai-daily-life.html">4. AI בחיי היומיום</a></li>
+                        <li><a href="ai-tools.html">5. כלים מעשיים</a></li>
+                        <li><a href="prompt-engineering.html">6. הנדסת הנחייה</a></li>
+                        <li><a href="ai-ethics.html">7. אתיקה ב-AI</a></li>
+                        <li><a href="ai-future.html">8. העתיד של AI</a></li>
+                        <li><a href="glossary.html">9. מילון מושגים</a></li>
+                    </ul>
+                </li>
+                <li><a href="glossary.html">מילון</a></li>
+                <li><a href="ai-tools.html">כלים</a></li>
+                <li><a href="../index.html#about">אודות</a></li>
+            </ul>
+            <form class="nav-search" id="site-search" role="search">
+                <input type="search" name="q" placeholder="חיפוש מילים ומושגים..." aria-label="חיפוש באתר" />
+                <button type="submit" aria-label="חפש">🔍</button>
+            </form>
+            <nav class="lang-switcher" aria-label="בחירת שפה">
+                <a href="intro-to-ai-en.html" hreflang="en" lang="en">English</a>
+                <span class="lang-active" aria-current="page">עברית</span>
+            </nav>
+            <button type="button" class="mobile-menu-btn" aria-label="תפריט">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Article Content -->
+    <main class="article">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">בית</a> / <span>מבוא לבינה מלאכותית</span>
+            </div>
+
+            <article class="article-content">
+                <h1>מבוא לבינה מלאכותית</h1>
+                <p class="article-meta">📚 זמן קריאה: 15 דקות | רמה: מתחילים</p>
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop" alt="בינה מלאכותית - מוח דיגיטלי" class="article-header-image">
+
+                <section>
+                    <h2 id="מה-זה-בינה-מלאכותית">מה זה בינה מלאכותית?</h2>
+                    <p>
+                        בינה מלאכותית (Artificial Intelligence או AI) היא ענף במדעי המחשב
+                        שמתמקד ביצירת מערכות מחשב שיכולות לבצע משימות שבדרך כלל דורשות
+                        אינטליגנציה אנושית. אבל מה זה בעצם אומר?
+                    </p>
+                    <p>
+                        כשאנחנו אומרים "אינטליגנציה אנושית", אנחנו מתכוונים ליכולות כמו:
+                    </p>
+                    <ul class="benefits-list">
+                        <li><strong>למידה:</strong> היכולת לרכוש ידע חדש מניסיון</li>
+                        <li><strong>הסקה:</strong> היכולת להסיק מסקנות מתוך מידע</li>
+                        <li><strong>פתרון בעיות:</strong> מציאת פתרונות למצבים חדשים</li>
+                        <li><strong>הבנת שפה:</strong> להבין ולייצר שפה טבעית</li>
+                        <li><strong>תפיסה:</strong> לזהות ולהבין תמונות, קולות וסביבה</li>
+                        <li><strong>תכנון:</strong> לבנות תוכניות להשגת מטרות</li>
+                    </ul>
+                    <p>
+                        בינה מלאכותית מנסה ליצור מערכות מחשב שיכולות לבצע חלק מהיכולות האלה -
+                        או אפילו את כולן.
+                    </p>
+
+                    <div class="info-card tip">
+                        <strong>💡 ההבדל מתכנות רגיל:</strong>
+                        <p>בתכנות רגיל, המתכנת כותב בדיוק מה המחשב צריך לעשות בכל מצב.
+                        ב-AI, המחשב לומד בעצמו מה לעשות על סמך דוגמאות וניסיון.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="איך-AI-עובד-הרעיון-הבסיסי">איך AI עובד? הרעיון הבסיסי</h2>
+                    <p>
+                        בבסיס, רוב מערכות ה-AI של היום עובדות לפי עיקרון פשוט:
+                        <strong>למידה מדוגמאות</strong>.
+                    </p>
+
+                    <div class="example-box">
+                        <h4>משל: לימוד זיהוי חתולים</h4>
+                        <p>נניח שאנחנו רוצים ללמד מחשב לזהות חתולים בתמונות:</p>
+                        <ol>
+                            <li><strong>שלב 1 - נתונים:</strong> מראים למחשב מיליוני תמונות, חלקן עם חתולים וחלקן בלי</li>
+                            <li><strong>שלב 2 - אימון:</strong> המחשב מנתח את התמונות ומחפש דפוסים משותפים לתמונות עם חתולים (אוזניים מחודדות, עיניים מסוימות, צורת פנים...)</li>
+                            <li><strong>שלב 3 - מודל:</strong> בסוף התהליך, המחשב "בנה" מודל פנימי שמייצג "מה זה חתול"</li>
+                            <li><strong>שלב 4 - שימוש:</strong> עכשיו כשנראה למחשב תמונה חדשה, הוא יכול לבדוק אם היא מתאימה למודל שלו</li>
+                        </ol>
+                    </div>
+
+                    <p>
+                        זה שונה מהותית מתכנות רגיל. מתכנת לא יכול לכתוב כללים מפורשים לזיהוי חתולים -
+                        יש יותר מדי וריאציות. אבל AI יכול ללמוד את זה לבד מדוגמאות.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 id="תת-תחומים-של-בינה-מלאכותית">תת-תחומים של בינה מלאכותית</h2>
+                    <p>AI הוא תחום רחב שכולל הרבה תת-תחומים:</p>
+
+                    <div class="example-box">
+                        <h4>🧠 למידת מכונה (ML - Machine Learning)</h4>
+                        <p>
+                            הענף הפופולרי ביותר. מחשבים שלומדים מנתונים (Data - מידע) ומשתפרים עם הזמן.
+                            כמעט כל ה-AI שאנחנו רואים היום מבוסס על למידת מכונה.
+                        </p>
+                        <p><strong>דוגמאות:</strong> המלצות נטפליקס, זיהוי ספאם (Spam - דואר זבל), חיזוי מזג אוויר</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🔮 למידה עמוקה (DL - Deep Learning)</h4>
+                        <p>
+                            תת-תחום של למידת מכונה שמשתמש ברשתות נוירונים מלאכותיות (Artificial Neural Networks - רשתות עצבים מלאכותיות) -
+                            מבנים שמחקים (בצורה פשוטה) את המוח האנושי.
+                            זו הטכנולוגיה מאחורי רוב ההתקדמות המרשימה בשנים האחרונות.
+                        </p>
+                        <p><strong>דוגמאות:</strong> ChatGPT (Chat Generative Pre-trained Transformer), זיהוי פנים, תרגום אוטומטי</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>💬 עיבוד שפה טבעית (NLP - Natural Language Processing)</h4>
+                        <p>
+                            היכולת של מחשבים להבין, לפרש ולייצר שפה אנושית.
+                            זה מה שמאפשר לנו לדבר עם סירי (Siri) או לשוחח עם ChatGPT.
+                        </p>
+                        <p><strong>דוגמאות:</strong> צ'אטבוטים (Chatbots - רובוטי שיחה), תרגום, סיכום טקסטים, ניתוח רגשות (Sentiment Analysis)</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>👁️ ראייה ממוחשבת (CV - Computer Vision)</h4>
+                        <p>
+                            היכולת של מחשבים "לראות" ולהבין תמונות ווידאו.
+                            זה כולל זיהוי אובייקטים (Object Detection), פנים, תנועות ועוד.
+                        </p>
+                        <p><strong>דוגמאות:</strong> Face ID (זיהוי פנים), רכבים אוטונומיים (Autonomous Vehicles), סינון תמונות</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🤖 רובוטיקה</h4>
+                        <p>
+                            שילוב של AI עם מכונות פיזיות. הרובוט צריך לתפוס את העולם,
+                            לקבל החלטות ולבצע פעולות פיזיות.
+                        </p>
+                        <p><strong>דוגמאות:</strong> רובוטים תעשייתיים, שואבים רובוטיים, רחפנים</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🎮 AI גנרטיבי (Generative AI)</h4>
+                        <p>
+                            הכוכב החדש! מערכות שיכולות ליצור תוכן חדש -
+                            טקסט, תמונות, מוזיקה, וידאו וקוד.
+                            זו המהפכה שאנחנו חווים עכשיו.
+                        </p>
+                        <p><strong>דוגמאות:</strong> ChatGPT, DALL-E, Midjourney, GitHub Copilot</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="סוגי-בינה-מלאכותית-לפי-יכולות">סוגי בינה מלאכותית לפי יכולות</h2>
+                    <p>מדעני AI מחלקים את הבינה המלאכותית לשלוש רמות:</p>
+
+                    <h3 id="1-AI-צר">1. AI צר (Narrow AI / Weak AI) 🎯</h3>
+                    <p>
+                        מערכת שמתמחה במשימה אחת ספציפית ומצטיינת בה.
+                        <strong>זה מה שיש לנו היום</strong> - וזה כבר מרשים מאוד!
+                    </p>
+                    <div class="example-box">
+                        <h4>מאפיינים:</h4>
+                        <ul>
+                            <li>מתמחה במשימה אחת או מספר משימות קרובות</li>
+                            <li>לא יכול להעביר ידע ממשימה אחת לאחרת</li>
+                            <li>לא "מבין" באמת - רק מזהה דפוסים</li>
+                            <li>יכול להיות מעולה במשימה שלו - אפילו יותר מאדם</li>
+                        </ul>
+                        <p><strong>דוגמאות:</strong></p>
+                        <ul>
+                            <li>ChatGPT - מצוין בשיחה, אבל לא יכול לנהוג ברכב</li>
+                            <li>AlphaGo - מנצח אלופי עולם בגו, אבל לא יכול לשחק שחמט</li>
+                            <li>מערכת זיהוי פנים - מזהה פנים, אבל לא מבינה רגשות</li>
+                        </ul>
+                    </div>
+
+                    <h3 id="2-AI-כללי">2. AI כללי (AGI - Artificial General Intelligence) 🧠</h3>
+                    <p>
+                        מערכת שיכולה לבצע <strong>כל</strong> משימה אינטלקטואלית שאדם יכול לבצע,
+                        ולהעביר ידע ממשימה אחת לאחרת.
+                    </p>
+                    <div class="example-box">
+                        <h4>מאפיינים היפותטיים:</h4>
+                        <ul>
+                            <li>יכולת ללמוד כל דבר חדש</li>
+                            <li>העברת ידע בין תחומים</li>
+                            <li>הבנה אמיתית, לא רק זיהוי דפוסים</li>
+                            <li>יכולת לפעול בעולם הפיזי</li>
+                            <li>אולי: תודעה עצמית?</li>
+                        </ul>
+                        <p><strong>סטטוס:</strong> לא קיים. יש מחלוקת עצומה מתי ואם זה יקרה -
+                        תחזיות נעות בין 10 שנים לעולם לא.</p>
+                    </div>
+
+                    <h3 id="3-AI-על-אנושי">3. AI על-אנושי (ASI - Artificial Superintelligence) 🚀</h3>
+                    <p>
+                        מערכת חכמה יותר מכל בני האדם יחד בכל תחום -
+                        מדע, יצירתיות, חברתיות, רגשות.
+                    </p>
+                    <div class="info-card warning">
+                        <strong>⚠️ תיאורטי לחלוטין:</strong>
+                        <p>זה נושא של ספקולציות ומדע בדיוני. אין לנו מושג אם זה אפשרי,
+                        מתי זה יכול לקרות, או מה המשמעות. חלק מהמדענים חוששים,
+                        חלק אופטימיים, ורובם אומרים שזה מוקדם לדאוג.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="דוגמאות-מפורטות-מחיי-היומיום">דוגמאות מפורטות מחיי היומיום</h2>
+                    <p>בינה מלאכותית כבר נמצאת סביבנו בכל מקום. הנה איך זה עובד:</p>
+
+                    <div class="example-box">
+                        <h4>🎬 נטפליקס ויוטיוב - מנועי המלצות</h4>
+                        <p><strong>מה קורה:</strong> נטפליקס יודע בדיוק מה להמליץ לכם</p>
+                        <p><strong>איך זה עובד:</strong></p>
+                        <ul>
+                            <li>המערכת אוספת נתונים: מה ראיתם, כמה זמן, מתי הפסקתם, מה דירגתם</li>
+                            <li>משווה אתכם למיליוני משתמשים אחרים עם טעם דומה</li>
+                            <li>מנתחת את התוכן עצמו: ז'אנרים, שחקנים, קצב, צבעים</li>
+                            <li>משלבת הכל ומחשבת: "מה הסיכוי שהמשתמש הזה ייהנה מהסרט הזה?"</li>
+                        </ul>
+                        <p><strong>עובדה:</strong> 80% מהתוכן שאנשים צופים בנטפליקס מגיע מהמלצות AI!</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>📱 Face ID - זיהוי פנים</h4>
+                        <p><strong>מה קורה:</strong> האייפון מזהה את הפנים שלכם תוך שבריר שנייה</p>
+                        <p><strong>איך זה עובד:</strong></p>
+                        <ul>
+                            <li>מקרין 30,000 נקודות אינפרא-אדום על הפנים</li>
+                            <li>יוצר מפה תלת-ממדית מדויקת</li>
+                            <li>רשת נוירונים משווה למפה השמורה</li>
+                            <li>עובד גם עם משקפיים, זקן, איפור, כובע</li>
+                        </ul>
+                        <p><strong>עובדה:</strong> הסיכוי שמישהו אחר יפתח את הטלפון שלכם: 1 למיליון!</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>📧 סינון ספאם - Gmail</h4>
+                        <p><strong>מה קורה:</strong> פחות מ-0.1% מהספאם מגיע לתיבה שלכם</p>
+                        <p><strong>איך זה עובד:</strong></p>
+                        <ul>
+                            <li>מנתח תוכן: מילים חשודות, קישורים, תמונות</li>
+                            <li>בודק שולח: מוניטין, היסטוריה, אימות</li>
+                            <li>לומד מהתנהגות: מה אתם מסמנים כספאם</li>
+                            <li>לומד מכולם: מה מיליארדי משתמשים מסמנים</li>
+                        </ul>
+                        <p><strong>עובדה:</strong> Gmail חוסם 10 מיליון הודעות ספאם בדקה!</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🚗 Waze - ניווט חכם</h4>
+                        <p><strong>מה קורה:</strong> תמיד מוצא את המסלול המהיר ביותר</p>
+                        <p><strong>איך זה עובד:</strong></p>
+                        <ul>
+                            <li>אוסף מיקום בזמן אמת ממיליוני נהגים</li>
+                            <li>מזהה פקקים, תאונות, מכשולים</li>
+                            <li>לומד דפוסי תנועה: באילו שעות יש עומס באיזה כביש</li>
+                            <li>מחשב את הזמן הצפוי בכל מסלול אפשרי</li>
+                            <li>מעדכן בזמן אמת אם המצב משתנה</li>
+                        </ul>
+                        <p><strong>עובדה:</strong> Waze חוסך לנהגים ממוצע של 5-10 דקות בנסיעה!</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>💬 ChatGPT - שיחה עם AI</h4>
+                        <p><strong>מה קורה:</strong> אפשר לשוחח בשפה טבעית ולקבל תשובות חכמות</p>
+                        <p><strong>איך זה עובד:</strong></p>
+                        <ul>
+                            <li>אומן על טריליוני מילים מהאינטרנט, ספרים, מאמרים</li>
+                            <li>למד את המבנה של השפה - דקדוק, סגנון, הקשר</li>
+                            <li>למד עובדות על העולם מתוך הטקסטים</li>
+                            <li>כשמקבל שאלה - "מנבא" מה התשובה הסבירה ביותר מילה אחרי מילה</li>
+                        </ul>
+                        <p><strong>חשוב להבין:</strong> ChatGPT לא "יודע" או "מבין" - הוא מזהה דפוסים
+                        סטטיסטיים. לפעמים הוא טועה, ממציא, או "הוזה".</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="היסטוריה-של-בינה-מלאכותית">ההיסטוריה של בינה מלאכותית</h2>
+                    <p>הסיפור של AI הוא סיפור של חלומות, אכזבות ופריצות דרך – מצ'ארלס באבג' והמכונה האנליטית (1837), דרך מבחן טיורינג (1950) וכנס דרטמות' (1956), ועד ChatGPT ו־GPT-5. לסקירה מפורטת עם תאריכים, שמות ומפתחים עד ינואר 2026, עברו לדף הייעודי:</p>
+                    <p><a href="ai-history.html" class="card-link">→ ההיסטוריה של בינה מלאכותית – ציר זמן מפורט</a></p>
+                </section>
+
+                <section>
+                    <h2 id="למה-זה-חשוב-ההשפעה-על-העולם">למה זה חשוב? ההשפעה על העולם</h2>
+                    <p>
+                        בינה מלאכותית משנה כמעט כל תחום בחיים שלנו.
+                        זו לא טכנולוגיה של העתיד - זה קורה עכשיו:
+                    </p>
+
+                    <div class="example-box">
+                        <h4>🏥 רפואה</h4>
+                        <ul>
+                            <li><strong>אבחון:</strong> AI מזהה סרטן בצילומים בדיוק של 95% - לפעמים יותר מרופא</li>
+                            <li><strong>פיתוח תרופות:</strong> מה שלקח 10 שנים לוקח שנה עם AI</li>
+                            <li><strong>ניתוחים:</strong> רובוטים מבצעים ניתוחים מדויקים יותר</li>
+                            <li><strong>תחזיות:</strong> זיהוי מחלות לפני שהתסמינים מופיעים</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🎓 חינוך</h4>
+                        <ul>
+                            <li><strong>למידה מותאמת:</strong> תוכנית לימודים אישית לכל תלמיד</li>
+                            <li><strong>מורה זמין 24/7:</strong> AI שעונה על שאלות בכל שעה</li>
+                            <li><strong>משוב מיידי:</strong> בדיקת עבודות ומתן הערות בזמן אמת</li>
+                            <li><strong>נגישות:</strong> תרגום, הקראה, התאמה ללקויות למידה</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🚗 תחבורה</h4>
+                        <ul>
+                            <li><strong>רכבים אוטונומיים:</strong> כבר נוסעים בערים מסוימות</li>
+                            <li><strong>תחזוקה:</strong> חיזוי תקלות לפני שהן קורות</li>
+                            <li><strong>ניהול תנועה:</strong> רמזורים חכמים שמתאימים את עצמם</li>
+                            <li><strong>לוגיסטיקה:</strong> מסלולי משלוח אופטימליים</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>💼 עבודה ועסקים</h4>
+                        <ul>
+                            <li><strong>אוטומציה:</strong> AI מבצע משימות שגרתיות</li>
+                            <li><strong>ניתוח:</strong> עיבוד כמויות עצומות של מידע</li>
+                            <li><strong>שירות לקוחות:</strong> צ'אטבוטים 24/7</li>
+                            <li><strong>יצירתיות:</strong> עזרה בכתיבה, עיצוב, קוד</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🎨 יצירתיות ובידור</h4>
+                        <ul>
+                            <li><strong>אמנות:</strong> יצירת תמונות, מוזיקה, וידאו</li>
+                            <li><strong>משחקים:</strong> יריבים חכמים יותר, עולמות מותאמים</li>
+                            <li><strong>סרטים:</strong> אפקטים מיוחדים, דיבוב, תרגום</li>
+                            <li><strong>כתיבה:</strong> עזרה ביצירת תוכן מכל סוג</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card warning">
+                        <strong>⚠️ אבל יש גם אתגרים:</strong>
+                        <ul>
+                            <li>עבודות שייעלמו או ישתנו</li>
+                            <li>שאלות של פרטיות ומעקב</li>
+                            <li>הטיות ואפליה באלגוריתמים</li>
+                            <li>מידע כוזב ו-deepfakes</li>
+                            <li>שאלות אתיות מורכבות</li>
+                        </ul>
+                        <p>על כל אלה נדבר בהמשך, בדף על אתיקה ב-AI.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="מושגי-יסוד-שכדאי-להכיר">מושגי יסוד שכדאי להכיר</h2>
+
+                    <div class="example-box">
+                        <h4>📊 אלגוריתם</h4>
+                        <p>סדרת הוראות מדויקת לביצוע משימה. כמו מתכון - צעד אחר צעד.</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🧠 רשת נוירונים</h4>
+                        <p>מבנה מתמטי שמחקה (בצורה מאוד פשוטה) את המוח. שכבות של "נוירונים" שמעבירים מידע ביניהם.</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>📚 נתונים (Data)</h4>
+                        <p>הדלק של AI. ככל שיש יותר נתונים איכותיים, ה-AI לומד יותר טוב.</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🎯 מודל</h4>
+                        <p>התוצאה של תהליך הלמידה - ה"מוח" שה-AI בנה מהנתונים.</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🏋️ אימון (Training)</h4>
+                        <p>התהליך שבו ה-AI לומד מנתונים. יכול לקחת ימים עד חודשים.</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>💬 פרומפט (Prompt)</h4>
+                        <p>ההנחיה שנותנים ל-AI. האופן שבו מנסחים את הבקשה משפיע מאוד על התוצאה.</p>
+                    </div>
+                </section>
+
+                <section class="summary-box">
+                    <h2 id="סיכום">סיכום 📝</h2>
+                    <ul>
+                        <li><strong>AI = מחשבים שלומדים מדוגמאות</strong> במקום להיות מתוכנתים לכל מצב</li>
+                        <li><strong>כבר כאן:</strong> ספאם, נטפליקס, ווייז, Face ID, ChatGPT - הכל AI</li>
+                        <li><strong>סוגים:</strong> למידת מכונה, למידה עמוקה, NLP, ראייה ממוחשבת, AI גנרטיבי</li>
+                        <li><strong>רמות:</strong> יש לנו AI צר (מתמחה במשימה אחת). AI כללי עדיין לא קיים</li>
+                        <li><strong>היסטוריה:</strong> 70 שנים של עליות וירידות, עכשיו במהפכה</li>
+                        <li><strong>השפעה:</strong> משנה רפואה, חינוך, תחבורה, עבודה - הכל</li>
+                        <li><strong>חשוב:</strong> יש גם אתגרים - עבודות, פרטיות, הטיות, אתיקה</li>
+                    </ul>
+                </section>
+
+                <!-- Quiz Section -->
+                <section id="quiz-section" class="quiz-section">
+                    <h2 id="בחן-את-עצמך">📝 בחן את עצמך</h2>
+                    <p class="quiz-intro">ענו על 10 שאלות כדי לבדוק את ההבנה שלכם. בחרו תשובה אחת לכל שאלה.</p>
+
+                    <form id="quiz-form">
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">1</span> מה ההבדל העיקרי בין תכנות רגיל לבינה מלאכותית?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q1" value="a"><span>בתכנות רגיל המחשב מהיר יותר</span></label>
+                                <label class="quiz-option"><input type="radio" name="q1" value="b"><span>ב-AI המחשב לומד מדוגמאות במקום הוראות מפורשות</span></label>
+                                <label class="quiz-option"><input type="radio" name="q1" value="c"><span>AI עובד רק על מחשבים חדשים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q1" value="d"><span>אין הבדל משמעותי ביניהם</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="c">
+                            <h4><span class="question-number">2</span> מה זה "AI צר" (Narrow AI)?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q2" value="a"><span>AI שעובד רק על מסכים קטנים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q2" value="b"><span>AI שחכם יותר מכל בני האדם</span></label>
+                                <label class="quiz-option"><input type="radio" name="q2" value="c"><span>AI שמתמחה במשימה ספציפית אחת</span></label>
+                                <label class="quiz-option"><input type="radio" name="q2" value="d"><span>AI שלומד לאט מאוד</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="a">
+                            <h4><span class="question-number">3</span> מה מייחד את "למידה עמוקה" (Deep Learning)?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q3" value="a"><span>שימוש ברשתות נוירונים מלאכותיות</span></label>
+                                <label class="quiz-option"><input type="radio" name="q3" value="b"><span>למידה מתחת לפני הים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q3" value="c"><span>למידה של נושאים פילוסופיים עמוקים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q3" value="d"><span>שימוש בחומרה יקרה במיוחד</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="d">
+                            <h4><span class="question-number">4</span> מתי נטבע המונח "בינה מלאכותית" לראשונה?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q4" value="a"><span>1990</span></label>
+                                <label class="quiz-option"><input type="radio" name="q4" value="b"><span>2010</span></label>
+                                <label class="quiz-option"><input type="radio" name="q4" value="c"><span>1970</span></label>
+                                <label class="quiz-option"><input type="radio" name="q4" value="d"><span>1956</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">5</span> כמה אחוז מהתוכן שצופים בנטפליקס מגיע מהמלצות AI?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q5" value="a"><span>20%</span></label>
+                                <label class="quiz-option"><input type="radio" name="q5" value="b"><span>80%</span></label>
+                                <label class="quiz-option"><input type="radio" name="q5" value="c"><span>50%</span></label>
+                                <label class="quiz-option"><input type="radio" name="q5" value="d"><span>10%</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="c">
+                            <h4><span class="question-number">6</span> מה עושה "עיבוד שפה טבעית" (NLP)?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q6" value="a"><span>מעבד תמונות של טבע</span></label>
+                                <label class="quiz-option"><input type="radio" name="q6" value="b"><span>יוצר מוזיקה אוטומטית</span></label>
+                                <label class="quiz-option"><input type="radio" name="q6" value="c"><span>מאפשר למחשבים להבין ולייצר שפה אנושית</span></label>
+                                <label class="quiz-option"><input type="radio" name="q6" value="d"><span>מנהל תנועה בכבישים</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="a">
+                            <h4><span class="question-number">7</span> מי הציע את "מבחן טיורינג"?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q7" value="a"><span>אלן טיורינג</span></label>
+                                <label class="quiz-option"><input type="radio" name="q7" value="b"><span>סטיב ג'ובס</span></label>
+                                <label class="quiz-option"><input type="radio" name="q7" value="c"><span>ביל גייטס</span></label>
+                                <label class="quiz-option"><input type="radio" name="q7" value="d"><span>אילון מאסק</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="d">
+                            <h4><span class="question-number">8</span> מה קרה ב-2022 שגרם למהפכה בתחום ה-AI?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q8" value="a"><span>הושק האייפון הראשון</span></label>
+                                <label class="quiz-option"><input type="radio" name="q8" value="b"><span>מחשב ניצח בשחמט</span></label>
+                                <label class="quiz-option"><input type="radio" name="q8" value="c"><span>פותחה רשת האינטרנט</span></label>
+                                <label class="quiz-option"><input type="radio" name="q8" value="d"><span>ChatGPT הושק והגיע ל-100 מיליון משתמשים</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">9</span> מה זה "פרומפט" (Prompt)?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q9" value="a"><span>סוג של מחשב חזק</span></label>
+                                <label class="quiz-option"><input type="radio" name="q9" value="b"><span>ההנחיה שנותנים ל-AI</span></label>
+                                <label class="quiz-option"><input type="radio" name="q9" value="c"><span>תקלה במערכת</span></label>
+                                <label class="quiz-option"><input type="radio" name="q9" value="d"><span>שפת תכנות</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="c">
+                            <h4><span class="question-number">10</span> מה לא נכון לגבי ChatGPT?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q10" value="a"><span>הוא אומן על טריליוני מילים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q10" value="b"><span>לפעמים הוא טועה או ממציא מידע</span></label>
+                                <label class="quiz-option"><input type="radio" name="q10" value="c"><span>הוא באמת "מבין" ו"יודע" כמו אדם</span></label>
+                                <label class="quiz-option"><input type="radio" name="q10" value="d"><span>הוא מזהה דפוסים סטטיסטיים</span></label>
+                            </div>
+                        </div>
+                    </form>
+
+                    <button id="quiz-submit">בדוק תשובות</button>
+
+                    <div id="quiz-results" class="quiz-results">
+                        <h3 id="התוצאות-שלך">התוצאות שלך</h3>
+                        <div class="score-display">
+                            <div class="score-item">
+                                <span id="quiz-score" class="score-number">0/10</span>
+                                <span class="score-label">תשובות נכונות</span>
+                            </div>
+                            <div class="score-item">
+                                <span id="quiz-percent" class="score-number">0%</span>
+                                <span class="score-label">אחוז הצלחה</span>
+                            </div>
+                        </div>
+                        <p id="quiz-message" class="quiz-message"></p>
+                        <button id="quiz-retry">נסה שוב</button>
+                    </div>
+                </section>
+
+                <div class="article-nav">
+                    <a href="../index.html" class="btn">→ חזרה לדף הבית</a>
+                    <a href="ai-history.html" class="btn btn-primary">2. ההיסטוריה של AI – המשך ←</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 אתר ללימוד בינה מלאכותית AI - כל הזכויות שמורות לשמוליק שחר יועץ לימודי המנגיש לימודי בינה מלאכותית לכל אדם</p>
+            <p class="footer-contact">טלפון: <a href="tel:+972522603831">+972522603831</a> | אימייל: <a href="mailto:shaharprod@gmail.com">shaharprod@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

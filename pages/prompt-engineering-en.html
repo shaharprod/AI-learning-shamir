@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Engineering | AI Learning</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="article.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>body { direction: ltr; }</style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="../index-en.html">
+                    <img src="../images/colorful%20digital%20media%20sy.png" alt="Logo" class="logo-icon">
+                    <span class="logo-text">AI Learning</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index-en.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="../index-en.html#topics" class="dropdown-toggle">Lessons ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="intro-to-ai-en.html">1. Intro to AI</a></li>
+                        <li><a href="ai-history-en.html">2. History of AI</a></li>
+                        <li><a href="machine-learning-en.html">3. Machine Learning</a></li>
+                        <li><a href="ai-daily-life-en.html">4. AI in Daily Life</a></li>
+                        <li><a href="ai-tools-en.html">5. Practical Tools</a></li>
+                        <li><a href="prompt-engineering-en.html">6. Prompt Engineering</a></li>
+                        <li><a href="ai-ethics-en.html">7. AI Ethics</a></li>
+                        <li><a href="ai-future-en.html">8. The Future of AI</a></li>
+                        <li><a href="glossary-en.html">9. Glossary</a></li>
+                    </ul>
+                </li>
+                <li><a href="glossary-en.html">Glossary</a></li>
+                <li><a href="ai-tools-en.html">Tools</a></li>
+                <li><a href="../index-en.html#about">About</a></li>
+            </ul>
+            <form class="nav-search" id="site-search" role="search">
+                <input type="search" name="q" placeholder="Search..." aria-label="Search" />
+                <button type="submit" aria-label="Search">🔍</button>
+            </form>
+            <nav class="lang-switcher" aria-label="Language">
+                <a href="prompt-engineering.html" hreflang="he" lang="he">עברית</a>
+                <span class="lang-active" aria-current="page">English</span>
+            </nav>
+            <button type="button" class="mobile-menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+        </nav>
+    </header>
+    <main class="article">
+        <div class="container">
+            <div class="breadcrumb"><a href="../index-en.html">Home</a> / <span>Prompt Engineering</span></div>
+            <article class="article-content">
+                <h1>Prompt Engineering for Language Models</h1>
+                <p class="article-meta">✍️ Reading time: 18 min | Level: Everyone</p>
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=400&fit=crop" alt="Prompt engineering - keyboard and chat" class="article-header-image">
+
+                <section>
+                    <h2 id="what-is-pe">What is Prompt Engineering?</h2>
+                    <p>
+                        Prompt engineering is the art and science of phrasing requests to AI tools so they produce
+                        the best results. It's a critical skill in the AI age –
+                        <strong>how you ask directly affects the quality of the answer.</strong>
+                    </p>
+                    <p>
+                        Think of it like ordering food: "Bring me something tasty" will get a very different result
+                        from "I want pasta in tomato sauce, no onion, with grated cheese on the side".
+                    </p>
+                    <p>
+                        In this lesson we'll use the <strong>CRAFT model</strong> – a simple five-letter framework for building effective prompts, plus principles and techniques for better results.
+                    </p>
+                    <div class="info-card tip">
+                        <strong>💡 Why it matters:</strong>
+                        <p>The same AI can give a mediocre or excellent answer – depending on how you asked. Learning prompt engineering is the best investment for using AI effectively.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="core-principle">🎯 Core principle: clarity and planning</h2>
+                    <p>
+                        Before you type a question to the AI, pause and think. These questions match the <strong>CRAFT</strong> components – use them as a quick check:
+                    </p>
+                    <ul class="benefits-list">
+                        <li><strong>What exactly do I want?</strong> – Short answer? Long? List? Table?</li>
+                        <li><strong>Who is the audience?</strong> – Experts? Beginners? Children?</li>
+                        <li><strong>What style?</strong> – Formal? Friendly? Technical?</li>
+                        <li><strong>What's the context?</strong> – Why do I need this?</li>
+                        <li><strong>What do I not want?</strong> – Anything to avoid?</li>
+                    </ul>
+                    <div class="example-box">
+                        <h4>❌ Vague prompt</h4>
+                        <p>"Tell me about Python"</p>
+                        <p><em>Problem: Unclear if you mean the programming language or the snake. Even then – what exactly do you want to know?</em></p>
+                    </div>
+                    <div class="example-box">
+                        <h4>✅ Clear prompt</h4>
+                        <p>"Explain the programming language Python in 5 main points, at a level for a complete beginner. Focus on advantages and common uses."</p>
+                        <p><em>Advantage: Clear what you want, how much, for whom, and the focus.</em></p>
+                    </div>
+                    <h3 id="craft">The CRAFT model – building a good prompt</h3>
+                    <p>
+                        <strong>CRAFT</strong> is a simple framework: five letters that cover what to think about before writing a prompt. You don't have to use all five every time – even 3–4 elements improve results a lot.
+                    </p>
+                    <ul class="benefits-list">
+                        <li><strong>C – Context:</strong> Give background and situation. Why do you need this? In what field? What limits or conditions?</li>
+                        <li><strong>R – Role:</strong> Assign the model a role or expertise. E.g. "You are a math teacher with 15 years of experience" or "Act as a copy editor".</li>
+                        <li><strong>A – Action:</strong> State clearly what you want done. A clear, concrete task – not "help me" but "Write three paragraphs about…" or "Prepare a list of…".</li>
+                        <li><strong>F – Format:</strong> Say how you want the answer: list, table, paragraphs, bullet points, code, two-sentence summary.</li>
+                        <li><strong>T – Tone:</strong> Set style and voice – formal, friendly, technical, simple for kids.</li>
+                    </ul>
+                    <div class="info-card tip">
+                        <strong>💡 Short CRAFT example</strong>
+                        <p>"<strong>Context:</strong> I'm preparing a talk for 8th graders. <strong>Role:</strong> Act as a science teacher explaining to kids. <strong>Request:</strong> Explain what DNA is in three simple sentences. <strong>Format:</strong> Three short paragraphs. <strong>Tone:</strong> Friendly and clear, no heavy jargon."</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="seven-principles">📋 7 golden principles</h2>
+                    <p>After filling in CRAFT, these principles help sharpen your prompt and improve results:</p>
+                    <div class="guidelines">
+                        <div class="guideline-item"><span class="guideline-number">1</span><div><h4>Be specific</h4><p>The more precise you are, the more relevant the answer. Instead of "help me write an email", write "Help me write a professional email asking for a raise, respectful but assertive, 150–200 words."</p></div></div>
+                        <div class="guideline-item"><span class="guideline-number">2</span><div><h4>Provide context</h4><p>Give relevant background. "I'm a 4th grade teacher" or "I'm a developer with 5 years of experience" – it changes the answer completely.</p></div></div>
+                        <div class="guideline-item"><span class="guideline-number">3</span><div><h4>Define format</h4><p>Say how you want the answer: numbered list, table, short paragraphs, bullet points, code with comments.</p></div></div>
+                        <div class="guideline-item"><span class="guideline-number">4</span><div><h4>Give examples</h4><p>If you have an example of what you want – share it. "Write in the style of this example…" helps the AI understand exactly what you want.</p></div></div>
+                        <div class="guideline-item"><span class="guideline-number">5</span><div><h4>Set a role</h4><p>Ask the AI to play a role: "Act like a physics teacher", "Imagine you're a lawyer", "Answer as a marketing expert".</p></div></div>
+                        <div class="guideline-item"><span class="guideline-number">6</span><div><h4>Limit the answer</h4><p>Specify length, number of points, or scope: "In 3 sentences", "Up to 500 words", "Only 5 ideas".</p></div></div>
+                        <div class="guideline-item"><span class="guideline-number">7</span><div><h4>Iterate</h4><p>Don't settle for the first answer. Ask "Expand on the second point", "Give another example", or "Put this in simpler words".</p></div></div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="techniques">🔧 Advanced techniques</h2>
+                    <h3 id="chain-of-thought">1. Chain of Thought</h3>
+                    <p>Ask the AI to explain its reasoning step by step. This improves accuracy on complex problems.</p>
+                    <div class="example-box"><h4>Example:</h4><p>"Solve the following step by step and explain the logic at each step: If Danny has 3 apples and Ronit has twice as many, and they gave half to Mom…"</p></div>
+                    <h3 id="few-shot">2. Few-Shot Learning</h3>
+                    <p>Give 2–3 examples of what you want, then ask for more in the same style.</p>
+                    <h3 id="role-play">3. Role Playing</h3>
+                    <p>Ask the AI to adopt a specific persona for the whole conversation.</p>
+                    <h3 id="constraints">4. Constraints</h3>
+                    <p>Define what is and isn’t allowed.</p>
+                </section>
+
+                <section>
+                    <h2 id="template">📝 The perfect prompt structure – CRAFT template</h2>
+                    <p>Use this template to organize CRAFT for almost any topic:</p>
+                    <div class="code-example">
+[Role] - You are [expert/role]<br>
+[Context] - I am [who/situation]<br>
+[Action] - I need you to [exactly what to do]<br>
+[Format] - Present as [list/table/paragraphs]<br>
+[Tone] - Important that [style, conditions, what to avoid]
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="mistakes">❌ Common mistakes to avoid</h2>
+                    <div class="example-box"><h4>1. Prompt too short</h4><p>❌ "Write an email" → ✅ "Write a professional email inviting a supplier to a meeting, friendly but businesslike, with 2–3 possible dates"</p></div>
+                    <div class="example-box"><h4>2. Assuming the AI knows context</h4><p>❌ "What do you think of my idea?" → ✅ "My idea is to open an online store selling homemade cookies. What are the pros and cons?"</p></div>
+                    <div class="example-box"><h4>3. Closed questions when you want detail</h4><p>❌ "Is Python a good language?" → ✅ "What are the pros and cons of Python vs JavaScript for backend?"</p></div>
+                    <div class="example-box"><h4>4. Not asking for fixes</h4><p>✅ "That’s not quite what I meant. I’m looking for something more [what’s missing]. Can you try again?"</p></div>
+                    <div class="example-box"><h4>5. Asking everything at once</h4><p>✅ Start with one topic and go deeper step by step.</p></div>
+                </section>
+
+                <section>
+                    <h2 id="examples">💬 Practical examples by area</h2>
+                    <div class="example-box"><h4>📧 Emails:</h4><p>"Write a professional email to a customer complaining about a late delivery. Tone: empathetic and apologetic but also reassuring, with a proposed solution. Length: 100–150 words. Include: apology, brief explanation, proposed solution, and offer to compensate."</p></div>
+                    <div class="example-box"><h4>📚 Learning:</h4><p>"Explain Einstein’s theory of relativity as if I'm 12. Use analogies from everyday life. Start from the most basic idea and build up. Length: 3 paragraphs."</p></div>
+                    <div class="example-box"><h4>💼 Work:</h4><p>"I need to present a project to senior managers. Help me create a structure for a 10-minute presentation on launching a new product. Include: strong opening, 3–4 main points, closing with a call to action."</p></div>
+                    <div class="example-box"><h4>💻 Code:</h4><p>"Write a Python function that takes a list of numbers and returns all the even ones. Include: documented code, usage example, and a short explanation of the logic."</p></div>
+                </section>
+
+                <section>
+                    <h2 id="conversation">🔄 Conversation is a process</h2>
+                    <p>Remember: a conversation with AI isn’t one question and one answer. It’s a <strong>dialogue</strong> you can refine. Evaluate the answer, ask for specific improvements ("expand on…", "shorten…", "add an example for…"), and iterate.</p>
+                    <div class="info-card tip"><strong>💡 If the answer isn’t good</strong> – it’s usually not "the AI’s fault". Try rephrasing with more detail or context, or run through CRAFT: Did you give Context (C), Role (R), clear Action (A), Format (F), and Tone (T)?</div>
+                </section>
+
+                <section>
+                    <h2 id="remember">⚠️ Always remember</h2>
+                    <div class="info-card warning">
+                        <strong>Important:</strong>
+                        <ul>
+                            <li><strong>Verify facts:</strong> AI can be wrong or invent information. Always double-check important facts.</li>
+                            <li><strong>Don’t share sensitive data:</strong> Passwords, ID numbers, financial details – never.</li>
+                            <li><strong>Use judgment:</strong> AI is a tool, not a replacement for your own thinking.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="summary-box">
+                    <h2 id="summary">Summary 📝</h2>
+                    <ul>
+                        <li><strong>CRAFT:</strong> Context (C), Role (R), Action (A), Format (F), Tone (T)</li>
+                        <li>Plan before you write; be specific; give context; define format; give examples when you can; iterate; verify the result.</li>
+                    </ul>
+                </section>
+
+                <section id="quiz-section" class="quiz-section">
+                    <h2 id="quiz">📝 Test yourself</h2>
+                    <p class="quiz-intro">Answer 11 questions on prompt engineering and the CRAFT model.</p>
+                    <form id="quiz-form">
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">1</span> What is prompt engineering?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q1" value="a"><span>Building robots</span></label>
+                                <label class="quiz-option"><input type="radio" name="q1" value="b"><span>The art of phrasing requests to AI for better results</span></label>
+                                <label class="quiz-option"><input type="radio" name="q1" value="c"><span>Programming computers</span></label>
+                                <label class="quiz-option"><input type="radio" name="q1" value="d"><span>Designing websites</span></label>
+                            </div>
+                        </div>
+                        <div class="quiz-question" data-correct="c">
+                            <h4><span class="question-number">2</span> What’s wrong with the prompt "Tell me about Python"?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q2" value="a"><span>It’s too long</span></label>
+                                <label class="quiz-option"><input type="radio" name="q2" value="b"><span>It’s in Hebrew</span></label>
+                                <label class="quiz-option"><input type="radio" name="q2" value="c"><span>It’s vague – unclear what you want</span></label>
+                                <label class="quiz-option"><input type="radio" name="q2" value="d"><span>Nothing, it’s a great prompt</span></label>
+                            </div>
+                        </div>
+                        <div class="quiz-question" data-correct="a">
+                            <h4><span class="question-number">3</span> What should a good prompt include?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q3" value="a"><span>Context, desired format, and level of detail</span></label>
+                                <label class="quiz-option"><input type="radio" name="q3" value="b"><span>Only the question – AI is smart enough</span></label>
+                                <label class="quiz-option"><input type="radio" name="q3" value="c"><span>Lots of emojis</span></label>
+                                <label class="quiz-option"><input type="radio" name="q3" value="d"><span>English only</span></label>
+                            </div>
+                        </div>
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">4</span> What does the CRAFT model provide?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q4" value="a"><span>The name of an AI program</span></label>
+                                <label class="quiz-option"><input type="radio" name="q4" value="b"><span>A framework of five elements: Context, Role, Action, Format, Tone</span></label>
+                                <label class="quiz-option"><input type="radio" name="q4" value="c"><span>A list of prompt-writing tools</span></label>
+                                <label class="quiz-option"><input type="radio" name="q4" value="d"><span>A creative thinking technique</span></label>
+                            </div>
+                        </div>
+                        <div class="quiz-question" data-correct="d">
+                            <h4><span class="question-number">5</span> What is "Chain of Thought"?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q5" value="a"><span>A chain of computers</span></label>
+                                <label class="quiz-option"><input type="radio" name="q5" value="b"><span>A to-do list</span></label>
+                                <label class="quiz-option"><input type="radio" name="q5" value="c"><span>A type of software</span></label>
+                                <label class="quiz-option"><input type="radio" name="q5" value="d"><span>Asking the AI to explain its reasoning step by step</span></label>
+                            </div>
+                        </div>
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">6</span> Why give examples in a prompt?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q6" value="a"><span>Because AI doesn’t understand without examples</span></label>
+                                <label class="quiz-option"><input type="radio" name="q6" value="b"><span>So the AI understands the exact style and format you want</span></label>
+                                <label class="quiz-option"><input type="radio" name="q6" value="c"><span>It doesn’t really help</span></label>
+                                <label class="quiz-option"><input type="radio" name="q6" value="d"><span>Because it’s required in every prompt</span></label>
+                            </div>
+                        </div>
+                        <div class="quiz-question" data-correct="c">
+                            <h4><span class="question-number">7</span> What’s wrong with asking "Is Python a good language?"?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q7" value="a"><span>The question is too long</span></label>
+                                <label class="quiz-option"><input type="radio" name="q7" value="b"><span>Python isn’t a language</span></label>
+                                <label class="quiz-option"><input type="radio" name="q7" value="c"><span>A closed question that yields a short answer instead of detailed analysis</span></label>
+                                <label class="quiz-option"><input type="radio" name="q7" value="d"><span>Nothing, it’s a great question</span></label>
+                            </div>
+                        </div>
+                        <div class="quiz-question" data-correct="a">
+                            <h4><span class="question-number">8</span> What does "set a role" mean in a prompt?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q8" value="a"><span>Asking the AI to act like a specific expert</span></label>
+                                <label class="quiz-option"><input type="radio" name="q8" value="b"><span>Giving the AI a job</span></label>
+                                <label class="quiz-option"><input type="radio" name="q8" value="c"><span>Defining your own role</span></label>
+                                <label class="quiz-option"><input type="radio" name="q8" value="d"><span>Playing a role-playing game</span></label>
+                            </div>
+                        </div>
+                        <div class="quiz-question" data-correct="d">
+                            <h4><span class="question-number">9</span> What to do if the AI’s answer isn’t accurate?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q9" value="a"><span>Give up and look elsewhere</span></label>
+                                <label class="quiz-option"><input type="radio" name="q9" value="b"><span>Accept the answer as is</span></label>
+                                <label class="quiz-option"><input type="radio" name="q9" value="c"><span>Get angry at the AI</span></label>
+                                <label class="quiz-option"><input type="radio" name="q9" value="d"><span>Ask for a specific fix or rephrase the request</span></label>
+                            </div>
+                        </div>
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">10</span> What should you not share with AI?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q10" value="a"><span>Questions about cooking</span></label>
+                                <label class="quiz-option"><input type="radio" name="q10" value="b"><span>Passwords, ID numbers, and financial information</span></label>
+                                <label class="quiz-option"><input type="radio" name="q10" value="c"><span>Creative ideas</span></label>
+                                <label class="quiz-option"><input type="radio" name="q10" value="d"><span>Study questions</span></label>
+                            </div>
+                        </div>
+                        <div class="quiz-question" data-correct="c">
+                            <h4><span class="question-number">11</span> What is the most important principle in prompt engineering?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q11" value="a"><span>Write prompts as short as possible</span></label>
+                                <label class="quiz-option"><input type="radio" name="q11" value="b"><span>Use English only</span></label>
+                                <label class="quiz-option"><input type="radio" name="q11" value="c"><span>Clarity and planning – know what you want before you write</span></label>
+                                <label class="quiz-option"><input type="radio" name="q11" value="d"><span>Write as much text as possible</span></label>
+                            </div>
+                        </div>
+                    </form>
+                    <button id="quiz-submit">Check answers</button>
+                    <div id="quiz-results" class="quiz-results">
+                        <h3 id="your-results">Your results</h3>
+                        <div class="score-display">
+                            <div class="score-item"><span id="quiz-score" class="score-number">0/11</span><span class="score-label">Correct answers</span></div>
+                            <div class="score-item"><span id="quiz-percent" class="score-number">0%</span><span class="score-label">Success rate</span></div>
+                        </div>
+                        <p id="quiz-message" class="quiz-message"></p>
+                        <button id="quiz-retry">Try again</button>
+                    </div>
+                </section>
+
+                <div class="article-nav">
+                    <a href="ai-tools-en.html" class="btn">→ 5. Practical Tools</a>
+                    <a href="ai-ethics-en.html" class="btn btn-primary">7. AI Ethics – Next ←</a>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 AI Learning – Sam Shahar</p>
+            <p class="footer-contact">Phone: <a href="tel:+972522603831">+972522603831</a> | Email: <a href="mailto:shaharprod@gmail.com">shaharprod@gmail.com</a></p>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202026-02-09%20160037.png">
+    <title>למידת מכונה | אתר ללימוד בינה מלאכותית AI</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="article.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/colorful%20digital%20media%20sy.png" alt="לוגו" class="logo-icon">
+                    <span class="logo-text">לימוד בינה מלאכותית AI</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">בית</a></li>
+                <li class="dropdown">
+                    <a href="../index.html#topics" class="dropdown-toggle">שיעורים ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="intro-to-ai.html">1. מבוא ל-AI</a></li>
+                        <li><a href="ai-history.html">2. ההיסטוריה של AI</a></li>
+                        <li><a href="machine-learning.html">3. למידת מכונה</a></li>
+                        <li><a href="ai-daily-life.html">4. AI בחיי היומיום</a></li>
+                        <li><a href="ai-tools.html">5. כלים מעשיים</a></li>
+                        <li><a href="prompt-engineering.html">6. הנדסת הנחייה</a></li>
+                        <li><a href="ai-ethics.html">7. אתיקה ב-AI</a></li>
+                        <li><a href="ai-future.html">8. העתיד של AI</a></li>
+                        <li><a href="glossary.html">9. מילון מושגים</a></li>
+                    </ul>
+                </li>
+                <li><a href="glossary.html">מילון</a></li>
+                <li><a href="ai-tools.html">כלים</a></li>
+                <li><a href="../index.html#about">אודות</a></li>
+            </ul>
+            <form class="nav-search" id="site-search" role="search">
+                <input type="search" name="q" placeholder="חיפוש מילים ומושגים..." aria-label="חיפוש באתר" />
+                <button type="submit" aria-label="חפש">🔍</button>
+            </form>
+            <nav class="lang-switcher" aria-label="בחירת שפה">
+                <a href="machine-learning-en.html" hreflang="en" lang="en">English</a>
+                <span class="lang-active" aria-current="page">עברית</span>
+            </nav>
+            <button type="button" class="mobile-menu-btn" aria-label="תפריט">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Article Content -->
+    <main class="article">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">בית</a> / <span>למידת מכונה</span>
+            </div>
+
+            <article class="article-content">
+                <h1>למידת מכונה - Machine Learning</h1>
+                <p class="article-meta">🔮 זמן קריאה: 20 דקות | רמה: מתחילים-בינוניים</p>
+                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=400&fit=crop" alt="למידת מכונה - רשת נוירונים" class="article-header-image">
+
+                <section>
+                    <h2 id="מה-זה-למידת-מכונה">מה זה למידת מכונה?</h2>
+                    <p>
+                        למידת מכונה (Machine Learning או ML) היא הענף המרכזי והחשוב ביותר בבינה מלאכותית כיום.
+                        זו הטכנולוגיה שמאחורי כמעט כל מה שאנחנו מכירים כ-AI - מ-ChatGPT ועד המלצות נטפליקס.
+                    </p>
+                    <p>
+                        <strong>ההגדרה הפורמלית:</strong> למידת מכונה היא תחום שמאפשר למחשבים
+                        <strong>ללמוד מנתונים ולהשתפר בביצוע משימות</strong> - ללא שמתכנתים אותם
+                        במפורש לכל מצב אפשרי.
+                    </p>
+
+                    <div class="info-card tip">
+                        <strong>💡 ההבדל העיקרי מתכנות רגיל:</strong>
+                        <ul>
+                            <li><strong>תכנות רגיל:</strong> אתה כותב חוקים → המחשב מבצע</li>
+                            <li><strong>למידת מכונה:</strong> אתה נותן דוגמאות → המחשב מגלה את החוקים בעצמו</li>
+                        </ul>
+                    </div>
+
+                    <p>
+                        זה נשמע פשוט, אבל זו מהפכה. במקום שמתכנת צריך לחשוב על כל מקרה אפשרי ולכתוב
+                        לו חוק - המחשב לומד לבד מדוגמאות ומגלה דפוסים שאפילו האדם לא היה מזהה.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 id="איך-זה-עובד-ההסבר-המלא">איך זה עובד? ההסבר המלא</h2>
+
+                    <h3 id="משל-הילד-והכלב">משל הילד והכלב</h3>
+                    <p>
+                        נניח שאנחנו רוצים ללמד ילד קטן מה זה "כלב":
+                    </p>
+                    <div class="example-box">
+                        <h4>👶 הדרך המסורתית (תכנות רגיל)</h4>
+                        <p>נסביר לילד חוקים:</p>
+                        <ul>
+                            <li>"כלב זה חיה עם 4 רגליים"</li>
+                            <li>"יש לו פרווה"</li>
+                            <li>"יש לו אוזניים"</li>
+                            <li>"יש לו זנב"</li>
+                        </ul>
+                        <p>❌ <strong>הבעיות:</strong></p>
+                        <ul>
+                            <li>גם לחתול יש 4 רגליים, פרווה, אוזניים וזנב</li>
+                            <li>יש כלבים בלי זנב</li>
+                            <li>יש כלבים עם אוזניים זקופות ויש עם אוזניים מושכות</li>
+                            <li>יש כלבים קטנטנים ויש כלבים ענקיים</li>
+                            <li>אי אפשר לכתוב את כל החוקים!</li>
+                        </ul>
+                    </div>
+                    <div class="example-box">
+                        <h4>🧒 הדרך של למידת מכונה</h4>
+                        <p>נראה לילד אלפי תמונות:</p>
+                        <ul>
+                            <li>"זה כלב" (ראה 1000 תמונות)</li>
+                            <li>"זה לא כלב" (ראה 1000 תמונות של חתולים, שפנים, וכו')</li>
+                        </ul>
+                        <p>✅ <strong>מה קורה:</strong></p>
+                        <ul>
+                            <li>הילד לומד לבד את הדפוסים</li>
+                            <li>הוא לא יכול להסביר בדיוק איך הוא יודע - אבל הוא יודע</li>
+                            <li>הוא יכול לזהות כלבים חדשים שמעולם לא ראה</li>
+                        </ul>
+                    </div>
+                    <p>
+                        <strong>זה בדיוק מה שלמידת מכונה עושה!</strong> המחשב רואה הרבה דוגמאות,
+                        מזהה דפוסים, ובונה "מודל" פנימי שמאפשר לו להכליל למקרים חדשים.
+                    </p>
+
+                    <h3 id="התהליך-הטכני-פשוט">התהליך הטכני (פשוט)</h3>
+                    <div class="example-box">
+                        <h4>📊 שלב 1: איסוף נתונים</h4>
+                        <p>אוספים הרבה דוגמאות. ככל שיש יותר - יותר טוב.</p>
+                        <p><strong>דוגמה:</strong> 10,000 תמונות של כלבים ו-10,000 תמונות של לא-כלבים</p>
+                    </div>
+                    <div class="example-box">
+                        <h4>🏷️ שלב 2: תיוג (לפעמים)</h4>
+                        <p>מסמנים את הנתונים - מה התשובה הנכונה לכל דוגמה.</p>
+                        <p><strong>דוגמה:</strong> כל תמונה מסומנת "כלב" או "לא כלב"</p>
+                    </div>
+                    <div class="example-box">
+                        <h4>🏋️ שלב 3: אימון (Training)</h4>
+                        <p>המחשב עובר על כל הדוגמאות, מנתח אותן, ומחפש דפוסים.</p>
+                        <p>זה כמו "ללמוד למבחן" - המחשב מתרגל שוב ושוב עד שהוא מצליח.</p>
+                        <p><strong>זמן:</strong> יכול לקחת דקות עד שבועות, תלוי במורכבות</p>
+                    </div>
+                    <div class="example-box">
+                        <h4>🎯 שלב 4: מודל</h4>
+                        <p>התוצאה היא "מודל" - מבנה מתמטי שמייצג את מה שהמחשב למד.</p>
+                        <p>המודל הוא כמו "המוח" שנבנה מהלמידה.</p>
+                    </div>
+                    <div class="example-box">
+                        <h4>🔮 שלב 5: חיזוי (Inference)</h4>
+                        <p>עכשיו אפשר לתת למודל קלט חדש והוא "מנחש" את התשובה.</p>
+                        <p><strong>דוגמה:</strong> תמונה חדשה → המודל אומר "93% סיכוי שזה כלב"</p>
+                    </div>
+                    <div class="example-box">
+                        <h4>📈 שלב 6: הערכה ושיפור</h4>
+                        <p>בודקים כמה המודל צודק. אם הוא טועה הרבה - משפרים ומתאימים.</p>
+                        <p>זה תהליך חוזר של שיפור מתמיד.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="3-סוגי-למידת-מכונה">3 סוגי למידת מכונה</h2>
+                    <p>יש שלוש גישות עיקריות ללמידת מכונה, כל אחת מתאימה למצבים שונים:</p>
+
+                    <h3 id="למידה-מונחית">1. למידה מונחית (Supervised Learning) 👨‍🏫</h3>
+                    <p>
+                        הסוג הנפוץ ביותר. המחשב מקבל דוגמאות <strong>עם תשובות נכונות</strong>
+                        (Labels) ולומד לחזות את התשובה לדוגמאות חדשות.
+                    </p>
+                    <div class="example-box">
+                        <h4>איך זה עובד:</h4>
+                        <p>כמו ללמוד ממורה שנותן לך תרגילים עם פתרונות:</p>
+                        <ul>
+                            <li>המחשב רואה: קלט (X) → תשובה (Y)</li>
+                            <li>המחשב לומד: מה הקשר בין X ל-Y?</li>
+                            <li>עכשיו כשיש X חדש → המחשב מנחש Y</li>
+                        </ul>
+                    </div>
+                    <div class="example-box">
+                        <h4>דוגמאות מהעולם האמיתי:</h4>
+                        <ul>
+                            <li><strong>זיהוי ספאם:</strong> אלפי מיילים מסומנים "ספאם" / "לא ספאם" → המודל לומד להבדיל</li>
+                            <li><strong>חיזוי מחירי דירות:</strong> נתונים על דירות שנמכרו ומחיריהן → המודל מנבא מחיר לדירה חדשה</li>
+                            <li><strong>אבחון רפואי:</strong> צילומי רנטגן מסומנים "בריא" / "חולה" → המודל מזהה מחלות</li>
+                            <li><strong>זיהוי פנים:</strong> תמונות מסומנות בשמות → המודל מזהה מי בתמונה</li>
+                            <li><strong>תרגום:</strong> מיליוני משפטים מתורגמים → המודל לומד לתרגם</li>
+                        </ul>
+                    </div>
+                    <div class="info-card tip">
+                        <strong>💡 היתרון:</strong> תוצאות מדויקות ואמינות<br>
+                        <strong>⚠️ החיסרון:</strong> צריך הרבה נתונים מתויגים (יקר וגוזל זמן)
+                    </div>
+
+                    <h3 id="למידה-לא-מונחית">2. למידה לא מונחית (Unsupervised Learning) 🔍</h3>
+                    <p>
+                        המחשב מקבל נתונים <strong>בלי תשובות</strong> ומחפש דפוסים ומבנים בעצמו.
+                        כמו לתת לילד ערימת צעצועים ולבקש ממנו למיין אותם - בלי להגיד לו איך.
+                    </p>
+                    <div class="example-box">
+                        <h4>איך זה עובד:</h4>
+                        <ul>
+                            <li>המחשב מקבל נתונים ללא תיוגים</li>
+                            <li>מחפש דמיון בין הנתונים</li>
+                            <li>מקבץ (Clustering) או מוצא מבנים נסתרים</li>
+                        </ul>
+                    </div>
+                    <div class="example-box">
+                        <h4>דוגמאות מהעולם האמיתי:</h4>
+                        <ul>
+                            <li><strong>פילוח לקוחות:</strong> המערכת מנתחת התנהגות קנייה ומחלקת לקבוצות (VIP, מזדמנים, רדומים...)</li>
+                            <li><strong>זיהוי אנומליות:</strong> מציאת עסקאות חריגות בכרטיס אשראי</li>
+                            <li><strong>דחיסת נתונים:</strong> מציאת ייצוג יעיל יותר למידע</li>
+                            <li><strong>מנועי המלצות:</strong> קיבוץ מוצרים/משתמשים דומים</li>
+                            <li><strong>ניתוח רשתות חברתיות:</strong> מציאת קהילות</li>
+                        </ul>
+                    </div>
+                    <div class="info-card tip">
+                        <strong>💡 היתרון:</strong> לא צריך לתייג נתונים, מגלה דפוסים נסתרים<br>
+                        <strong>⚠️ החיסרון:</strong> קשה יותר להעריך אם התוצאות טובות
+                    </div>
+
+                    <h3 id="למידת-חיזוק">3. למידת חיזוק (Reinforcement Learning) 🎮</h3>
+                    <p>
+                        המחשב לומד מ<strong>ניסוי וטעייה</strong> - מבצע פעולות, מקבל משוב
+                        (פרס או עונש), ולומד מה כדאי לעשות.
+                    </p>
+                    <div class="example-box">
+                        <h4>איך זה עובד:</h4>
+                        <p>כמו לאמן כלב:</p>
+                        <ul>
+                            <li><strong>סוכן (Agent):</strong> מי שלומד (הכלב / התוכנה)</li>
+                            <li><strong>סביבה (Environment):</strong> העולם שבו הוא פועל</li>
+                            <li><strong>פעולות (Actions):</strong> מה הסוכן יכול לעשות</li>
+                            <li><strong>תגמול (Reward):</strong> משוב על הפעולות (+1 על הצלחה, -1 על כישלון)</li>
+                        </ul>
+                        <p>הסוכן לומד לאט לאט אילו פעולות מביאות לתגמול הגבוה ביותר.</p>
+                    </div>
+                    <div class="example-box">
+                        <h4>דוגמאות מהעולם האמיתי:</h4>
+                        <ul>
+                            <li><strong>AlphaGo:</strong> למד לשחק גו ברמת אלוף עולם</li>
+                            <li><strong>רובוטים:</strong> לומדים ללכת, לתפוס חפצים</li>
+                            <li><strong>נהיגה אוטונומית:</strong> לומד מניסיון נהיגה</li>
+                            <li><strong>משחקי מחשב:</strong> AI שמנצח שחקנים אנושיים</li>
+                            <li><strong>אופטימיזציה:</strong> ניהול חשמל במרכזי נתונים</li>
+                        </ul>
+                    </div>
+                    <div class="info-card tip">
+                        <strong>💡 היתרון:</strong> יכול ללמוד משימות מורכבות, להשתפר ללא גבול<br>
+                        <strong>⚠️ החיסרון:</strong> דורש הרבה ניסיונות, לפעמים לא יציב
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="למידה-עמוקה">למידה עמוקה (Deep Learning)</h2>
+                    <p>
+                        למידה עמוקה היא תת-תחום של למידת מכונה שחוללה את המהפכה בשנים האחרונות.
+                        זו הטכנולוגיה מאחורי ChatGPT, זיהוי פנים, תרגום אוטומטי, ועוד.
+                    </p>
+
+                    <h3 id="מה-זה-רשת-נוירונים">מה זה רשת נוירונים?</h3>
+                    <p>
+                        רשת נוירונים מלאכותית היא מבנה מתמטי שמחקה (בצורה מאוד פשוטה)
+                        את האופן שבו המוח האנושי עובד.
+                    </p>
+                    <div class="example-box">
+                        <h4>איך זה עובד:</h4>
+                        <ul>
+                            <li><strong>נוירונים:</strong> יחידות חישוב קטנות שמקבלות קלט ומוציאות פלט</li>
+                            <li><strong>שכבות:</strong> הנוירונים מאורגנים בשכבות</li>
+                            <li><strong>חיבורים:</strong> כל נוירון מחובר לנוירונים בשכבה הבאה</li>
+                            <li><strong>משקלים:</strong> לכל חיבור יש "משקל" שקובע את עוצמת ההשפעה</li>
+                        </ul>
+                        <p>בתהליך הלמידה, המערכת מכוונת את המשקלים כדי לשפר את התוצאות.</p>
+                    </div>
+
+                    <h3 id="למה-עמוקה">למה "עמוקה"?</h3>
+                    <p>
+                        "עמוקה" מתייחס למספר השכבות. רשתות נוירונים מודרניות יכולות להכיל
+                        עשרות ואף מאות שכבות - זה מה שמאפשר להן ללמוד דפוסים מורכבים.
+                    </p>
+                    <div class="example-box">
+                        <h4>דוגמה - זיהוי פנים:</h4>
+                        <ul>
+                            <li><strong>שכבות ראשונות:</strong> מזהות קצוות ועקומות בסיסיות</li>
+                            <li><strong>שכבות אמצעיות:</strong> מזהות צורות (עיניים, אף, פה)</li>
+                            <li><strong>שכבות עמוקות:</strong> מזהות פנים שלמות וזהות</li>
+                        </ul>
+                        <p>כל שכבה לומדת ייצוגים יותר ויותר מופשטים.</p>
+                    </div>
+
+                    <h3 id="סוגי-רשתות-נוירונים">סוגי רשתות נוירונים</h3>
+                    <div class="example-box">
+                        <h4>CNN - Convolutional Neural Networks</h4>
+                        <p>מתמחות בתמונות ווידאו. משמשות לזיהוי פנים, אובייקטים, ניתוח תמונות רפואיות.</p>
+                    </div>
+                    <div class="example-box">
+                        <h4>RNN / LSTM - Recurrent Neural Networks</h4>
+                        <p>מתמחות ברצפים (טקסט, זמן). משמשות לתרגום, ניתוח רגשות, חיזוי.</p>
+                    </div>
+                    <div class="example-box">
+                        <h4>Transformers</h4>
+                        <p>
+                            הארכיטקטורה המהפכנית מ-2017. הבסיס ל-GPT, BERT, ורוב מודלי השפה המודרניים.
+                            מסוגלת לעבד קלט ארוך ולהבין קשרים מרוחקים בטקסט.
+                        </p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="דוגמאות-מפורטות-מהעולם-האמיתי">דוגמאות מפורטות מהעולם האמיתי</h2>
+
+                    <div class="example-box">
+                        <h4>🏥 רפואה - אבחון סרטן</h4>
+                        <p><strong>הבעיה:</strong> רופאים מפספסים לפעמים גידולים קטנים בצילומים</p>
+                        <p><strong>הפתרון:</strong></p>
+                        <ul>
+                            <li>אימון על מיליוני צילומים מתויגים</li>
+                            <li>המודל לומד לזהות דפוסים של גידולים</li>
+                            <li>מציג "נקודות חשודות" לרופא</li>
+                        </ul>
+                        <p><strong>התוצאה:</strong> שיעור זיהוי של 95%+, לפעמים יותר מרופאים מומחים</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🏦 בנקאות - זיהוי הונאות</h4>
+                        <p><strong>הבעיה:</strong> מיליוני עסקאות ביום, אי אפשר לבדוק ידנית</p>
+                        <p><strong>הפתרון:</strong></p>
+                        <ul>
+                            <li>המודל לומד מהי עסקה "רגילה" לכל לקוח</li>
+                            <li>מזהה חריגות: מיקום יוצא דופן, סכום חריג, דפוס קנייה שונה</li>
+                            <li>שולח התראה או חוסם את העסקה</li>
+                        </ul>
+                        <p><strong>התוצאה:</strong> חיסכון של מיליארדי דולרים בשנה</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🎵 Spotify - המלצות מוזיקה</h4>
+                        <p><strong>הבעיה:</strong> יש עשרות מיליוני שירים, איך למצוא את מה שתאהבו?</p>
+                        <p><strong>הפתרון (שילוב של גישות):</strong></p>
+                        <ul>
+                            <li><strong>Collaborative Filtering:</strong> "אנשים שאהבו X אהבו גם Y"</li>
+                            <li><strong>Content-Based:</strong> ניתוח מוזיקלי של השירים (קצב, כלים, ז'אנר)</li>
+                            <li><strong>NLP:</strong> ניתוח מילות השיר ותיאורים</li>
+                            <li><strong>Audio Analysis:</strong> ניתוח הסאונד עצמו</li>
+                        </ul>
+                        <p><strong>התוצאה:</strong> Discover Weekly - רשימה אישית שמפתיעה אתכם בכל שבוע</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🚗 טסלה - נהיגה אוטונומית</h4>
+                        <p><strong>הבעיה:</strong> נהיגה דורשת הבנת סביבה מורכבת ותגובות בזמן אמת</p>
+                        <p><strong>הפתרון:</strong></p>
+                        <ul>
+                            <li><strong>מצלמות:</strong> 8 מצלמות מקיפות את הרכב</li>
+                            <li><strong>Computer Vision:</strong> זיהוי מכוניות, הולכי רגל, שלטים, נתיבים</li>
+                            <li><strong>חיזוי:</strong> ניבוי התנהגות של משתמשי דרך אחרים</li>
+                            <li><strong>תכנון מסלול:</strong> החלטה לאן לנסוע</li>
+                            <li><strong>למידה מרחוק:</strong> כל נסיעה של כל טסלה מלמדת את המערכת</li>
+                        </ul>
+                        <p><strong>התוצאה:</strong> מיליארדי קילומטרים של נתוני נהיגה</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>💬 ChatGPT - מודל שפה</h4>
+                        <p><strong>הבעיה:</strong> יצירת שיחה טבעית עם מחשב</p>
+                        <p><strong>הפתרון:</strong></p>
+                        <ul>
+                            <li><strong>Pre-training:</strong> אימון על טריליוני מילים מהאינטרנט</li>
+                            <li><strong>המשימה:</strong> לנבא את המילה הבאה בטקסט</li>
+                            <li><strong>Fine-tuning:</strong> כיוונון עם דוגמאות של שיחות טובות</li>
+                            <li><strong>RLHF:</strong> למידה מחיזוק על סמך משוב אנושי</li>
+                        </ul>
+                        <p><strong>התוצאה:</strong> מודל שיכול לענות על כמעט כל שאלה בשפה טבעית</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="מה-צריך-כדי-שזה-יעבוד">מה צריך כדי שזה יעבוד?</h2>
+
+                    <div class="example-box">
+                        <h4>📊 1. נתונים (Data) - הדלק</h4>
+                        <p>ללא נתונים אין למידת מכונה. צריך:</p>
+                        <ul>
+                            <li><strong>כמות:</strong> בדרך כלל ככל שיותר - יותר טוב (אלפים עד מיליארדים)</li>
+                            <li><strong>איכות:</strong> נתונים נקיים, מדויקים, ללא שגיאות</li>
+                            <li><strong>מגוון:</strong> נתונים שמייצגים את כל המקרים האפשריים</li>
+                            <li><strong>תיוג:</strong> בלמידה מונחית - צריך לסמן את התשובות</li>
+                        </ul>
+                        <div class="info-card warning">
+                            <strong>⚠️ "זבל פנימה = זבל החוצה"</strong>
+                            <p>אם הנתונים גרועים או מוטים - גם המודל יהיה גרוע או מוטה!</p>
+                        </div>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>💻 2. כוח חישוב (Compute)</h4>
+                        <p>אימון מודלים דורש עיבוד כבד:</p>
+                        <ul>
+                            <li><strong>GPU:</strong> מעבדים גרפיים שמצטיינים בחישוב מקבילי</li>
+                            <li><strong>TPU:</strong> שבבים מיוחדים של גוגל ל-ML</li>
+                            <li><strong>ענן:</strong> AWS, Google Cloud, Azure מציעים חומרה חזקה</li>
+                        </ul>
+                        <p><strong>עלויות:</strong> אימון מודל בקנה מידה של GPT-5 עלה לפי הערכות עשרות עד מאות מיליוני דולר.</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🧮 3. אלגוריתם</h4>
+                        <p>השיטה המתמטית שבה המחשב לומד:</p>
+                        <ul>
+                            <li>בחירת ארכיטקטורה (CNN, Transformer, וכו')</li>
+                            <li>פונקציית מטרה (מה המודל מנסה לשפר?)</li>
+                            <li>אופטימיזציה (איך משפרים את המשקלים?)</li>
+                            <li>היפר-פרמטרים (קצב למידה, גודל batch, וכו')</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>👨‍💻 4. מומחיות</h4>
+                        <p>צריך אנשים שמבינים:</p>
+                        <ul>
+                            <li>Data Scientists - מנתחים נתונים ובונים מודלים</li>
+                            <li>ML Engineers - מממשים ומטמיעים מערכות</li>
+                            <li>Domain Experts - מבינים את התחום הספציפי</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>⏰ 5. זמן</h4>
+                        <p>אימון לוקח זמן:</p>
+                        <ul>
+                            <li>מודל קטן: דקות עד שעות</li>
+                            <li>מודל בינוני: שעות עד ימים</li>
+                            <li>מודל גדול (למשל GPT-5): שבועות עד חודשים</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="מושגים-חשובים">מושגים חשובים</h2>
+
+                    <div class="example-box">
+                        <h4>🎯 Overfitting (התאמת יתר)</h4>
+                        <p>כשהמודל "משנן" את נתוני האימון במקום ללמוד דפוסים כלליים.</p>
+                        <p><strong>דוגמה:</strong> תלמיד ששינן את כל התשובות במבחן לדוגמה - אבל נכשל במבחן האמיתי.</p>
+                        <p><strong>פתרון:</strong> יותר נתונים, רגולריזציה, בדיקה על נתונים חדשים.</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>📉 Underfitting (התאמת חסר)</h4>
+                        <p>כשהמודל פשוט מדי ולא מצליח ללמוד את הדפוסים.</p>
+                        <p><strong>פתרון:</strong> מודל מורכב יותר, יותר פיצ'רים, יותר אימון.</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🔄 Training / Validation / Test Sets</h4>
+                        <p>מחלקים את הנתונים לשלוש קבוצות:</p>
+                        <ul>
+                            <li><strong>Training (70%):</strong> לאימון המודל</li>
+                            <li><strong>Validation (15%):</strong> לכיוון וכיול</li>
+                            <li><strong>Test (15%):</strong> לבדיקה סופית - לא נוגעים עד הסוף!</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>📊 Accuracy, Precision, Recall</h4>
+                        <p>מדדים להערכת איכות המודל:</p>
+                        <ul>
+                            <li><strong>Accuracy:</strong> כמה פעמים צדקנו מתוך הכל</li>
+                            <li><strong>Precision:</strong> כשאמרנו "כן" - כמה פעמים צדקנו?</li>
+                            <li><strong>Recall:</strong> מכל ה"כן" האמיתיים - כמה מצאנו?</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>⚖️ Bias (הטיה)</h4>
+                        <p>כשהמודל מפלה באופן שיטתי. קורה בגלל נתונים לא מאוזנים.</p>
+                        <p><strong>דוגמה:</strong> מודל גיוס שלמד מעובדים קיימים (רובם גברים) מפלה נשים.</p>
+                    </div>
+                </section>
+
+                <section class="summary-box">
+                    <h2 id="סיכום">סיכום 📝</h2>
+                    <ul>
+                        <li><strong>למידת מכונה:</strong> מחשבים שלומדים מדוגמאות במקום חוקים מפורשים</li>
+                        <li><strong>3 סוגים:</strong> מונחית (עם תשובות), לא מונחית (בלי), חיזוק (ניסוי וטעייה)</li>
+                        <li><strong>למידה עמוקה:</strong> רשתות נוירונים עם הרבה שכבות - הטכנולוגיה מאחורי ChatGPT</li>
+                        <li><strong>מה צריך:</strong> נתונים + כוח חישוב + אלגוריתם + מומחיות + זמן</li>
+                        <li><strong>דוגמאות:</strong> המלצות, זיהוי הונאות, אבחון רפואי, נהיגה אוטונומית</li>
+                        <li><strong>אתגרים:</strong> overfitting, הטיות, צורך בהרבה נתונים</li>
+                    </ul>
+                </section>
+
+                <!-- Quiz Section -->
+                <section id="quiz-section" class="quiz-section">
+                    <h2 id="בחן-את-עצמך">📝 בחן את עצמך</h2>
+                    <p class="quiz-intro">ענו על 10 שאלות כדי לבדוק את ההבנה שלכם בנושא למידת מכונה.</p>
+
+                    <form id="quiz-form">
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">1</span> מהי למידת מכונה?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q1" value="a"><span>תכנות מחשבים עם הוראות מפורטות לכל מצב</span></label>
+                                <label class="quiz-option"><input type="radio" name="q1" value="b"><span>מחשבים שלומדים מנתונים ומשתפרים ללא תכנות מפורש</span></label>
+                                <label class="quiz-option"><input type="radio" name="q1" value="c"><span>רובוטים שעובדים במפעלים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q1" value="d"><span>מחשבים שמדברים עם אנשים</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="a">
+                            <h4><span class="question-number">2</span> מהם שלושת סוגי הלמידה העיקריים?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q2" value="a"><span>מונחית, לא-מונחית, וחיזוקים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q2" value="b"><span>מהירה, איטית, ובינונית</span></label>
+                                <label class="quiz-option"><input type="radio" name="q2" value="c"><span>קלה, קשה, ובלתי אפשרית</span></label>
+                                <label class="quiz-option"><input type="radio" name="q2" value="d"><span>ראשונית, שניונית, ושלישונית</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="c">
+                            <h4><span class="question-number">3</span> בלמידה מונחית (Supervised Learning), מה המערכת מקבלת?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q3" value="a"><span>רק נתונים ללא שום תיוג</span></label>
+                                <label class="quiz-option"><input type="radio" name="q3" value="b"><span>פקודות ישירות מה לעשות</span></label>
+                                <label class="quiz-option"><input type="radio" name="q3" value="c"><span>דוגמאות עם תשובות נכונות (תיוגים)</span></label>
+                                <label class="quiz-option"><input type="radio" name="q3" value="d"><span>פרסים ועונשים בלבד</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="d">
+                            <h4><span class="question-number">4</span> איזה סוג למידה משתמשים כדי לאמן רובוט לשחק משחקים?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q4" value="a"><span>למידה מונחית</span></label>
+                                <label class="quiz-option"><input type="radio" name="q4" value="b"><span>למידה לא-מונחית</span></label>
+                                <label class="quiz-option"><input type="radio" name="q4" value="c"><span>למידה פסיבית</span></label>
+                                <label class="quiz-option"><input type="radio" name="q4" value="d"><span>למידת חיזוקים (Reinforcement Learning)</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">5</span> מהי רשת נוירונים?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q5" value="a"><span>רשת של מחשבים מחוברים לאינטרנט</span></label>
+                                <label class="quiz-option"><input type="radio" name="q5" value="b"><span>מבנה מתמטי שמחקה את אופן עבודת המוח</span></label>
+                                <label class="quiz-option"><input type="radio" name="q5" value="c"><span>חיבור של נוירונים ביולוגיים למחשב</span></label>
+                                <label class="quiz-option"><input type="radio" name="q5" value="d"><span>סוג של כבל רשת</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="a">
+                            <h4><span class="question-number">6</span> מה קורה כשיש "התאמת יתר" (Overfitting)?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q6" value="a"><span>המודל שינן את נתוני האימון ולא מכליל לנתונים חדשים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q6" value="b"><span>המודל עובד מהר מדי</span></label>
+                                <label class="quiz-option"><input type="radio" name="q6" value="c"><span>יש יותר מדי נתונים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q6" value="d"><span>המחשב מתחמם</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="c">
+                            <h4><span class="question-number">7</span> מהי למידה לא-מונחית (Unsupervised Learning)?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q7" value="a"><span>למידה בלי מחשב</span></label>
+                                <label class="quiz-option"><input type="radio" name="q7" value="b"><span>למידה עם מורה אנושי</span></label>
+                                <label class="quiz-option"><input type="radio" name="q7" value="c"><span>מציאת דפוסים בנתונים ללא תיוגים מוקדמים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q7" value="d"><span>למידה איטית ללא פיקוח</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">8</span> למה חשוב להפריד את הנתונים לסט אימון וסט בדיקה?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q8" value="a"><span>כדי לחסוך מקום בזיכרון</span></label>
+                                <label class="quiz-option"><input type="radio" name="q8" value="b"><span>כדי לבדוק אם המודל מכליל טוב לנתונים חדשים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q8" value="c"><span>כדי שהמחשב יעבוד מהר יותר</span></label>
+                                <label class="quiz-option"><input type="radio" name="q8" value="d"><span>אין סיבה מיוחדת, זו פשוט מוסכמה</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="d">
+                            <h4><span class="question-number">9</span> מה תפקיד ה"משקולות" (Weights) ברשת נוירונים?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q9" value="a"><span>למדוד כמה כבד המחשב</span></label>
+                                <label class="quiz-option"><input type="radio" name="q9" value="b"><span>לאזן את הטמפרטורה</span></label>
+                                <label class="quiz-option"><input type="radio" name="q9" value="c"><span>לספור כמה נוירונים יש</span></label>
+                                <label class="quiz-option"><input type="radio" name="q9" value="d"><span>לקבוע את חוזק הקשר בין נוירונים</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="a">
+                            <h4><span class="question-number">10</span> מה נדרש כדי שלמידת מכונה תצליח?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q10" value="a"><span>כמות גדולה של נתונים איכותיים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q10" value="b"><span>רק מחשב חזק</span></label>
+                                <label class="quiz-option"><input type="radio" name="q10" value="c"><span>חיבור לאינטרנט מהיר</span></label>
+                                <label class="quiz-option"><input type="radio" name="q10" value="d"><span>מתכנת שיושב ליד המחשב כל הזמן</span></label>
+                            </div>
+                        </div>
+                    </form>
+
+                    <button id="quiz-submit">בדוק תשובות</button>
+
+                    <div id="quiz-results" class="quiz-results">
+                        <h3 id="התוצאות-שלך">התוצאות שלך</h3>
+                        <div class="score-display">
+                            <div class="score-item">
+                                <span id="quiz-score" class="score-number">0/10</span>
+                                <span class="score-label">תשובות נכונות</span>
+                            </div>
+                            <div class="score-item">
+                                <span id="quiz-percent" class="score-number">0%</span>
+                                <span class="score-label">אחוז הצלחה</span>
+                            </div>
+                        </div>
+                        <p id="quiz-message" class="quiz-message"></p>
+                        <button id="quiz-retry">נסה שוב</button>
+                    </div>
+                </section>
+
+                <div class="article-nav">
+                    <a href="ai-history.html" class="btn">→ 2. ההיסטוריה של AI</a>
+                    <a href="ai-daily-life.html" class="btn btn-primary">4. AI בחיי היומיום – המשך ←</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 אתר ללימוד בינה מלאכותית AI - כל הזכויות שמורות לשמוליק שחר יועץ לימודי המנגיש לימודי בינה מלאכותית לכל אדם</p>
+            <p class="footer-contact">טלפון: <a href="tel:+972522603831">+972522603831</a> | אימייל: <a href="mailto:shaharprod@gmail.com">shaharprod@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

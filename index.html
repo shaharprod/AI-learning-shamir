@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202026-02-09%20160037.png">
+    <title>אתר ללימוד בינה מלאכותית AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/colorful%20digital%20media%20sy.png" alt="לוגו" class="logo-icon">
+                    <span class="logo-text">לימוד בינה מלאכותית AI</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">בית</a></li>
+                <li><a href="#intro">מה זה AI?</a></li>
+                <li class="dropdown">
+                    <a href="#topics" class="dropdown-toggle">שיעורים ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/intro-to-ai.html">1. מבוא ל-AI</a></li>
+                        <li><a href="pages/ai-history.html">2. ההיסטוריה של AI</a></li>
+                        <li><a href="pages/machine-learning.html">3. למידת מכונה</a></li>
+                        <li><a href="pages/ai-daily-life.html">4. AI בחיי היומיום</a></li>
+                        <li><a href="pages/ai-tools.html">5. כלים מעשיים</a></li>
+                        <li><a href="pages/prompt-engineering.html">6. הנדסת הנחייה</a></li>
+                        <li><a href="pages/ai-ethics.html">7. אתיקה ב-AI</a></li>
+                        <li><a href="pages/ai-future.html">8. העתיד של AI</a></li>
+                        <li><a href="pages/glossary.html">9. מילון מושגים</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/glossary.html">מילון</a></li>
+                <li><a href="pages/ai-tools.html">כלים</a></li>
+                <li><a href="#about">אודות</a></li>
+            </ul>
+            <form class="nav-search" id="site-search" role="search">
+                <input type="search" name="q" placeholder="חיפוש מילים ומושגים..." aria-label="חיפוש באתר" />
+                <button type="submit" aria-label="חפש">🔍</button>
+            </form>
+            <nav class="lang-switcher" aria-label="בחירת שפה">
+                <a href="index-en.html" hreflang="en" lang="en">English</a>
+                <span class="lang-active" aria-current="page">עברית</span>
+            </nav>
+            <button type="button" class="mobile-menu-btn" aria-label="תפריט">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="hero-tagline">AI בינה מלאכותית למתחילים</p>
+            <h1>ברוכים הבאים לעולם הבינה המלאכותית</h1>
+            <p>למדו על AI בעברית פשוטה וברורה - ללא צורך בידע טכני מוקדם</p>
+            <a href="#intro" class="btn btn-primary">בואו נתחיל</a>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section id="intro" class="section intro">
+        <div class="container">
+            <h2 id="מה-זה-בינה-מלאכותית">מה זה בינה מלאכותית?</h2>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <p>
+                        בינה מלאכותית (AI - Artificial Intelligence) היא תחום במדעי המחשב שעוסק ביצירת מערכות
+                        שיכולות לבצע משימות שבדרך כלל דורשות אינטליגנציה אנושית.
+                    </p>
+                    <p>
+                        זה כולל יכולות כמו: למידה, הבנת שפה, זיהוי תמונות, קבלת החלטות ועוד.
+                    </p>
+                    <ul class="feature-list">
+                        <li>🧠 למידת מכונה (ML - Machine Learning) - המחשב לומד מדוגמאות</li>
+                        <li>💬 עיבוד שפה טבעית (NLP - Natural Language Processing) - הבנת טקסט ודיבור</li>
+                        <li>👁️ ראייה ממוחשבת (Computer Vision) - זיהוי תמונות ווידאו</li>
+                        <li>🎯 קבלת החלטות (Decision Making) - ניתוח מידע והמלצות</li>
+                    </ul>
+                </div>
+                <div class="intro-image">
+                    <div class="placeholder-image">
+                        <span>🤖</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section id="topics" class="section topics">
+        <div class="container">
+            <h2 id="נושאים-ללימוד">נושאים ללימוד</h2>
+            <div class="cards-grid">
+                <article class="card">
+                    <div class="card-number">1</div>
+                    <div class="card-icon">📚</div>
+                    <h3 id="מבוא-ל-AI">מבוא ל-AI</h3>
+                    <p>הכירו את עולם הבינה המלאכותית מההתחלה - היסטוריה, מושגים בסיסיים וסוגי AI שונים.</p>
+                    <a href="pages/intro-to-ai.html" class="card-link">למדו עוד ←</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-number">2</div>
+                    <div class="card-icon">📅</div>
+                    <h3 id="היסטוריה-של-AI">ההיסטוריה של AI</h3>
+                    <p>ציר זמן מפורט מצ'ארלס באבג' (1837) ועד ינואר 2026 – תאריכים, ממציאים וחידושים.</p>
+                    <a href="pages/ai-history.html" class="card-link">למדו עוד ←</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-number">3</div>
+                    <div class="card-icon">🔮</div>
+                    <h3 id="למידת-מכונה">למידת מכונה</h3>
+                    <p>גלו איך מחשבים לומדים מנתונים ומשפרים את עצמם ללא תכנות מפורש.</p>
+                    <a href="pages/machine-learning.html" class="card-link">למדו עוד ←</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-number">4</div>
+                    <div class="card-icon">💡</div>
+                    <h3 id="AI-בחיי-היומיום">AI בחיי היומיום</h3>
+                    <p>ראו איך בינה מלאכותית משפיעה על חיינו - מהמלצות נטפליקס ועד רכב אוטונומי.</p>
+                    <a href="pages/ai-daily-life.html" class="card-link">למדו עוד ←</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-number">5</div>
+                    <div class="card-icon">🛠️</div>
+                    <h3 id="כלים-מעשיים">כלים מעשיים</h3>
+                    <p>הכירו כלי AI שימושיים כמו ChatGPT, יצירת תמונות ועוד - ואיך להשתמש בהם.</p>
+                    <a href="pages/ai-tools.html" class="card-link">למדו עוד ←</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-number">6</div>
+                    <div class="card-icon">✍️</div>
+                    <h3 id="הנדסת-הנחייה">הנדסת הנחייה</h3>
+                    <p>למדו איך לנסח בקשות ל-AI בצורה מדויקת ויעילה - עם דגש על תכנון ודיוק.</p>
+                    <a href="pages/prompt-engineering.html" class="card-link">למדו עוד ←</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-number">7</div>
+                    <div class="card-icon">⚖️</div>
+                    <h3 id="אתיקה-ב-AI">אתיקה ב-AI</h3>
+                    <p>דיון בסוגיות חשובות: פרטיות, הטיות, תעסוקה והשפעה על החברה.</p>
+                    <a href="pages/ai-ethics.html" class="card-link">למדו עוד ←</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-number">8</div>
+                    <div class="card-icon">🚀</div>
+                    <h3 id="העתיד-של-AI">העתיד של AI</h3>
+                    <p>מה צופן העתיד? מגמות, התפתחויות צפויות והשפעות על עולם העבודה.</p>
+                    <a href="pages/ai-future.html" class="card-link">למדו עוד ←</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-number">9</div>
+                    <div class="card-icon">📖</div>
+                    <h3 id="מילון-מושגים">מילון מושגים</h3>
+                    <p>מעל 100 מושגים בעברית ובאנגלית – בינה מלאכותית, למידת מכונה, פרומפט, LLM ועוד.</p>
+                    <a href="pages/glossary.html" class="card-link">למדו עוד ←</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 id="אודות-האתר">אודות האתר</h2>
+            <p>
+                אתר זה נוצר במטרה להנגיש את עולם הבינה המלאכותית לכל דובר עברית.
+                אנחנו מאמינים שכל אחד יכול להבין את הטכנולוגיה שמשנה את העולם שלנו.
+            </p>
+            <p>
+                התוכן כתוב בשפה פשוטה וברורה, ללא ז'רגון מיותר, עם דוגמאות מהחיים.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 אתר ללימוד בינה מלאכותית AI - כל הזכויות שמורות לשמוליק שחר יועץ לימודי המנגיש לימודי בינה מלאכותית לכל אדם</p>
+            <p class="footer-contact">טלפון: <a href="tel:+972522603831">+972522603831</a> | אימייל: <a href="mailto:shaharprod@gmail.com">shaharprod@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

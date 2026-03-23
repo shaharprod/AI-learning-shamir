@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning | AI Learning</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="article.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>body { direction: ltr; }</style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="../index-en.html">
+                    <img src="../images/colorful%20digital%20media%20sy.png" alt="Logo" class="logo-icon">
+                    <span class="logo-text">AI Learning</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index-en.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="../index-en.html#topics" class="dropdown-toggle">Lessons ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="intro-to-ai-en.html">1. Intro to AI</a></li>
+                        <li><a href="ai-history-en.html">2. History of AI</a></li>
+                        <li><a href="machine-learning-en.html">3. Machine Learning</a></li>
+                        <li><a href="ai-daily-life-en.html">4. AI in Daily Life</a></li>
+                        <li><a href="ai-tools-en.html">5. Practical Tools</a></li>
+                        <li><a href="prompt-engineering-en.html">6. Prompt Engineering</a></li>
+                        <li><a href="ai-ethics-en.html">7. AI Ethics</a></li>
+                        <li><a href="ai-future-en.html">8. The Future of AI</a></li>
+                        <li><a href="glossary-en.html">9. Glossary</a></li>
+                    </ul>
+                </li>
+                <li><a href="glossary-en.html">Glossary</a></li>
+                <li><a href="ai-tools-en.html">Tools</a></li>
+                <li><a href="../index-en.html#about">About</a></li>
+            </ul>
+            <form class="nav-search" id="site-search" role="search">
+                <input type="search" name="q" placeholder="Search..." aria-label="Search" />
+                <button type="submit" aria-label="Search">🔍</button>
+            </form>
+            <nav class="lang-switcher" aria-label="Language">
+                <a href="machine-learning.html" hreflang="he" lang="he">עברית</a>
+                <span class="lang-active" aria-current="page">English</span>
+            </nav>
+            <button type="button" class="mobile-menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+        </nav>
+    </header>
+    <main class="article">
+        <div class="container">
+            <div class="breadcrumb"><a href="../index-en.html">Home</a> / <span>Machine Learning</span></div>
+            <article class="article-content">
+                <h1>Machine Learning</h1>
+                <p class="article-meta">🔮 Reading time: 20 min | Level: Beginner–Intermediate</p>
+                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=400&fit=crop" alt="Machine learning - neural network" class="article-header-image">
+
+                <section>
+                    <h2 id="what-is-ml">What is Machine Learning?</h2>
+                    <p>
+                        Machine Learning (ML) is the central and most important branch of artificial intelligence today.
+                        It's the technology behind almost everything we know as AI—from ChatGPT to Netflix recommendations.
+                    </p>
+                    <p>
+                        <strong>Formal definition:</strong> Machine learning is a field that enables computers
+                        <strong>to learn from data and improve at tasks</strong>—without being explicitly programmed
+                        for every possible situation.
+                    </p>
+
+                    <div class="info-card tip">
+                        <strong>💡 Main difference from regular programming:</strong>
+                        <ul>
+                            <li><strong>Regular programming:</strong> You write rules → the computer executes</li>
+                            <li><strong>Machine learning:</strong> You give examples → the computer discovers the rules by itself</li>
+                        </ul>
+                    </div>
+
+                    <p>
+                        It sounds simple, but it's a revolution. Instead of a programmer having to think of every possible case and write
+                        a rule—the computer learns by itself from examples and discovers patterns even humans might not spot.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 id="how-it-works">How does it work? The full picture</h2>
+
+                    <h3 id="child-and-dog">The child and the dog</h3>
+                    <p>
+                        Suppose we want to teach a small child what a "dog" is:
+                    </p>
+                    <div class="example-box">
+                        <h4>👶 Traditional way (regular programming)</h4>
+                        <p>We explain rules to the child:</p>
+                        <ul>
+                            <li>"A dog is an animal with 4 legs"</li>
+                            <li>"It has fur"</li>
+                            <li>"It has ears"</li>
+                            <li>"It has a tail"</li>
+                        </ul>
+                        <p>❌ <strong>Problems:</strong></p>
+                        <ul>
+                            <li>Cats also have 4 legs, fur, ears, and a tail</li>
+                            <li>Some dogs have no tail</li>
+                            <li>Some dogs have pointy ears, some floppy</li>
+                            <li>Tiny dogs and huge dogs</li>
+                            <li>You can't write all the rules!</li>
+                        </ul>
+                    </div>
+                    <div class="example-box">
+                        <h4>🧒 Machine learning way</h4>
+                        <p>We show the child thousands of images:</p>
+                        <ul>
+                            <li>"This is a dog" (see 1000 images)</li>
+                            <li>"This is not a dog" (see 1000 images of cats, rabbits, etc.)</li>
+                        </ul>
+                        <p>✅ <strong>What happens:</strong></p>
+                        <ul>
+                            <li>The child learns the patterns by themselves</li>
+                            <li>They can't explain exactly how they know—but they know</li>
+                            <li>They can recognize new dogs they've never seen</li>
+                        </ul>
+                    </div>
+                    <p>
+                        <strong>That's exactly what machine learning does!</strong> The computer sees many examples,
+                        finds patterns, and builds an internal "model" that lets it generalize to new cases.
+                    </p>
+
+                    <h3 id="technical-process">The technical process (simplified)</h3>
+                    <div class="example-box">
+                        <h4>📊 Step 1: Collect data</h4>
+                        <p>Gather many examples. More is usually better.</p>
+                        <p><strong>Example:</strong> 10,000 dog images and 10,000 non-dog images</p>
+                    </div>
+                    <div class="example-box">
+                        <h4>🏷️ Step 2: Labeling (sometimes)</h4>
+                        <p>Label the data—what the correct answer is for each example.</p>
+                        <p><strong>Example:</strong> Each image is labeled "dog" or "not dog"</p>
+                    </div>
+                    <div class="example-box">
+                        <h4>🏋️ Step 3: Training</h4>
+                        <p>The computer goes through all examples, analyzes them, and looks for patterns.</p>
+                        <p>It's like "studying for a test"—the computer practices again and again until it succeeds.</p>
+                        <p><strong>Time:</strong> Can take minutes to weeks, depending on complexity</p>
+                    </div>
+                    <div class="example-box">
+                        <h4>🎯 Step 4: Model</h4>
+                        <p>The result is a "model"—a mathematical structure that represents what the computer learned.</p>
+                        <p>The model is like the "brain" built from learning.</p>
+                    </div>
+                    <div class="example-box">
+                        <h4>🔮 Step 5: Inference</h4>
+                        <p>Now you can give the model new input and it "guesses" the answer.</p>
+                        <p><strong>Example:</strong> New image → model says "93% chance this is a dog"</p>
+                    </div>
+                    <div class="example-box">
+                        <h4>📈 Step 6: Evaluation and improvement</h4>
+                        <p>Check how often the model is right. If it makes many mistakes—improve and adjust.</p>
+                        <p>It's an iterative process of continuous improvement.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="three-types">Three types of machine learning</h2>
+                    <p>There are three main approaches, each suited to different situations:</p>
+
+                    <h3 id="supervised">1. Supervised Learning 👨‍🏫</h3>
+                    <p>
+                        The most common type. The computer gets examples <strong>with correct answers</strong>
+                        (labels) and learns to predict the answer for new examples.
+                    </p>
+                    <div class="example-box">
+                        <h4>How it works:</h4>
+                        <p>Like learning from a teacher who gives you exercises with solutions:</p>
+                        <ul>
+                            <li>The computer sees: input (X) → answer (Y)</li>
+                            <li>The computer learns: what's the relationship between X and Y?</li>
+                            <li>Now when there's new X → the computer guesses Y</li>
+                        </ul>
+                    </div>
+                    <div class="example-box">
+                        <h4>Real-world examples:</h4>
+                        <ul>
+                            <li><strong>Spam detection:</strong> Thousands of emails labeled "spam" / "not spam" → model learns to tell them apart</li>
+                            <li><strong>House price prediction:</strong> Data on sold houses and prices → model predicts price for a new house</li>
+                            <li><strong>Medical diagnosis:</strong> X-rays labeled "healthy" / "disease" → model detects conditions</li>
+                            <li><strong>Face recognition:</strong> Images labeled with names → model recognizes who's in the photo</li>
+                            <li><strong>Translation:</strong> Millions of translated sentences → model learns to translate</li>
+                        </ul>
+                    </div>
+                    <div class="info-card tip">
+                        <strong>💡 Advantage:</strong> Accurate, reliable results<br>
+                        <strong>⚠️ Disadvantage:</strong> Need lots of labeled data (expensive and time-consuming)
+                    </div>
+
+                    <h3 id="unsupervised">2. Unsupervised Learning 🔍</h3>
+                    <p>
+                        The computer gets data <strong>without answers</strong> and looks for patterns and structure by itself.
+                        Like giving a child a pile of toys and asking them to sort—without saying how.
+                    </p>
+                    <div class="example-box">
+                        <h4>How it works:</h4>
+                        <ul>
+                            <li>The computer receives unlabeled data</li>
+                            <li>Looks for similarity between data points</li>
+                            <li>Clusters or finds hidden structure</li>
+                        </ul>
+                    </div>
+                    <div class="example-box">
+                        <h4>Real-world examples:</h4>
+                        <ul>
+                            <li><strong>Customer segmentation:</strong> System analyzes buying behavior and divides into groups (VIP, occasional, dormant...)</li>
+                            <li><strong>Anomaly detection:</strong> Finding unusual credit card transactions</li>
+                            <li><strong>Data compression:</strong> Finding a more efficient representation of information</li>
+                            <li><strong>Recommendation engines:</strong> Grouping similar products/users</li>
+                            <li><strong>Social network analysis:</strong> Finding communities</li>
+                        </ul>
+                    </div>
+                    <div class="info-card tip">
+                        <strong>💡 Advantage:</strong> No need to label data, discovers hidden patterns<br>
+                        <strong>⚠️ Disadvantage:</strong> Harder to judge if results are good
+                    </div>
+
+                    <h3 id="reinforcement">3. Reinforcement Learning 🎮</h3>
+                    <p>
+                        The computer learns by <strong>trial and error</strong>—takes actions, gets feedback
+                        (reward or penalty), and learns what's worth doing.
+                    </p>
+                    <div class="example-box">
+                        <h4>How it works:</h4>
+                        <p>Like training a dog:</p>
+                        <ul>
+                            <li><strong>Agent:</strong> Who learns (the dog / the software)</li>
+                            <li><strong>Environment:</strong> The world it operates in</li>
+                            <li><strong>Actions:</strong> What the agent can do</li>
+                            <li><strong>Reward:</strong> Feedback on actions (+1 for success, -1 for failure)</li>
+                        </ul>
+                        <p>The agent gradually learns which actions lead to the highest reward.</p>
+                    </div>
+                    <div class="example-box">
+                        <h4>Real-world examples:</h4>
+                        <ul>
+                            <li><strong>AlphaGo:</strong> Learned to play Go at world-champion level</li>
+                            <li><strong>Robots:</strong> Learning to walk, grasp objects</li>
+                            <li><strong>Autonomous driving:</strong> Learning from driving experience</li>
+                            <li><strong>Video games:</strong> AI that beats human players</li>
+                            <li><strong>Optimization:</strong> Managing power in data centers</li>
+                        </ul>
+                    </div>
+                    <div class="info-card tip">
+                        <strong>💡 Advantage:</strong> Can learn complex tasks, improve without limit<br>
+                        <strong>⚠️ Disadvantage:</strong> Needs many trials, sometimes unstable
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="deep-learning">Deep Learning</h2>
+                    <p>
+                        Deep learning is a subfield of machine learning that drove the revolution in recent years.
+                        It's the technology behind ChatGPT, face recognition, automatic translation, and more.
+                    </p>
+
+                    <h3 id="what-is-neural-net">What is a neural network?</h3>
+                    <p>
+                        An artificial neural network is a mathematical structure that mimics (in a very simplified way)
+                        how the human brain works.
+                    </p>
+                    <div class="example-box">
+                        <h4>How it works:</h4>
+                        <ul>
+                            <li><strong>Neurons:</strong> Small computing units that take input and produce output</li>
+                            <li><strong>Layers:</strong> Neurons are organized in layers</li>
+                            <li><strong>Connections:</strong> Each neuron connects to neurons in the next layer</li>
+                            <li><strong>Weights:</strong> Each connection has a "weight" that sets its influence</li>
+                        </ul>
+                        <p>During learning, the system adjusts the weights to improve results.</p>
+                    </div>
+
+                    <h3 id="why-deep">Why "deep"?</h3>
+                    <p>
+                        "Deep" refers to the number of layers. Modern neural networks can have
+                        dozens or even hundreds of layers—that's what lets them learn complex patterns.
+                    </p>
+                    <div class="example-box">
+                        <h4>Example—face recognition:</h4>
+                        <ul>
+                            <li><strong>Early layers:</strong> Detect edges and basic curves</li>
+                            <li><strong>Middle layers:</strong> Detect shapes (eyes, nose, mouth)</li>
+                            <li><strong>Deep layers:</strong> Recognize full faces and identity</li>
+                        </ul>
+                        <p>Each layer learns more and more abstract representations.</p>
+                    </div>
+
+                    <h3 id="network-types">Types of neural networks</h3>
+                    <div class="example-box">
+                        <h4>CNN - Convolutional Neural Networks</h4>
+                        <p>Specialize in images and video. Used for face recognition, object detection, medical image analysis.</p>
+                    </div>
+                    <div class="example-box">
+                        <h4>RNN / LSTM - Recurrent Neural Networks</h4>
+                        <p>Specialize in sequences (text, time). Used for translation, sentiment analysis, forecasting.</p>
+                    </div>
+                    <div class="example-box">
+                        <h4>Transformers</h4>
+                        <p>
+                            The revolutionary architecture from 2017. The basis for GPT, BERT, and most modern language models.
+                            Can process long input and understand distant relationships in text.
+                        </p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="real-world-examples">Detailed real-world examples</h2>
+
+                    <div class="example-box">
+                        <h4>🏥 Medicine - cancer diagnosis</h4>
+                        <p><strong>Problem:</strong> Doctors sometimes miss small tumors in scans</p>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>Training on millions of labeled scans</li>
+                            <li>Model learns to spot tumor patterns</li>
+                            <li>Shows "suspicious areas" to the doctor</li>
+                        </ul>
+                        <p><strong>Result:</strong> Detection rate of 95%+, sometimes better than specialist doctors</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🏦 Banking - fraud detection</h4>
+                        <p><strong>Problem:</strong> Millions of transactions per day, can't check manually</p>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>Model learns what's "normal" for each customer</li>
+                            <li>Detects anomalies: unusual location, amount, buying pattern</li>
+                            <li>Sends alert or blocks the transaction</li>
+                        </ul>
+                        <p><strong>Result:</strong> Saves billions of dollars per year</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🎵 Spotify - music recommendations</h4>
+                        <p><strong>Problem:</strong> Tens of millions of songs—how to find what you'll love?</p>
+                        <p><strong>Solution (combination of approaches):</strong></p>
+                        <ul>
+                            <li><strong>Collaborative Filtering:</strong> "People who liked X also liked Y"</li>
+                            <li><strong>Content-Based:</strong> Musical analysis (tempo, instruments, genre)</li>
+                            <li><strong>NLP:</strong> Analyzing lyrics and descriptions</li>
+                            <li><strong>Audio Analysis:</strong> Analyzing the sound itself</li>
+                        </ul>
+                        <p><strong>Result:</strong> Discover Weekly—a personal list that surprises you every week</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🚗 Tesla - autonomous driving</h4>
+                        <p><strong>Problem:</strong> Driving requires understanding a complex environment and real-time reactions</p>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li><strong>Cameras:</strong> 8 cameras around the car</li>
+                            <li><strong>Computer Vision:</strong> Detecting cars, pedestrians, signs, lanes</li>
+                            <li><strong>Prediction:</strong> Predicting behavior of other road users</li>
+                            <li><strong>Path planning:</strong> Deciding where to drive</li>
+                            <li><strong>Fleet learning:</strong> Every Tesla drive teaches the system</li>
+                        </ul>
+                        <p><strong>Result:</strong> Billions of kilometers of driving data</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>💬 ChatGPT - language model</h4>
+                        <p><strong>Problem:</strong> Creating natural conversation with a computer</p>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li><strong>Pre-training:</strong> Training on trillions of words from the internet</li>
+                            <li><strong>Task:</strong> Predict the next word in text</li>
+                            <li><strong>Fine-tuning:</strong> Tuning with examples of good conversations</li>
+                            <li><strong>RLHF:</strong> Reinforcement learning from human feedback</li>
+                        </ul>
+                        <p><strong>Result:</strong> A model that can answer almost any question in natural language</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="what-it-takes">What does it take to work?</h2>
+
+                    <div class="example-box">
+                        <h4>📊 1. Data - the fuel</h4>
+                        <p>Without data there's no machine learning. You need:</p>
+                        <ul>
+                            <li><strong>Quantity:</strong> Usually more is better (thousands to billions)</li>
+                            <li><strong>Quality:</strong> Clean, accurate data without errors</li>
+                            <li><strong>Diversity:</strong> Data that represents all possible cases</li>
+                            <li><strong>Labeling:</strong> In supervised learning—answers must be marked</li>
+                        </ul>
+                        <div class="info-card warning">
+                            <strong>⚠️ "Garbage in = garbage out"</strong>
+                            <p>If the data is bad or biased—the model will be too!</p>
+                        </div>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>💻 2. Compute</h4>
+                        <p>Training models requires heavy processing:</p>
+                        <ul>
+                            <li><strong>GPU:</strong> Graphics processors that excel at parallel computation</li>
+                            <li><strong>TPU:</strong> Google's special chips for ML</li>
+                            <li><strong>Cloud:</strong> AWS, Google Cloud, Azure offer powerful hardware</li>
+                        </ul>
+                        <p><strong>Cost:</strong> Training a GPT-5-scale model is estimated at tens to hundreds of millions of dollars.</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🧮 3. Algorithm</h4>
+                        <p>The mathematical method the computer uses to learn:</p>
+                        <ul>
+                            <li>Choosing architecture (CNN, Transformer, etc.)</li>
+                            <li>Objective function (what is the model trying to improve?)</li>
+                            <li>Optimization (how to update the weights?)</li>
+                            <li>Hyperparameters (learning rate, batch size, etc.)</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>👨‍💻 4. Expertise</h4>
+                        <p>You need people who understand:</p>
+                        <ul>
+                            <li>Data Scientists—analyze data and build models</li>
+                            <li>ML Engineers—implement and deploy systems</li>
+                            <li>Domain Experts—understand the specific field</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>⏰ 5. Time</h4>
+                        <p>Training takes time:</p>
+                        <ul>
+                            <li>Small model: minutes to hours</li>
+                            <li>Medium model: hours to days</li>
+                            <li>Large model (e.g. GPT-5): weeks to months</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="key-terms">Key concepts</h2>
+
+                    <div class="example-box">
+                        <h4>🎯 Overfitting</h4>
+                        <p>When the model "memorizes" the training data instead of learning general patterns.</p>
+                        <p><strong>Example:</strong> A student who memorized all answers on a practice test—but fails the real test.</p>
+                        <p><strong>Solution:</strong> More data, regularization, testing on new data.</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>📉 Underfitting</h4>
+                        <p>When the model is too simple and fails to learn the patterns.</p>
+                        <p><strong>Solution:</strong> More complex model, more features, more training.</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🔄 Training / Validation / Test Sets</h4>
+                        <p>Split the data into three sets:</p>
+                        <ul>
+                            <li><strong>Training (70%):</strong> For training the model</li>
+                            <li><strong>Validation (15%):</strong> For tuning and calibration</li>
+                            <li><strong>Test (15%):</strong> For final evaluation—don't touch until the end!</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>📊 Accuracy, Precision, Recall</h4>
+                        <p>Metrics for evaluating model quality:</p>
+                        <ul>
+                            <li><strong>Accuracy:</strong> How often we were right overall</li>
+                            <li><strong>Precision:</strong> When we said "yes"—how often were we right?</li>
+                            <li><strong>Recall:</strong> Of all the true "yes"—how many did we find?</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>⚖️ Bias</h4>
+                        <p>When the model discriminates systematically. Happens due to unbalanced data.</p>
+                        <p><strong>Example:</strong> A hiring model trained on existing employees (mostly men) discriminates against women.</p>
+                    </div>
+                </section>
+
+                <section class="summary-box">
+                    <h2 id="summary">Summary 📝</h2>
+                    <ul>
+                        <li><strong>Machine learning:</strong> Computers that learn from examples instead of explicit rules</li>
+                        <li><strong>3 types:</strong> Supervised (with answers), unsupervised (without), reinforcement (trial and error)</li>
+                        <li><strong>Deep learning:</strong> Neural networks with many layers—the technology behind ChatGPT</li>
+                        <li><strong>What you need:</strong> Data + compute + algorithm + expertise + time</li>
+                        <li><strong>Examples:</strong> Recommendations, fraud detection, medical diagnosis, autonomous driving</li>
+                        <li><strong>Challenges:</strong> Overfitting, bias, need for lots of data</li>
+                    </ul>
+                </section>
+
+                <section id="quiz-section" class="quiz-section">
+                    <h2 id="quiz">📝 Test yourself</h2>
+                    <p class="quiz-intro">Answer 10 questions to check your understanding of machine learning.</p>
+
+                    <form id="quiz-form">
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">1</span> What is machine learning?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q1" value="a"><span>Programming computers with detailed instructions for every situation</span></label>
+                                <label class="quiz-option"><input type="radio" name="q1" value="b"><span>Computers that learn from data and improve without explicit programming</span></label>
+                                <label class="quiz-option"><input type="radio" name="q1" value="c"><span>Robots that work in factories</span></label>
+                                <label class="quiz-option"><input type="radio" name="q1" value="d"><span>Computers that talk to people</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="a">
+                            <h4><span class="question-number">2</span> What are the three main types of learning?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q2" value="a"><span>Supervised, unsupervised, and reinforcement</span></label>
+                                <label class="quiz-option"><input type="radio" name="q2" value="b"><span>Fast, slow, and medium</span></label>
+                                <label class="quiz-option"><input type="radio" name="q2" value="c"><span>Easy, hard, and impossible</span></label>
+                                <label class="quiz-option"><input type="radio" name="q2" value="d"><span>Primary, secondary, and tertiary</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="c">
+                            <h4><span class="question-number">3</span> In supervised learning, what does the system receive?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q3" value="a"><span>Only data with no labels</span></label>
+                                <label class="quiz-option"><input type="radio" name="q3" value="b"><span>Direct commands on what to do</span></label>
+                                <label class="quiz-option"><input type="radio" name="q3" value="c"><span>Examples with correct answers (labels)</span></label>
+                                <label class="quiz-option"><input type="radio" name="q3" value="d"><span>Only rewards and penalties</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="d">
+                            <h4><span class="question-number">4</span> Which type of learning is used to train a robot to play games?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q4" value="a"><span>Supervised learning</span></label>
+                                <label class="quiz-option"><input type="radio" name="q4" value="b"><span>Unsupervised learning</span></label>
+                                <label class="quiz-option"><input type="radio" name="q4" value="c"><span>Passive learning</span></label>
+                                <label class="quiz-option"><input type="radio" name="q4" value="d"><span>Reinforcement learning</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">5</span> What is a neural network?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q5" value="a"><span>A network of computers connected to the internet</span></label>
+                                <label class="quiz-option"><input type="radio" name="q5" value="b"><span>A mathematical structure that mimics how the brain works</span></label>
+                                <label class="quiz-option"><input type="radio" name="q5" value="c"><span>Connecting biological neurons to a computer</span></label>
+                                <label class="quiz-option"><input type="radio" name="q5" value="d"><span>A type of network cable</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="a">
+                            <h4><span class="question-number">6</span> What happens with overfitting?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q6" value="a"><span>The model memorizes training data and doesn't generalize to new data</span></label>
+                                <label class="quiz-option"><input type="radio" name="q6" value="b"><span>The model runs too fast</span></label>
+                                <label class="quiz-option"><input type="radio" name="q6" value="c"><span>There is too much data</span></label>
+                                <label class="quiz-option"><input type="radio" name="q6" value="d"><span>The computer overheats</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="c">
+                            <h4><span class="question-number">7</span> What is unsupervised learning?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q7" value="a"><span>Learning without a computer</span></label>
+                                <label class="quiz-option"><input type="radio" name="q7" value="b"><span>Learning with a human teacher</span></label>
+                                <label class="quiz-option"><input type="radio" name="q7" value="c"><span>Finding patterns in data without prior labels</span></label>
+                                <label class="quiz-option"><input type="radio" name="q7" value="d"><span>Slow learning without supervision</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">8</span> Why is it important to split data into training and test sets?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q8" value="a"><span>To save memory space</span></label>
+                                <label class="quiz-option"><input type="radio" name="q8" value="b"><span>To check if the model generalizes well to new data</span></label>
+                                <label class="quiz-option"><input type="radio" name="q8" value="c"><span>So the computer runs faster</span></label>
+                                <label class="quiz-option"><input type="radio" name="q8" value="d"><span>No special reason, it's just convention</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="d">
+                            <h4><span class="question-number">9</span> What is the role of "weights" in a neural network?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q9" value="a"><span>To measure how heavy the computer is</span></label>
+                                <label class="quiz-option"><input type="radio" name="q9" value="b"><span>To balance temperature</span></label>
+                                <label class="quiz-option"><input type="radio" name="q9" value="c"><span>To count how many neurons there are</span></label>
+                                <label class="quiz-option"><input type="radio" name="q9" value="d"><span>To set the strength of the connection between neurons</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="a">
+                            <h4><span class="question-number">10</span> What is needed for machine learning to succeed?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q10" value="a"><span>A large amount of quality data</span></label>
+                                <label class="quiz-option"><input type="radio" name="q10" value="b"><span>Only a powerful computer</span></label>
+                                <label class="quiz-option"><input type="radio" name="q10" value="c"><span>Fast internet connection</span></label>
+                                <label class="quiz-option"><input type="radio" name="q10" value="d"><span>A programmer sitting next to the computer all the time</span></label>
+                            </div>
+                        </div>
+                    </form>
+
+                    <button id="quiz-submit">Check answers</button>
+
+                    <div id="quiz-results" class="quiz-results">
+                        <h3 id="your-results">Your results</h3>
+                        <div class="score-display">
+                            <div class="score-item">
+                                <span id="quiz-score" class="score-number">0/10</span>
+                                <span class="score-label">Correct answers</span>
+                            </div>
+                            <div class="score-item">
+                                <span id="quiz-percent" class="score-number">0%</span>
+                                <span class="score-label">Success rate</span>
+                            </div>
+                        </div>
+                        <p id="quiz-message" class="quiz-message"></p>
+                        <button id="quiz-retry">Try again</button>
+                    </div>
+                </section>
+
+                <div class="article-nav">
+                    <a href="ai-history-en.html" class="btn">→ 2. History of AI</a>
+                    <a href="ai-daily-life-en.html" class="btn btn-primary">4. AI in Daily Life – Next ←</a>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 AI Learning – Sam Shahar</p>
+            <p class="footer-contact">Phone: <a href="tel:+972522603831">+972522603831</a> | Email: <a href="mailto:shaharprod@gmail.com">shaharprod@gmail.com</a></p>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

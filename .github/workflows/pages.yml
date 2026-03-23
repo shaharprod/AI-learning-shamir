@@ -1,0 +1,56 @@
+# GitHub Pages - אתר סטטי בינה מלאכותית ללימוד
+# Workflow חדש: בונה תיקיית פרסום נקייה ומעלה ל-Pages
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare site folder
+        run: |
+          mkdir -p _site _site/en
+          cp index.html index-en.html search.html search-en.html _site/
+          cp style.css script.js _site/
+          cp -r pages _site/
+          cp -r images _site/
+          cp en/index.html _site/en/
+          touch _site/.nojekyll
+          ls -la _site
+          ls -la _site/pages | head -25
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site'
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

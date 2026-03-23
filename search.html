@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202026-02-09%20160037.png">
+    <title>חיפוש באתר | אתר ללימוד בינה מלאכותית AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .search-page { padding: 6rem 0 4rem; }
+        .search-page h1 { margin-bottom: 1rem; text-align: center; }
+        .search-form-wrap { max-width: 500px; margin: 0 auto 2rem; }
+        .search-form-wrap input { width: 100%; padding: 0.75rem 1rem; font-size: 1.1rem; border-radius: var(--radius-sm); border: 1px solid var(--border); }
+        .search-form-wrap input:focus { outline: none; border-color: var(--primary); }
+        .search-results { max-width: 700px; margin: 0 auto; }
+        .search-results .result-item { margin-bottom: 1.5rem; padding: 1rem; background: var(--surface); border-radius: var(--radius-sm); border-right: 4px solid var(--primary); }
+        .search-results .result-item h3 { margin-bottom: 0.35rem; font-size: 1.1rem; }
+        .search-results .result-item h3 a { color: var(--primary); }
+        .search-results .result-item .snippet { color: var(--text-light); font-size: 0.95rem; line-height: 1.6; }
+        .search-results .result-item .snippet strong { background: rgba(37,99,235,0.15); padding: 0 2px; }
+        .search-results .no-results { text-align: center; color: var(--text-light); padding: 2rem; }
+        .search-results .loading { text-align: center; padding: 2rem; color: var(--text-light); }
+        .anchor-hint { font-size: 0.75rem; font-weight: normal; color: var(--text-light); }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/colorful%20digital%20media%20sy.png" alt="לוגו" class="logo-icon">
+                    <span class="logo-text">לימוד בינה מלאכותית AI</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">בית</a></li>
+                <li><a href="index.html#intro">מה זה AI?</a></li>
+                <li class="dropdown">
+                    <a href="index.html#topics" class="dropdown-toggle">שיעורים ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/intro-to-ai.html">1. מבוא ל-AI</a></li>
+                        <li><a href="pages/ai-history.html">2. ההיסטוריה של AI</a></li>
+                        <li><a href="pages/machine-learning.html">3. למידת מכונה</a></li>
+                        <li><a href="pages/ai-daily-life.html">4. AI בחיי היומיום</a></li>
+                        <li><a href="pages/ai-tools.html">5. כלים מעשיים</a></li>
+                        <li><a href="pages/prompt-engineering.html">6. הנדסת הנחייה</a></li>
+                        <li><a href="pages/ai-ethics.html">7. אתיקה ב-AI</a></li>
+                        <li><a href="pages/ai-future.html">8. העתיד של AI</a></li>
+                        <li><a href="pages/glossary.html">9. מילון מושגים</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/glossary.html">מילון</a></li>
+                <li><a href="pages/ai-tools.html">כלים</a></li>
+                <li><a href="index.html#about">אודות</a></li>
+            </ul>
+            <form class="nav-search" id="site-search" role="search">
+                <input type="search" name="q" placeholder="חיפוש מילים ומושגים..." aria-label="חיפוש באתר" />
+                <button type="submit" aria-label="חפש">🔍</button>
+            </form>
+            <nav class="lang-switcher" aria-label="בחירת שפה">
+                <a href="search-en.html" hreflang="en" lang="en">English</a>
+                <span class="lang-active" aria-current="page">עברית</span>
+            </nav>
+            <button type="button" class="mobile-menu-btn" aria-label="תפריט">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="section search-page">
+        <div class="container">
+            <h1>חיפוש מילים ומושגים באתר</h1>
+            <div class="search-form-wrap">
+                <form id="search-form" role="search">
+                    <input type="search" name="q" id="search-query" placeholder="הקלידו מילה או מושג..." aria-label="חיפוש" autofocus />
+                </form>
+            </div>
+            <div id="search-results" class="search-results"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 אתר ללימוד בינה מלאכותית AI - כל הזכויות שמורות לשמוליק שחר יועץ לימודי המנגיש לימודי בינה מלאכותית לכל אדם</p>
+            <p class="footer-contact">טלפון: <a href="tel:+972522603831">+972522603831</a> | אימייל: <a href="mailto:shaharprod@gmail.com">shaharprod@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script>
+(function () {
+    var PAGES = [
+        { url: 'index.html', title: 'דף הבית' },
+        { url: 'pages/intro-to-ai.html', title: 'מבוא ל-AI' },
+        { url: 'pages/ai-history.html', title: 'ההיסטוריה של AI' },
+        { url: 'pages/machine-learning.html', title: 'למידת מכונה' },
+        { url: 'pages/ai-daily-life.html', title: 'AI בחיי היומיום' },
+        { url: 'pages/ai-tools.html', title: 'כלים מעשיים' },
+        { url: 'pages/prompt-engineering.html', title: 'הנדסת הנחייה' },
+        { url: 'pages/ai-ethics.html', title: 'אתיקה ב-AI' },
+        { url: 'pages/ai-future.html', title: 'העתיד של AI' },
+        { url: 'pages/glossary.html', title: 'מילון מושגים' }
+    ];
+
+    /* מונחים מקבילים – חיפוש באחד יחפש גם בשאר (עברית, לועזית, קיצורים) */
+    var TERM_GROUPS = [
+        ['למידת מכונה', 'לימוד מכונה', 'מכונה לומדת', 'machine learning', 'ML'],
+        ['בינה מלאכותית', 'בינה מתוחכמת', 'artificial intelligence', 'AI'],
+        ['הנדסת הנחייה', 'נדסת הנחייה', 'הנחיות', 'פרומפט', 'prompt engineering', 'prompts'],
+        ['רשת נוירונים', 'נוירונים', 'neural network', 'neural'],
+        ['למידה עמוקה', 'למידה עמוקה', 'deep learning', 'deep learning'],
+        ['עיבוד שפה טבעית', 'שפה טבעית', 'NLP', 'natural language'],
+        ['ראייה ממוחשבת', 'ממוחשבת', 'computer vision', 'vision'],
+        ['אתיקה', 'ethics', 'מוסר'],
+        ['פרומפט', 'הנחייה', 'prompt', 'הוראה'],
+        ['מודל', 'model', 'מודלים'],
+        ['אימון', 'training', 'אימון המודל'],
+        ['צ\'אט ג\'יפיטי', 'צ\'אט גיפיטי', 'ChatGPT', 'chatgpt'],
+        ['ג\'מיני', 'גמיני', 'Gemini', 'gemini'],
+        ['קלוד', 'Claude', 'claude']
+    ];
+
+    var resultsEl = document.getElementById('search-results');
+    var form = document.getElementById('search-form');
+    var input = document.getElementById('search-query');
+    var basePath = (function () {
+        if (window.location.protocol === 'file:') return '';
+        var p = window.location.pathname || '';
+        return p.indexOf('/') === -1 ? '' : p.replace(/\/[^/]*$/, '/');
+    })();
+
+    function getQuery() {
+        var params = new URLSearchParams(window.location.search);
+        return (params.get('q') || '').trim();
+    }
+    function setQuery(q) { if (input) input.value = q; }
+
+    function expandSearchTerms(q) {
+        var out = [q];
+        var qLower = q.toLowerCase();
+        TERM_GROUPS.forEach(function (group) {
+            var inGroup = group.some(function (t) {
+                var tl = t.toLowerCase();
+                return qLower.indexOf(tl) !== -1 || tl.indexOf(qLower) !== -1;
+            });
+            if (inGroup) group.forEach(function (t) { if (out.indexOf(t) === -1) out.push(t); });
+        });
+        return out;
+    }
+
+    function slug(t) {
+        return (t || '').trim().replace(/\s+/g, '-').replace(/[?!.,:؛'"׳]/g, '').slice(0, 80);
+    }
+
+    function getContentRoot(doc) {
+        return doc.querySelector('main') || doc.querySelector('article.article-content') || doc.querySelector('.article') || doc.body;
+    }
+
+    function getBlocks(doc) {
+        var blocks = [];
+        var root = getContentRoot(doc);
+        if (!root) return blocks;
+        var headings = root.querySelectorAll('h1, h2, h3');
+        var used = {};
+        headings.forEach(function (h) {
+            var id = (h.id || slug(h.textContent)).replace(/^\s*|\s*$/g, '');
+            if (used[id]) { id = id + '-' + (Math.random().toString(36).slice(2, 6)); }
+            used[id] = true;
+            var text = (h.textContent || '') + ' ';
+            var n = h.nextElementSibling;
+            while (n) {
+                if (n.tagName === 'H1' || n.tagName === 'H2' || n.tagName === 'H3') break;
+                text += (n.innerText || n.textContent || '') + ' ';
+                n = n.nextElementSibling;
+            }
+            var blockText = text.replace(/\s+/g, ' ').trim();
+            if (blockText) blocks.push({ id: id || 'top', text: blockText });
+        });
+        var full = (root.innerText || root.textContent || '').replace(/\s+/g, ' ').trim();
+        if (blocks.length === 0 && full) blocks.push({ id: '', text: full });
+        else if (full) blocks.push({ id: '_full', text: full });
+        return blocks;
+    }
+
+    function highlight(snippet, term) {
+        if (!term) return snippet;
+        var r = new RegExp('(' + (term + '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+        return snippet.replace(r, '<strong>$1</strong>');
+    }
+    function snippetAround(text, index, termLen, chars) {
+        var start = Math.max(0, index - chars);
+        var end = Math.min(text.length, index + termLen + chars);
+        var s = text.slice(start, end);
+        if (start > 0) s = '…' + s;
+        if (end < text.length) s = s + '…';
+        return s.replace(/\s+/g, ' ').trim();
+    }
+
+    function runSearch(q) {
+        if (!q) {
+            resultsEl.innerHTML = '<p class="no-results">הזינו מילה או מושג לחיפוש.</p>';
+            return;
+        }
+            resultsEl.innerHTML = '<p class="loading">מחפש...</p>';
+        setQuery(q);
+        var searchTerms = expandSearchTerms(q);
+        var found = [];
+        var maxTotal = 30;
+        var maxPerPage = 5;
+
+        var promises = PAGES.map(function (p) {
+            var pageUrl = basePath + p.url;
+            return fetch(pageUrl).then(function (r) { return r.text(); }).then(function (html) {
+                var parser = new DOMParser();
+                var doc = parser.parseFromString(html, 'text/html');
+                [].forEach.call(doc.querySelectorAll('script, style, noscript'), function (el) { el.remove(); });
+                var blocks = getBlocks(doc);
+                var count = 0;
+                for (var b = 0; b < blocks.length && count < maxPerPage && found.length < maxTotal; b++) {
+                    var block = blocks[b];
+                    var blockLower = block.text.toLowerCase();
+                    for (var t = 0; t < searchTerms.length; t++) {
+                        var term = searchTerms[t];
+                        var idx = blockLower.indexOf(term.toLowerCase());
+                        if (idx === -1) continue;
+                        var anchor = (block.id && block.id !== '_full') ? ('#' + block.id) : '';
+                        found.push({
+                            title: p.title,
+                            url: p.url + anchor,
+                            snippet: snippetAround(block.text, idx, term.length, 80),
+                            matchedTerm: term
+                        });
+                        count++;
+                        break;
+                    }
+                }
+            }).catch(function () {});
+        });
+
+        Promise.all(promises).then(function () {
+            if (found.length === 0) {
+                resultsEl.innerHTML = '<p class="no-results">No results for “‘ + q + '”.</p>';
+                return;
+            }
+            var html = '';
+            found.forEach(function (r) {
+                html += '<div class="result-item"><h3><a href="' + r.url + '">' + r.title + (r.url.indexOf('#') !== -1 ? ' <span class="anchor-hint">↵ קפיצה למיקום</span>' : '') + '</a></h3><p class="snippet">' + highlight(r.snippet, r.matchedTerm) + '</p></div>';
+            });
+            resultsEl.innerHTML = html;
+        });
+    }
+
+    if (form) {
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            var q = (input && input.value) ? input.value.trim() : '';
+            if (q) window.location.href = 'search.html?q=' + encodeURIComponent(q);
+            return false;
+        });
+    }
+    setQuery(getQuery());
+    runSearch(getQuery());
+})();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202026-02-09%20160037.png">
+    <title>אתיקה ב-AI | אתר ללימוד בינה מלאכותית AI</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="article.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/colorful%20digital%20media%20sy.png" alt="לוגו" class="logo-icon">
+                    <span class="logo-text">לימוד בינה מלאכותית AI</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">בית</a></li>
+                <li class="dropdown">
+                    <a href="../index.html#topics" class="dropdown-toggle">שיעורים ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="intro-to-ai.html">1. מבוא ל-AI</a></li>
+                        <li><a href="ai-history.html">2. ההיסטוריה של AI</a></li>
+                        <li><a href="machine-learning.html">3. למידת מכונה</a></li>
+                        <li><a href="ai-daily-life.html">4. AI בחיי היומיום</a></li>
+                        <li><a href="ai-tools.html">5. כלים מעשיים</a></li>
+                        <li><a href="prompt-engineering.html">6. הנדסת הנחייה</a></li>
+                        <li><a href="ai-ethics.html">7. אתיקה ב-AI</a></li>
+                        <li><a href="ai-future.html">8. העתיד של AI</a></li>
+                        <li><a href="glossary.html">9. מילון מושגים</a></li>
+                    </ul>
+                </li>
+                <li><a href="glossary.html">מילון</a></li>
+                <li><a href="ai-tools.html">כלים</a></li>
+                <li><a href="../index.html#about">אודות</a></li>
+            </ul>
+            <form class="nav-search" id="site-search" role="search">
+                <input type="search" name="q" placeholder="חיפוש מילים ומושגים..." aria-label="חיפוש באתר" />
+                <button type="submit" aria-label="חפש">🔍</button>
+            </form>
+            <nav class="lang-switcher" aria-label="בחירת שפה">
+                <a href="ai-ethics-en.html" hreflang="en" lang="en">English</a>
+                <span class="lang-active" aria-current="page">עברית</span>
+            </nav>
+            <button type="button" class="mobile-menu-btn" aria-label="תפריט">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Article Content -->
+    <main class="article">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">בית</a> / <span>אתיקה ב-AI</span>
+            </div>
+
+            <article class="article-content">
+                <h1>אתיקה בבינה מלאכותית</h1>
+                <p class="article-meta">⚖️ זמן קריאה: 10 דקות | רמה: כולם</p>
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=400&fit=crop" alt="אתיקה - מאזני צדק" class="article-header-image">
+
+                <section>
+                    <h2 id="למה-אתיקה-ב-AI-חשובה">למה אתיקה ב-AI חשובה?</h2>
+                    <p>
+                        בינה מלאכותית היא כלי עוצמתי - וככל כלי עוצמתי, אפשר להשתמש בה לטוב או לרע.
+                        ככל שה-AI הופך לחלק מרכזי יותר בחיינו, השאלות האתיות הופכות לדחופות יותר.
+                    </p>
+                    <div class="info-card warning">
+                        <strong>⚠️ חשוב להבין:</strong> אין תשובות "נכונות" או "שגויות" לרוב השאלות האתיות.
+                        המטרה היא להכיר את הסוגיות ולחשוב עליהן בצורה מעמיקה.
+                    </div>
+                </section>
+
+                <!-- Bias Section -->
+                <section>
+                    <h2 id="הטיות-bias">🎯 הטיות (Bias)</h2>
+                    <p>
+                        AI לומד מנתונים - ואם הנתונים מוטים, גם ה-AI יהיה מוטה.
+                    </p>
+
+                    <div class="example-box">
+                        <h4>דוגמה: גיוס עובדים</h4>
+                        <p>
+                            חברת Amazon פיתחה AI לסינון קורות חיים. הוא למד מהיסטוריית הגיוסים של החברה -
+                            ומכיוון שהיסטורית רוב המגויסים היו גברים, ה-AI העדיף גברים והפלה נשים.
+                        </p>
+                        <p><strong>התוצאה:</strong> הפרויקט בוטל.</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>דוגמה: זיהוי פנים</h4>
+                        <p>
+                            מערכות זיהוי פנים רבות מדויקות פחות בזיהוי אנשים עם גוון עור כהה -
+                            כי הן אומנו בעיקר על תמונות של אנשים לבנים.
+                        </p>
+                    </div>
+
+                    <div class="info-card tip">
+                        <strong>💡 הפתרון:</strong> נתונים מגוונים יותר, בדיקות קפדניות, ופיקוח אנושי.
+                    </div>
+                </section>
+
+                <!-- Privacy Section -->
+                <section>
+                    <h2 id="פרטיות">🔒 פרטיות</h2>
+                    <p>
+                        AI צריך נתונים כדי לעבוד - אבל כמה מהפרטיות שלנו אנחנו מוכנים לוותר?
+                    </p>
+
+                    <div class="example-box">
+                        <h4>השאלות הקשות:</h4>
+                        <ul>
+                            <li>האם בסדר שגוגל קורא את המיילים שלנו כדי לסנן ספאם?</li>
+                            <li>האם בסדר שנטפליקס יודע בדיוק מה אנחנו אוהבים לראות?</li>
+                            <li>האם בסדר שהמעסיק ינטר את הפרודוקטיביות שלנו עם AI?</li>
+                            <li>מה קורה כשהממשלה משתמשת ב-AI לזיהוי פנים במרחב הציבורי?</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>סין: מערכת "אשראי חברתי"</h4>
+                        <p>
+                            AI עוקב אחרי התנהגות אזרחים ונותן להם "ציון חברתי".
+                            ציון נמוך = הגבלות על טיסות, רכבות, ועוד.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Jobs Section -->
+                <section>
+                    <h2 id="תעסוקה-ועבודה">💼 תעסוקה ועבודה</h2>
+                    <p>
+                        אחת הדאגות הגדולות: האם AI יחליף את העבודה שלנו?
+                    </p>
+
+                    <div class="example-box">
+                        <h4>מקצועות בסיכון גבוה:</h4>
+                        <ul>
+                            <li>נהגים (רכבים אוטונומיים)</li>
+                            <li>קופאים (קופות אוטומטיות)</li>
+                            <li>עובדי מוקד שירות (צ'אטבוטים)</li>
+                            <li>מתרגמים (תרגום אוטומטי)</li>
+                            <li>עורכי תוכן בסיסי</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>מקצועות שכנראה בטוחים (בינתיים):</h4>
+                        <ul>
+                            <li>עבודות שדורשות יצירתיות גבוהה</li>
+                            <li>עבודות עם אינטראקציה אנושית עמוקה</li>
+                            <li>עבודות פיזיות מורכבות</li>
+                            <li>עבודות שדורשות שיפוט אתי</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card tip">
+                        <strong>💡 נקודת אור:</strong> AI גם יוצר מקצועות חדשים - מהנדסי AI, מאמני נתונים,
+                        מומחי אתיקה טכנולוגית, ועוד.
+                    </div>
+                </section>
+
+                <!-- Deepfakes Section -->
+                <section>
+                    <h2 id="deepfakes-ומידע-כוזב">🎭 Deepfakes ומידע כוזב</h2>
+                    <p>
+                        AI יכול ליצור תמונות, סרטונים והקלטות קול מזויפים שנראים אמיתיים לחלוטין.
+                    </p>
+
+                    <div class="example-box">
+                        <h4>הסכנות:</h4>
+                        <ul>
+                            <li><strong>פוליטיקה:</strong> סרטונים מזויפים של פוליטיקאים אומרים דברים שמעולם לא אמרו</li>
+                            <li><strong>הונאות:</strong> שיחות טלפון מזויפות בקול של בני משפחה</li>
+                            <li><strong>פגיעה במוניטין:</strong> תמונות או סרטונים מביכים מזויפים</li>
+                            <li><strong>חדשות מזויפות:</strong> קשה יותר לדעת מה אמיתי</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card warning">
+                        <strong>⚠️ כלל אצבע:</strong> אם משהו נראה מדהים מכדי להיות אמיתי, או מזעזע מדי -
+                        בדקו את המקור לפני שאתם משתפים.
+                    </div>
+                </section>
+
+                <!-- Accountability Section -->
+                <section>
+                    <h2 id="אחריות-מי-אשם">⚖️ אחריות - מי אשם?</h2>
+                    <p>
+                        כש-AI עושה טעות - מי אחראי?
+                    </p>
+
+                    <div class="example-box">
+                        <h4>תרחיש: רכב אוטונומי פוגע באדם</h4>
+                        <p>מי אשם?</p>
+                        <ul>
+                            <li>היצרן שבנה את הרכב?</li>
+                            <li>המתכנתים שכתבו את הקוד?</li>
+                            <li>הנהג שהיה אמור לפקח?</li>
+                            <li>ה-AI עצמו? (אבל אי אפשר לשפוט תוכנה...)</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>תרחיש: AI רפואי מאבחן לא נכון</h4>
+                        <p>מי אחראי על אבחון שגוי?</p>
+                        <ul>
+                            <li>הרופא שסמך על ה-AI?</li>
+                            <li>החברה שפיתחה את המערכת?</li>
+                            <li>בית החולים שאימץ אותה?</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Autonomy Section -->
+                <section>
+                    <h2 id="שליטה-ואוטונומיה">🎮 שליטה ואוטונומיה</h2>
+                    <p>
+                        כמה החלטות אנחנו רוצים לתת ל-AI?
+                    </p>
+
+                    <div class="example-box">
+                        <h4>הדילמה של הרכב האוטונומי</h4>
+                        <p>
+                            רכב אוטונומי צריך להחליט: לפגוע בהולך רגל או להסתכן בנוסעים?
+                        </p>
+                        <p>
+                            מי צריך להחליט איך הרכב יתכנת? היצרן? הממשלה? הקונה?
+                        </p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>נשק אוטונומי</h4>
+                        <p>
+                            האם מותר ל-AI להחליט לבד אם לירות באדם?
+                            רוב המומחים אומרים: לא. תמיד צריך אדם בלופ ("Human in the loop").
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Positive Uses Section -->
+                <section>
+                    <h2 id="הצד-החיובי">✨ הצד החיובי</h2>
+                    <p>
+                        חשוב לזכור - AI יכול גם לעשות הרבה טוב:
+                    </p>
+
+                    <div class="example-box">
+                        <h4>שימושים חיוביים:</h4>
+                        <ul>
+                            <li><strong>רפואה:</strong> אבחון מוקדם של סרטן, פיתוח תרופות</li>
+                            <li><strong>סביבה:</strong> חיזוי אסונות טבע, התייעלות אנרגטית</li>
+                            <li><strong>נגישות:</strong> תיאור תמונות לעיוורים, תרגום לשפת סימנים</li>
+                            <li><strong>חינוך:</strong> למידה מותאמת אישית</li>
+                            <li><strong>מדע:</strong> גילויים שייקח לאנושות עשרות שנים</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Guidelines Section -->
+                <section>
+                    <h2 id="עקרונות-לשימוש-אחראי">📋 עקרונות לשימוש אחראי</h2>
+
+                    <div class="guidelines">
+                        <div class="guideline-item">
+                            <span class="guideline-number">1</span>
+                            <div>
+                                <h4>שקיפות</h4>
+                                <p>לדעת מתי AI מקבל החלטות שמשפיעות עלינו</p>
+                            </div>
+                        </div>
+                        <div class="guideline-item">
+                            <span class="guideline-number">2</span>
+                            <div>
+                                <h4>הוגנות</h4>
+                                <p>AI לא צריך להפלות על בסיס מין, גזע, גיל וכו'</p>
+                            </div>
+                        </div>
+                        <div class="guideline-item">
+                            <span class="guideline-number">3</span>
+                            <div>
+                                <h4>אחריותיות</h4>
+                                <p>תמיד צריך להיות מישהו שאחראי על ההחלטות</p>
+                            </div>
+                        </div>
+                        <div class="guideline-item">
+                            <span class="guideline-number">4</span>
+                            <div>
+                                <h4>פרטיות</h4>
+                                <p>להגן על המידע האישי של אנשים</p>
+                            </div>
+                        </div>
+                        <div class="guideline-item">
+                            <span class="guideline-number">5</span>
+                            <div>
+                                <h4>בטיחות</h4>
+                                <p>AI לא צריך לפגוע באנשים</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="summary-box">
+                    <h2 id="סיכום">סיכום 📝</h2>
+                    <ul>
+                        <li>AI הוא כלי - השימוש בו תלוי בנו</li>
+                        <li>סוגיות מרכזיות: הטיות, פרטיות, תעסוקה, מידע כוזב</li>
+                        <li>חשוב לדרוש שקיפות מחברות טכנולוגיה</li>
+                        <li>צריך רגולציה חכמה שמאזנת בין חדשנות להגנה</li>
+                        <li>כולנו אחראים - כצרכנים, אזרחים ובני אדם</li>
+                    </ul>
+                </section>
+
+                <!-- Quiz Section -->
+                <section id="quiz-section" class="quiz-section">
+                    <h2 id="בחן-את-עצמך">📝 בחן את עצמך</h2>
+                    <p class="quiz-intro">ענו על 10 שאלות כדי לבדוק את ההבנה שלכם בנושא אתיקה ב-AI.</p>
+
+                    <form id="quiz-form">
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">1</span> מה גרם ל-AI של אמזון להפלות נשים בגיוס?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q1" value="a"><span>תקלה טכנית</span></label>
+                                <label class="quiz-option"><input type="radio" name="q1" value="b"><span>הוא למד מנתונים היסטוריים שבהם רוב המגויסים היו גברים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q1" value="c"><span>מתכנת התכנת אותו כך</span></label>
+                                <label class="quiz-option"><input type="radio" name="q1" value="d"><span>הוא החליט בעצמו</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="c">
+                            <h4><span class="question-number">2</span> למה מערכות זיהוי פנים מדויקות פחות באנשים עם עור כהה?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q2" value="a"><span>בגלל תאורה גרועה</span></label>
+                                <label class="quiz-option"><input type="radio" name="q2" value="b"><span>בגלל מצלמות זולות</span></label>
+                                <label class="quiz-option"><input type="radio" name="q2" value="c"><span>כי אומנו בעיקר על תמונות של אנשים לבנים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q2" value="d"><span>זה לא נכון, הן מדויקות אצל כולם</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="a">
+                            <h4><span class="question-number">3</span> מה זה "אשראי חברתי" בסין?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q3" value="a"><span>מערכת AI שנותנת ציון לאזרחים לפי התנהגותם</span></label>
+                                <label class="quiz-option"><input type="radio" name="q3" value="b"><span>הלוואה מהבנק</span></label>
+                                <label class="quiz-option"><input type="radio" name="q3" value="c"><span>רשת חברתית</span></label>
+                                <label class="quiz-option"><input type="radio" name="q3" value="d"><span>כרטיס אשראי מיוחד</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="d">
+                            <h4><span class="question-number">4</span> מה זה Deepfake?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q4" value="a"><span>תוכנה לעריכת תמונות</span></label>
+                                <label class="quiz-option"><input type="radio" name="q4" value="b"><span>רשת חברתית</span></label>
+                                <label class="quiz-option"><input type="radio" name="q4" value="c"><span>סוג של וירוס מחשב</span></label>
+                                <label class="quiz-option"><input type="radio" name="q4" value="d"><span>סרטונים או תמונות מזויפים שנוצרו ע"י AI</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">5</span> כש-AI רפואי מאבחן לא נכון, מי אחראי?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q5" value="a"><span>ה-AI עצמו</span></label>
+                                <label class="quiz-option"><input type="radio" name="q5" value="b"><span>זו שאלה מורכבת - יכול להיות הרופא, החברה, או בית החולים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q5" value="c"><span>המטופל</span></label>
+                                <label class="quiz-option"><input type="radio" name="q5" value="d"><span>אף אחד</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="c">
+                            <h4><span class="question-number">6</span> מה המשמעות של "Human in the loop"?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q6" value="a"><span>אדם שמתכנת את ה-AI</span></label>
+                                <label class="quiz-option"><input type="radio" name="q6" value="b"><span>אדם שמשתמש ב-AI</span></label>
+                                <label class="quiz-option"><input type="radio" name="q6" value="c"><span>אדם שמפקח ומאשר החלטות של AI</span></label>
+                                <label class="quiz-option"><input type="radio" name="q6" value="d"><span>אדם שמוכר מוצרי AI</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="a">
+                            <h4><span class="question-number">7</span> איזה מקצוע נמצא בסיכון גבוה להתחלף ע"י AI?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q7" value="a"><span>נהגים ועובדי מוקד שירות</span></label>
+                                <label class="quiz-option"><input type="radio" name="q7" value="b"><span>פסיכולוגים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q7" value="c"><span>אומנים יצירתיים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q7" value="d"><span>מנהיגים</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="d">
+                            <h4><span class="question-number">8</span> מהו עיקרון "השקיפות" באתיקה של AI?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q8" value="a"><span>AI צריך להיות מזכוכית</span></label>
+                                <label class="quiz-option"><input type="radio" name="q8" value="b"><span>AI צריך לעבוד מהר</span></label>
+                                <label class="quiz-option"><input type="radio" name="q8" value="c"><span>AI צריך להיות זול</span></label>
+                                <label class="quiz-option"><input type="radio" name="q8" value="d"><span>לדעת מתי AI מקבל החלטות שמשפיעות עלינו</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">9</span> מה אפשר לעשות עם AI לטובה?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q9" value="a"><span>רק ליצור בעיות</span></label>
+                                <label class="quiz-option"><input type="radio" name="q9" value="b"><span>אבחון מוקדם של מחלות, נגישות, חינוך מותאם</span></label>
+                                <label class="quiz-option"><input type="radio" name="q9" value="c"><span>להחליף את כל בני האדם</span></label>
+                                <label class="quiz-option"><input type="radio" name="q9" value="d"><span>לשלוט בעולם</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="c">
+                            <h4><span class="question-number">10</span> מה הדבר הנכון לעשות אם רואים תוכן מזעזע באינטרנט?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q10" value="a"><span>לשתף מיד עם כולם</span></label>
+                                <label class="quiz-option"><input type="radio" name="q10" value="b"><span>להאמין שזה אמיתי</span></label>
+                                <label class="quiz-option"><input type="radio" name="q10" value="c"><span>לבדוק את המקור לפני שמשתפים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q10" value="d"><span>להתעלם</span></label>
+                            </div>
+                        </div>
+                    </form>
+
+                    <button id="quiz-submit">בדוק תשובות</button>
+
+                    <div id="quiz-results" class="quiz-results">
+                        <h3 id="התוצאות-שלך">התוצאות שלך</h3>
+                        <div class="score-display">
+                            <div class="score-item">
+                                <span id="quiz-score" class="score-number">0/10</span>
+                                <span class="score-label">תשובות נכונות</span>
+                            </div>
+                            <div class="score-item">
+                                <span id="quiz-percent" class="score-number">0%</span>
+                                <span class="score-label">אחוז הצלחה</span>
+                            </div>
+                        </div>
+                        <p id="quiz-message" class="quiz-message"></p>
+                        <button id="quiz-retry">נסה שוב</button>
+                    </div>
+                </section>
+
+                <div class="article-nav">
+                    <a href="prompt-engineering.html" class="btn">→ 6. הנדסת הנחייה</a>
+                    <a href="ai-future.html" class="btn btn-primary">8. העתיד של AI – המשך ←</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 אתר ללימוד בינה מלאכותית AI - כל הזכויות שמורות לשמוליק שחר יועץ לימודי המנגיש לימודי בינה מלאכותית לכל אדם</p>
+            <p class="footer-contact">טלפון: <a href="tel:+972522603831">+972522603831</a> | אימייל: <a href="mailto:shaharprod@gmail.com">shaharprod@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+You will help create a comprehensive Product Requirements Document (PRD) for building a website. This process has two phases: first you'll ask clarifying questions, then you'll create detailed documentation.
+
+**CRITICAL REQUIREMENT: You must write all of your responses in Hebrew (עברית). This includes all analysis, questions, and final deliverables.**
+
+Here is the website topic you'll be working with:
+
+<topic>
+{{TOPIC}}
+</topic>
+
+Here are any additional requirements that have been specified:
+
+<additional_requirements>
+{{ADDITIONAL_REQUIREMENTS}}
+</additional_requirements>
+
+## Overview of the Two-Phase Process
+
+**Phase 1 (Information Gathering)**: You will analyze the provided information, identify gaps, and ask 5-10 strategic clarifying questions in Hebrew.
+
+**Phase 2 (Document Creation)**: After receiving answers to your questions, you will create two deliverables in Hebrew:
+1. A comprehensive Product Requirements Document (PRD)
+2. A task tracking file (TASKS.MD) with actionable items
+
+## Phase 1: Asking Clarifying Questions
+
+You are currently in Phase 1. Your task is to generate questions that will help you create a complete PRD.
+
+Before presenting your questions, work through your thinking process as follows:
+
+**Step 1: Language Check**
+In <language_check> tags, confirm that you understand you must write in Hebrew and briefly note how you will ensure all your output (analysis, questions, and later deliverables) will be in Hebrew.
+
+**Step 2: Analysis**
+In <analysis> tags (written in Hebrew), work through the following:
+
+1. **Extract all provided information**: First, systematically go through the topic and additional requirements and list out every piece of information provided. Be explicit and comprehensive - write down each detail, requirement, or constraint mentioned.
+
+2. **What is already clear**: Based on your extraction, summarize the specific information provided. Be explicit about what you know.
+
+3. **What is missing**: List the critical information gaps that you need to fill. This section can be extensive.
+
+4. **Category-by-category assessment**: For each of these categories, note what's known and what needs clarification:
+   - Target audience and user needs
+   - Core features and functionality priorities  
+   - Technical constraints or preferences
+   - Timeline and resource constraints
+   - Success criteria and business goals
+   - Content strategy and requirements
+   - Design preferences or brand guidelines
+
+**Step 3: Draft and Verify Questions**
+In <questions_draft> tags (written in Hebrew):
+- Draft 5-10 clarifying questions grouped by category
+- For each question, verify that the answer isn't already provided in the topic or additional requirements
+- If a question is already answered, note this and revise or remove it
+
+**Step 4: Present Final Questions**
+In <questions> tags (written in Hebrew), present your final 5-10 well-organized clarifying questions. Group related questions together under clear category headings. Make each question specific and actionable.
+
+Use this structure:
+```
+<questions>
+**[Category Name in Hebrew]:**
+1. [Question in Hebrew]
+2. [Question in Hebrew]
+
+**[Another Category Name in Hebrew]:**
+3. [Question in Hebrew]
+4. [Question in Hebrew]
+</questions>
+```
+
+## Phase 2: Creating the PRD and Task File
+
+Once you receive answers to your questions, you will enter Phase 2. At that point, follow these steps:
+
+**Step 1: Planning**
+In <prd_planning> tags (written in Hebrew), work through the following:
+
+1. **Gather information from each source**: Systematically go through each information source and list what it provides:
+   - Information from the original topic
+   - Information from the additional requirements
+   - Information from the user's answers to your questions
+
+2. **Compile all information**: Create a comprehensive master list of everything gathered. Quote or paraphrase key details.
+
+3. **Categorize the information**: Organize by audience, features, technical specs, timeline, etc.
+
+4. **Prioritize**: Identify which items are must-haves versus nice-to-haves based on signals in the information.
+
+5. **Map to PRD sections**: List the key sections that should appear in the PRD and note which gathered information belongs in each section.
+
+6. **Break down into tasks**: List every task you can think of for building this website. Be thorough and comprehensive.
+
+7. **Organize tasks**: Group tasks by phase or category, ensuring a logical flow from planning through launch.
+
+It's OK for this planning section to be quite long - thoroughness is important.
+
+**Step 2: Create the PRD**
+In <prd> tags (written in Hebrew), create a comprehensive Product Requirements Document with these sections:
+
+- **סקירה כללית של הפרויקט** (Project Overview): Purpose, goals, and target audience
+- **סיפורי משתמשים** (User Stories): Key user personas and their needs
+- **דרישות פונקציונליות** (Functional Requirements): Detailed feature specifications organized by priority
+- **דרישות תוכן** (Content Requirements): Content structure, types, and organization
+- **דרישות עיצוב** (Design Requirements): Visual design approach, UX principles, branding
+- **דרישות טכניות** (Technical Requirements): Platform, hosting, integrations, performance requirements
+- **מדדי הצלחה** (Success Metrics): KPIs and measurement criteria
+- **ציר זמן ואבני דרך** (Timeline & Milestones): Phased development approach with key dates
+- **אילוצים והנחות** (Constraints & Assumptions): Any limitations or dependencies
+
+**Step 3: Create the Task Tracking File**
+In <tasks> tags (written in Hebrew), create a task list using markdown checkbox format. Organize tasks into logical phases with clear, actionable items. It's OK for this section to be quite long.
+
+Use this structure:
+```
+<tasks>
+# [Title in Hebrew]
+
+## [Phase Name in Hebrew]
+- [ ] [Task description in Hebrew]
+- [ ] [Task description in Hebrew]
+- [ ] [Task description in Hebrew]
+
+## [Another Phase Name in Hebrew]
+- [ ] [Task description in Hebrew]
+- [ ] [Task description in Hebrew]
+</tasks>
+```
+
+Example phase categories you might use:
+- תכנון ועיצוב (Planning & Design)
+- הקמת סביבת פיתוח (Development Setup)
+- פיתוח ליבה (Core Development)
+- תוכן ובדיקות (Content & Testing)
+- השקה (Launch)
+
+---
+
+**You are currently in Phase 1.** Begin by checking the language requirement, then analyze what information you need, and finally present your clarifying questions in Hebrew.

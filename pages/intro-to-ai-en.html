@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to AI | AI Learning</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="article.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>body { direction: ltr; }</style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="../index-en.html">
+                    <img src="../images/colorful%20digital%20media%20sy.png" alt="Logo" class="logo-icon">
+                    <span class="logo-text">AI Learning</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index-en.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="../index-en.html#topics" class="dropdown-toggle">Lessons ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="intro-to-ai-en.html">1. Intro to AI</a></li>
+                        <li><a href="ai-history-en.html">2. History of AI</a></li>
+                        <li><a href="machine-learning-en.html">3. Machine Learning</a></li>
+                        <li><a href="ai-daily-life-en.html">4. AI in Daily Life</a></li>
+                        <li><a href="ai-tools-en.html">5. Practical Tools</a></li>
+                        <li><a href="prompt-engineering-en.html">6. Prompt Engineering</a></li>
+                        <li><a href="ai-ethics-en.html">7. AI Ethics</a></li>
+                        <li><a href="ai-future-en.html">8. The Future of AI</a></li>
+                        <li><a href="glossary-en.html">9. Glossary</a></li>
+                    </ul>
+                </li>
+                <li><a href="glossary-en.html">Glossary</a></li>
+                <li><a href="ai-tools-en.html">Tools</a></li>
+                <li><a href="../index-en.html#about">About</a></li>
+            </ul>
+            <form class="nav-search" id="site-search" role="search">
+                <input type="search" name="q" placeholder="Search..." aria-label="Search" />
+                <button type="submit" aria-label="Search">🔍</button>
+            </form>
+            <nav class="lang-switcher" aria-label="Language">
+                <a href="intro-to-ai.html" hreflang="he" lang="he">עברית</a>
+                <span class="lang-active" aria-current="page">English</span>
+            </nav>
+            <button type="button" class="mobile-menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+        </nav>
+    </header>
+    <main class="article">
+        <div class="container">
+            <div class="breadcrumb"><a href="../index-en.html">Home</a> / <span>Intro to AI</span></div>
+            <article class="article-content">
+                <h1>Introduction to Artificial Intelligence</h1>
+                <p class="article-meta">📚 Reading time: 15 min | Level: Beginners</p>
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop" alt="AI - Digital brain" class="article-header-image">
+
+                <section>
+                    <h2 id="what-is-ai">What is Artificial Intelligence?</h2>
+                    <p>
+                        Artificial Intelligence (AI) is a branch of computer science
+                        focused on building computer systems that can perform tasks that usually require
+                        human intelligence. But what does that actually mean?
+                    </p>
+                    <p>
+                        When we say "human intelligence," we mean abilities like:
+                    </p>
+                    <ul class="benefits-list">
+                        <li><strong>Learning:</strong> The ability to gain new knowledge from experience</li>
+                        <li><strong>Reasoning:</strong> The ability to draw conclusions from information</li>
+                        <li><strong>Problem-solving:</strong> Finding solutions in new situations</li>
+                        <li><strong>Language understanding:</strong> Understanding and producing natural language</li>
+                        <li><strong>Perception:</strong> Recognizing and understanding images, sounds, and the environment</li>
+                        <li><strong>Planning:</strong> Building plans to achieve goals</li>
+                    </ul>
+                    <p>
+                        Artificial intelligence tries to create computer systems that can perform some of these abilities—
+                        or even all of them.
+                    </p>
+
+                    <div class="info-card tip">
+                        <strong>💡 The difference from regular programming:</strong>
+                        <p>In regular programming, the programmer writes exactly what the computer should do in every situation.
+                        In AI, the computer learns by itself what to do based on examples and experience.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="how-ai-works">How does AI work? The basic idea</h2>
+                    <p>
+                        At its core, most of today's AI systems work on a simple principle:
+                        <strong>learning from examples</strong>.
+                    </p>
+
+                    <div class="example-box">
+                        <h4>Example: Teaching a computer to recognize cats</h4>
+                        <p>Suppose we want to teach a computer to recognize cats in images:</p>
+                        <ol>
+                            <li><strong>Step 1 - Data:</strong> Show the computer millions of images, some with cats and some without</li>
+                            <li><strong>Step 2 - Training:</strong> The computer analyzes the images and looks for patterns common to cat images (pointed ears, certain eyes, face shape...)</li>
+                            <li><strong>Step 3 - Model:</strong> At the end of the process, the computer has "built" an internal model that represents "what a cat is"</li>
+                            <li><strong>Step 4 - Use:</strong> Now when we show the computer a new image, it can check whether it matches its model</li>
+                        </ol>
+                    </div>
+
+                    <p>
+                        This is fundamentally different from regular programming. A programmer cannot write explicit rules for recognizing cats—
+                        there are too many variations. But AI can learn it by itself from examples.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 id="subfields">Subfields of Artificial Intelligence</h2>
+                    <p>AI is a broad field that includes many subfields:</p>
+
+                    <div class="example-box">
+                        <h4>🧠 Machine Learning (ML)</h4>
+                        <p>
+                            The most popular branch. Computers that learn from data and improve over time.
+                            Almost all the AI we see today is based on machine learning.
+                        </p>
+                        <p><strong>Examples:</strong> Netflix recommendations, spam detection, weather forecasting</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🔮 Deep Learning (DL)</h4>
+                        <p>
+                            A subfield of machine learning that uses artificial neural networks—
+                            structures that mimic (in a simplified way) the human brain.
+                            This is the technology behind most of the impressive progress in recent years.
+                        </p>
+                        <p><strong>Examples:</strong> ChatGPT, face recognition, automatic translation</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>💬 Natural Language Processing (NLP)</h4>
+                        <p>
+                            The ability of computers to understand, interpret, and produce human language.
+                            This is what lets us talk to Siri or chat with ChatGPT.
+                        </p>
+                        <p><strong>Examples:</strong> Chatbots, translation, text summarization, sentiment analysis</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>👁️ Computer Vision (CV)</h4>
+                        <p>
+                            The ability of computers to "see" and understand images and video.
+                            This includes object detection, faces, motion, and more.
+                        </p>
+                        <p><strong>Examples:</strong> Face ID, autonomous vehicles, image filtering</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🤖 Robotics</h4>
+                        <p>
+                            Combining AI with physical machines. The robot must perceive the world,
+                            make decisions, and perform physical actions.
+                        </p>
+                        <p><strong>Examples:</strong> Industrial robots, robot vacuums, drones</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🎮 Generative AI</h4>
+                        <p>
+                            The new star! Systems that can create new content—
+                            text, images, music, video, and code.
+                            This is the revolution we're experiencing now.
+                        </p>
+                        <p><strong>Examples:</strong> ChatGPT, DALL-E, Midjourney, GitHub Copilot</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="types-by-capability">Types of AI by capability</h2>
+                    <p>AI scientists divide artificial intelligence into three levels:</p>
+
+                    <h3 id="narrow-ai">1. Narrow AI (Weak AI) 🎯</h3>
+                    <p>
+                        A system that specializes in one specific task and excels at it.
+                        <strong>This is what we have today</strong>—and it's already very impressive!
+                    </p>
+                    <div class="example-box">
+                        <h4>Characteristics:</h4>
+                        <ul>
+                            <li>Specializes in one task or a few related tasks</li>
+                            <li>Cannot transfer knowledge from one task to another</li>
+                            <li>Doesn't really "understand"—only recognizes patterns</li>
+                            <li>Can be excellent at its task—even better than a human</li>
+                        </ul>
+                        <p><strong>Examples:</strong></p>
+                        <ul>
+                            <li>ChatGPT—great at conversation, but can't drive a car</li>
+                            <li>AlphaGo—beats world champions at Go, but can't play chess</li>
+                            <li>Face recognition system—recognizes faces, but doesn't understand emotions</li>
+                        </ul>
+                    </div>
+
+                    <h3 id="agi">2. General AI (AGI - Artificial General Intelligence) 🧠</h3>
+                    <p>
+                        A system that can perform <strong>any</strong> intellectual task a human can perform,
+                        and transfer knowledge from one task to another.
+                    </p>
+                    <div class="example-box">
+                        <h4>Hypothetical characteristics:</h4>
+                        <ul>
+                            <li>Ability to learn anything new</li>
+                            <li>Transfer of knowledge between domains</li>
+                            <li>Real understanding, not just pattern recognition</li>
+                            <li>Ability to act in the physical world</li>
+                            <li>Perhaps: self-awareness?</li>
+                        </ul>
+                        <p><strong>Status:</strong> Does not exist. There is huge debate about when and if it will happen—
+                        predictions range from 10 years to never.</p>
+                    </div>
+
+                    <h3 id="asi">3. Superintelligence (ASI) 🚀</h3>
+                    <p>
+                        A system smarter than all humans combined in every domain—
+                        science, creativity, social skills, emotions.
+                    </p>
+                    <div class="info-card warning">
+                        <strong>⚠️ Purely theoretical:</strong>
+                        <p>This is a topic of speculation and science fiction. We have no idea if it's possible,
+                        when it might happen, or what it would mean. Some scientists are worried,
+                        some are optimistic, and most say it's too early to worry.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="everyday-examples">Detailed examples from everyday life</h2>
+                    <p>Artificial intelligence is already all around us. Here's how it works:</p>
+
+                    <div class="example-box">
+                        <h4>🎬 Netflix and YouTube - recommendation engines</h4>
+                        <p><strong>What happens:</strong> Netflix knows exactly what to recommend to you</p>
+                        <p><strong>How it works:</strong></p>
+                        <ul>
+                            <li>The system collects data: what you watched, for how long, when you stopped, what you rated</li>
+                            <li>Compares you to millions of other users with similar taste</li>
+                            <li>Analyzes the content itself: genres, actors, pace, colors</li>
+                            <li>Combines everything and calculates: "What's the chance this user will enjoy this film?"</li>
+                        </ul>
+                        <p><strong>Fact:</strong> 80% of what people watch on Netflix comes from AI recommendations!</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>📱 Face ID</h4>
+                        <p><strong>What happens:</strong> The iPhone recognizes your face in a fraction of a second</p>
+                        <p><strong>How it works:</strong></p>
+                        <ul>
+                            <li>Projects 30,000 infrared points onto your face</li>
+                            <li>Creates an accurate 3D map</li>
+                            <li>A neural network compares it to the stored map</li>
+                            <li>Works with glasses, beard, makeup, hat</li>
+                        </ul>
+                        <p><strong>Fact:</strong> The chance of someone else unlocking your phone: 1 in a million!</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>📧 Spam filtering - Gmail</h4>
+                        <p><strong>What happens:</strong> Less than 0.1% of spam reaches your inbox</p>
+                        <p><strong>How it works:</strong></p>
+                        <ul>
+                            <li>Analyzes content: suspicious words, links, images</li>
+                            <li>Checks sender: reputation, history, authentication</li>
+                            <li>Learns from your behavior: what you mark as spam</li>
+                            <li>Learns from everyone: what billions of users mark</li>
+                        </ul>
+                        <p><strong>Fact:</strong> Gmail blocks 10 million spam messages per minute!</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🚗 Waze - smart navigation</h4>
+                        <p><strong>What happens:</strong> Always finds the fastest route</p>
+                        <p><strong>How it works:</strong></p>
+                        <ul>
+                            <li>Collects real-time location from millions of drivers</li>
+                            <li>Detects traffic jams, accidents, obstacles</li>
+                            <li>Learns traffic patterns: which hours have congestion on which roads</li>
+                            <li>Calculates expected time for each possible route</li>
+                            <li>Updates in real time if conditions change</li>
+                        </ul>
+                        <p><strong>Fact:</strong> Waze saves drivers an average of 5–10 minutes per trip!</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>💬 ChatGPT - conversation with AI</h4>
+                        <p><strong>What happens:</strong> You can chat in natural language and get smart answers</p>
+                        <p><strong>How it works:</strong></p>
+                        <ul>
+                            <li>Trained on trillions of words from the internet, books, articles</li>
+                            <li>Learned the structure of language—grammar, style, context</li>
+                            <li>Learned facts about the world from the texts</li>
+                            <li>When it receives a question—"predicts" the most likely answer word by word</li>
+                        </ul>
+                        <p><strong>Important to understand:</strong> ChatGPT doesn't "know" or "understand"—it recognizes statistical
+                        patterns. Sometimes it makes mistakes, invents things, or "hallucinates."</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="history-link">History of Artificial Intelligence</h2>
+                    <p>The story of AI is one of dreams, disappointments, and breakthroughs—from Charles Babbage and the Analytical Engine (1837), through the Turing Test (1950) and the Dartmouth Conference (1956), to ChatGPT and GPT-5. For a detailed timeline with dates, names, and developers through January 2026, go to the dedicated page:</p>
+                    <p><a href="ai-history-en.html" class="card-link">→ History of AI – detailed timeline</a></p>
+                </section>
+
+                <section>
+                    <h2 id="why-it-matters">Why it matters: impact on the world</h2>
+                    <p>
+                        Artificial intelligence is changing almost every area of our lives.
+                        This isn't a technology of the future—it's happening now:
+                    </p>
+
+                    <div class="example-box">
+                        <h4>🏥 Medicine</h4>
+                        <ul>
+                            <li><strong>Diagnosis:</strong> AI detects cancer in scans with 95% accuracy—sometimes better than a doctor</li>
+                            <li><strong>Drug development:</strong> What took 10 years now takes a year with AI</li>
+                            <li><strong>Surgery:</strong> Robots perform more precise operations</li>
+                            <li><strong>Predictions:</strong> Detecting diseases before symptoms appear</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🎓 Education</h4>
+                        <ul>
+                            <li><strong>Personalized learning:</strong> A custom curriculum for each student</li>
+                            <li><strong>Teacher available 24/7:</strong> AI that answers questions any time</li>
+                            <li><strong>Instant feedback:</strong> Grading assignments and giving feedback in real time</li>
+                            <li><strong>Accessibility:</strong> Translation, read-aloud, adaptation for learning disabilities</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🚗 Transportation</h4>
+                        <ul>
+                            <li><strong>Autonomous vehicles:</strong> Already driving in some cities</li>
+                            <li><strong>Maintenance:</strong> Predicting failures before they happen</li>
+                            <li><strong>Traffic management:</strong> Smart traffic lights that adapt</li>
+                            <li><strong>Logistics:</strong> Optimal delivery routes</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>💼 Work and business</h4>
+                        <ul>
+                            <li><strong>Automation:</strong> AI performs routine tasks</li>
+                            <li><strong>Analysis:</strong> Processing huge amounts of information</li>
+                            <li><strong>Customer service:</strong> Chatbots 24/7</li>
+                            <li><strong>Creativity:</strong> Help with writing, design, code</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🎨 Creativity and entertainment</h4>
+                        <ul>
+                            <li><strong>Art:</strong> Creating images, music, video</li>
+                            <li><strong>Games:</strong> Smarter opponents, adaptive worlds</li>
+                            <li><strong>Film:</strong> Special effects, dubbing, translation</li>
+                            <li><strong>Writing:</strong> Help creating content of all kinds</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card warning">
+                        <strong>⚠️ But there are challenges too:</strong>
+                        <ul>
+                            <li>Jobs that will disappear or change</li>
+                            <li>Questions of privacy and surveillance</li>
+                            <li>Bias and discrimination in algorithms</li>
+                            <li>Misinformation and deepfakes</li>
+                            <li>Complex ethical questions</li>
+                        </ul>
+                        <p>We'll discuss all of these later, on the page about AI ethics.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="key-concepts">Key concepts to know</h2>
+
+                    <div class="example-box">
+                        <h4>📊 Algorithm</h4>
+                        <p>A precise set of instructions for performing a task. Like a recipe—step by step.</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🧠 Neural network</h4>
+                        <p>A mathematical structure that mimics (in a very simplified way) the brain. Layers of "neurons" that pass information between them.</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>📚 Data</h4>
+                        <p>The fuel of AI. The more quality data there is, the better the AI learns.</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🎯 Model</h4>
+                        <p>The result of the learning process—the "brain" that the AI built from the data.</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>🏋️ Training</h4>
+                        <p>The process in which the AI learns from data. Can take days to months.</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>💬 Prompt</h4>
+                        <p>The instruction you give to the AI. How you phrase the request greatly affects the result.</p>
+                    </div>
+                </section>
+
+                <section class="summary-box">
+                    <h2 id="summary">Summary 📝</h2>
+                    <ul>
+                        <li><strong>AI = computers that learn from examples</strong> instead of being programmed for every situation</li>
+                        <li><strong>Already here:</strong> Spam, Netflix, Waze, Face ID, ChatGPT—all AI</li>
+                        <li><strong>Types:</strong> Machine learning, deep learning, NLP, computer vision, generative AI</li>
+                        <li><strong>Levels:</strong> We have narrow AI (specialized in one task). General AI doesn't exist yet</li>
+                        <li><strong>History:</strong> 70 years of ups and downs, now in a revolution</li>
+                        <li><strong>Impact:</strong> Changing medicine, education, transportation, work—everything</li>
+                        <li><strong>Important:</strong> There are challenges too—jobs, privacy, bias, ethics</li>
+                    </ul>
+                </section>
+
+                <section id="quiz-section" class="quiz-section">
+                    <h2 id="quiz">📝 Test yourself</h2>
+                    <p class="quiz-intro">Answer 10 questions to check your understanding. Choose one answer per question.</p>
+
+                    <form id="quiz-form">
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">1</span> What is the main difference between regular programming and artificial intelligence?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q1" value="a"><span>In regular programming the computer is faster</span></label>
+                                <label class="quiz-option"><input type="radio" name="q1" value="b"><span>In AI the computer learns from examples instead of explicit instructions</span></label>
+                                <label class="quiz-option"><input type="radio" name="q1" value="c"><span>AI only works on new computers</span></label>
+                                <label class="quiz-option"><input type="radio" name="q1" value="d"><span>There is no significant difference between them</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="c">
+                            <h4><span class="question-number">2</span> What is "Narrow AI"?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q2" value="a"><span>AI that only works on small screens</span></label>
+                                <label class="quiz-option"><input type="radio" name="q2" value="b"><span>AI that is smarter than all humans</span></label>
+                                <label class="quiz-option"><input type="radio" name="q2" value="c"><span>AI that specializes in one specific task</span></label>
+                                <label class="quiz-option"><input type="radio" name="q2" value="d"><span>AI that learns very slowly</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="a">
+                            <h4><span class="question-number">3</span> What distinguishes "Deep Learning"?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q3" value="a"><span>Use of artificial neural networks</span></label>
+                                <label class="quiz-option"><input type="radio" name="q3" value="b"><span>Learning under the sea</span></label>
+                                <label class="quiz-option"><input type="radio" name="q3" value="c"><span>Learning deep philosophical topics</span></label>
+                                <label class="quiz-option"><input type="radio" name="q3" value="d"><span>Use of especially expensive hardware</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="d">
+                            <h4><span class="question-number">4</span> When was the term "artificial intelligence" first coined?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q4" value="a"><span>1990</span></label>
+                                <label class="quiz-option"><input type="radio" name="q4" value="b"><span>2010</span></label>
+                                <label class="quiz-option"><input type="radio" name="q4" value="c"><span>1970</span></label>
+                                <label class="quiz-option"><input type="radio" name="q4" value="d"><span>1956</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">5</span> What percentage of content watched on Netflix comes from AI recommendations?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q5" value="a"><span>20%</span></label>
+                                <label class="quiz-option"><input type="radio" name="q5" value="b"><span>80%</span></label>
+                                <label class="quiz-option"><input type="radio" name="q5" value="c"><span>50%</span></label>
+                                <label class="quiz-option"><input type="radio" name="q5" value="d"><span>10%</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="c">
+                            <h4><span class="question-number">6</span> What does Natural Language Processing (NLP) do?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q6" value="a"><span>Processes nature images</span></label>
+                                <label class="quiz-option"><input type="radio" name="q6" value="b"><span>Creates automatic music</span></label>
+                                <label class="quiz-option"><input type="radio" name="q6" value="c"><span>Enables computers to understand and produce human language</span></label>
+                                <label class="quiz-option"><input type="radio" name="q6" value="d"><span>Manages road traffic</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="a">
+                            <h4><span class="question-number">7</span> Who proposed the "Turing Test"?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q7" value="a"><span>Alan Turing</span></label>
+                                <label class="quiz-option"><input type="radio" name="q7" value="b"><span>Steve Jobs</span></label>
+                                <label class="quiz-option"><input type="radio" name="q7" value="c"><span>Bill Gates</span></label>
+                                <label class="quiz-option"><input type="radio" name="q7" value="d"><span>Elon Musk</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="d">
+                            <h4><span class="question-number">8</span> What happened in 2022 that caused a revolution in AI?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q8" value="a"><span>The first iPhone was launched</span></label>
+                                <label class="quiz-option"><input type="radio" name="q8" value="b"><span>A computer beat at chess</span></label>
+                                <label class="quiz-option"><input type="radio" name="q8" value="c"><span>The internet was developed</span></label>
+                                <label class="quiz-option"><input type="radio" name="q8" value="d"><span>ChatGPT launched and reached 100 million users</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">9</span> What is a "Prompt"?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q9" value="a"><span>A type of powerful computer</span></label>
+                                <label class="quiz-option"><input type="radio" name="q9" value="b"><span>The instruction you give to the AI</span></label>
+                                <label class="quiz-option"><input type="radio" name="q9" value="c"><span>A system malfunction</span></label>
+                                <label class="quiz-option"><input type="radio" name="q9" value="d"><span>A programming language</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="c">
+                            <h4><span class="question-number">10</span> What is not true about ChatGPT?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q10" value="a"><span>It was trained on trillions of words</span></label>
+                                <label class="quiz-option"><input type="radio" name="q10" value="b"><span>It sometimes makes mistakes or invents information</span></label>
+                                <label class="quiz-option"><input type="radio" name="q10" value="c"><span>It really "understands" and "knows" like a human</span></label>
+                                <label class="quiz-option"><input type="radio" name="q10" value="d"><span>It recognizes statistical patterns</span></label>
+                            </div>
+                        </div>
+                    </form>
+
+                    <button id="quiz-submit">Check answers</button>
+
+                    <div id="quiz-results" class="quiz-results">
+                        <h3 id="your-results">Your results</h3>
+                        <div class="score-display">
+                            <div class="score-item">
+                                <span id="quiz-score" class="score-number">0/10</span>
+                                <span class="score-label">Correct answers</span>
+                            </div>
+                            <div class="score-item">
+                                <span id="quiz-percent" class="score-number">0%</span>
+                                <span class="score-label">Success rate</span>
+                            </div>
+                        </div>
+                        <p id="quiz-message" class="quiz-message"></p>
+                        <button id="quiz-retry">Try again</button>
+                    </div>
+                </section>
+
+                <div class="article-nav">
+                    <a href="../index-en.html" class="btn">→ Back to Home</a>
+                    <a href="ai-history-en.html" class="btn btn-primary">2. History of AI – Next ←</a>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 AI Learning – Sam Shahar</p>
+            <p class="footer-contact">Phone: <a href="tel:+972522603831">+972522603831</a> | Email: <a href="mailto:shaharprod@gmail.com">shaharprod@gmail.com</a></p>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

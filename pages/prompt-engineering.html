@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202026-02-09%20160037.png">
+    <title>הנדסת הנחייה | אתר ללימוד בינה מלאכותית AI</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="article.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/colorful%20digital%20media%20sy.png" alt="לוגו" class="logo-icon">
+                    <span class="logo-text">לימוד בינה מלאכותית AI</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">בית</a></li>
+                <li class="dropdown">
+                    <a href="../index.html#topics" class="dropdown-toggle">שיעורים ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="intro-to-ai.html">1. מבוא ל-AI</a></li>
+                        <li><a href="ai-history.html">2. ההיסטוריה של AI</a></li>
+                        <li><a href="machine-learning.html">3. למידת מכונה</a></li>
+                        <li><a href="ai-daily-life.html">4. AI בחיי היומיום</a></li>
+                        <li><a href="ai-tools.html">5. כלים מעשיים</a></li>
+                        <li><a href="prompt-engineering.html">6. הנדסת הנחייה</a></li>
+                        <li><a href="ai-ethics.html">7. אתיקה ב-AI</a></li>
+                        <li><a href="ai-future.html">8. העתיד של AI</a></li>
+                        <li><a href="glossary.html">9. מילון מושגים</a></li>
+                    </ul>
+                </li>
+                <li><a href="glossary.html">מילון</a></li>
+                <li><a href="ai-tools.html">כלים</a></li>
+                <li><a href="../index.html#about">אודות</a></li>
+            </ul>
+            <form class="nav-search" id="site-search" role="search">
+                <input type="search" name="q" placeholder="חיפוש מילים ומושגים..." aria-label="חיפוש באתר" />
+                <button type="submit" aria-label="חפש">🔍</button>
+            </form>
+            <nav class="lang-switcher" aria-label="בחירת שפה">
+                <a href="prompt-engineering-en.html" hreflang="en" lang="en">English</a>
+                <span class="lang-active" aria-current="page">עברית</span>
+            </nav>
+            <button type="button" class="mobile-menu-btn" aria-label="תפריט">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Article Content -->
+    <main class="article">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">בית</a> / <span>הנדסת הנחייה</span>
+            </div>
+
+            <article class="article-content">
+                <h1>הנדסת הנחייה למודלי שפה</h1>
+                <p class="article-meta">✍️ זמן קריאה: 18 דקות | רמה: כולם</p>
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=400&fit=crop" alt="הנדסת הנחייה - מקלדת וצ'אט" class="article-header-image">
+
+                <section>
+                    <h2 id="מה-זה-הנדסת-הנחייה">מה זה הנדסת הנחייה (Prompt Engineering)?</h2>
+                    <p>
+                        הנדסת הנחייה היא האומנות והמדע של ניסוח בקשות לכלי AI בצורה שתניב
+                        את התוצאות הטובות ביותר. זו מיומנות קריטית בעידן ה-AI -
+                        <strong>האופן שבו אתם שואלים משפיע ישירות על איכות התשובה.</strong>
+                    </p>
+                    <p>
+                        חשבו על זה כמו להזמין אוכל במסעדה: "תביא לי משהו טעים" יתן תוצאה אחרת לגמרי
+                        מ"אני רוצה פסטה ברוטב עגבניות, בלי בצל, עם גבינה מגורדת בצד".
+                    </p>
+                    <p>
+                        בשיעור הזה נכיר את <strong>מודל CRAFT</strong> – מסגרת פשוטה של חמש אותיות שעוזרת לבנות פרומפט נכון, ואחריה עקרונות וטכניקות שיעזרו לכם לקבל תוצאות טובות יותר.
+                    </p>
+
+                    <div class="info-card tip">
+                        <strong>💡 למה זה חשוב?</strong>
+                        <p>
+                            אותו מודל AI יכול לתת תשובה בינונית או מעולה - תלוי איך שאלתם.
+                            למידת הנדסת הנחייה היא ההשקעה הכי משתלמת לשימוש יעיל ב-AI.
+                        </p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="העיקרון-המרכזי-דיוק-ותכנון-מוקדם">🎯 העיקרון המרכזי: דיוק ותכנון מוקדם</h2>
+                    <p>
+                        לפני שאתם כותבים שאלה ל-AI, עצרו לרגע וחשבו. השאלות הבאות תואמות בדיוק את מרכיבי מודל <strong>CRAFT</strong> – אחרי שתקראו עליו תוכלו להשתמש בהן כבדיקה מהירה:
+                    </p>
+                    <ul class="benefits-list">
+                        <li><strong>מה בדיוק אני רוצה לקבל?</strong> - תשובה קצרה? ארוכה? רשימה? טבלה?</li>
+                        <li><strong>מי קהל היעד?</strong> - מומחים? מתחילים? ילדים?</li>
+                        <li><strong>באיזה סגנון?</strong> - רשמי? ידידותי? טכני?</li>
+                        <li><strong>מה ההקשר?</strong> - למה אני צריך את זה?</li>
+                        <li><strong>מה אני לא רוצה?</strong> - יש דברים שצריך להימנע מהם?</li>
+                    </ul>
+
+                    <div class="example-box">
+                        <h4>❌ הנחייה מעורפלת</h4>
+                        <p>"ספר לי על פייתון"</p>
+                        <p><em>בעיה: לא ברור אם מדובר בשפת תכנות או בנחש. גם אם ברור - מה בדיוק רוצים לדעת?</em></p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>✅ הנחייה מדויקת</h4>
+                        <p>"הסבר לי את שפת התכנות Python ב-5 נקודות עיקריות, ברמה מתאימה למתחיל שלא תכנת מעולם. התמקד ביתרונות ובשימושים הנפוצים."</p>
+                        <p><em>יתרון: ברור מה רוצים, כמה, לאיזו רמה, ומה המיקוד.</em></p>
+                    </div>
+
+                    <h3 id="מודל-CRAFT">מודל CRAFT – מסגרת לבניית פרומפט נכון</h3>
+                    <p>
+                        מודל <strong>CRAFT</strong> הוא מסגרת פשוטה לזכור: חמש אותיות שמכסות את מה שצריך לחשוב עליו לפני שמנסחים הנחייה. לא חייבים להשתמש בכולן בכל פעם – גם 3–4 מרכיבים משפרים משמעותית את התוצאה.
+                    </p>
+                    <ul class="benefits-list">
+                        <li><strong>C – Context (הקשר):</strong> תנו רקע וסיטואציה. למה אתם צריכים את זה? באיזה תחום? אילו מגבלות או תנאים רלוונטיים? זה עוזר ל-AI להבין את המסגרת.</li>
+                        <li><strong>R – Role (תפקיד):</strong> הגדירו למודל תפקיד או מומחיות. למשל: "אתה מורה למתמטיקה עם 15 שנות ניסיון" או "התנהג כעורך לשון". כך התשובה תתאים לפרספקטיבה הנכונה.</li>
+                        <li><strong>A – Action (פעולה / בקשה):</strong> נסחו בבירור מה בדיוק אתם רוצים שיקרה. משימה ברורה ומדידה – לא "תעזור לי" אלא "כתוב שלוש פסקאות על…" או "הכן רשימה של…".</li>
+                        <li><strong>F – Format (פורמט):</strong> ציינו איך אתם רוצים את התשובה: רשימה, טבלה, פסקאות, נקודות, קוד, סיכום בשני משפטים – וכך תקבלו פלט מוכן לשימוש.</li>
+                        <li><strong>T – Tone (טון):</strong> קבעו את הסגנון והקול – רשמי, ידידותי, טכני, פשוט לילדים. הטון מתאים את התשובה לקהל היעד ולמטרה.</li>
+                    </ul>
+                    <div class="info-card tip">
+                        <strong>💡 דוגמה קצרה עם CRAFT</strong>
+                        <p>"<strong>הקשר:</strong> אני מכין הרצאה לתלמידי כיתה ח'. <strong>תפקיד:</strong> התנהג כמורה למדעים שמסביר לילדים. <strong>בקשה:</strong> הסבר מהו DNA בשלוש משפטים פשוטים. <strong>פורמט:</strong> שלוש פסקאות קצרות. <strong>טון:</strong> ידידותי ומובן, בלי מונחים מקצועיים כבדים."</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="7-עקרונות-הזהב-להנחייה-מוצלחת">📋 7 עקרונות הזהב להנחייה מוצלחת</h2>
+                    <p>
+                        אחרי שמילאתם את מרכיבי CRAFT, העקרונות הבאים יעזרו לחדד את ההנחייה ולשפר תוצאות. הם משלימים את המסגרת – ספציפיות, הקשר, פורמט, תפקיד וטון.
+                    </p>
+
+                    <div class="guidelines">
+                        <div class="guideline-item">
+                            <span class="guideline-number">1</span>
+                            <div>
+                                <h4>היו ספציפיים</h4>
+                                <p>ככל שתהיו מדויקים יותר, התשובה תהיה רלוונטית יותר. במקום "עזור לי לכתוב מייל", כתבו "עזור לי לכתוב מייל מקצועי לבקשת העלאת שכר, בטון מכבד אך אסרטיבי, באורך של 150-200 מילים".</p>
+                            </div>
+                        </div>
+
+                        <div class="guideline-item">
+                            <span class="guideline-number">2</span>
+                            <div>
+                                <h4>ספקו הקשר</h4>
+                                <p>תנו רקע רלוונטי. "אני מורה לכיתה ד'" או "אני מפתח תוכנה עם 5 שנות ניסיון" - זה משנה את התשובה לחלוטין.</p>
+                            </div>
+                        </div>
+
+                        <div class="guideline-item">
+                            <span class="guideline-number">3</span>
+                            <div>
+                                <h4>הגדירו פורמט</h4>
+                                <p>אמרו איך אתם רוצים את התשובה: רשימה ממוספרת, טבלה, פסקאות קצרות, נקודות, קוד עם הסברים - זה עוזר מאוד.</p>
+                            </div>
+                        </div>
+
+                        <div class="guideline-item">
+                            <span class="guideline-number">4</span>
+                            <div>
+                                <h4>תנו דוגמאות</h4>
+                                <p>אם יש לכם דוגמה למה שאתם מחפשים - שתפו אותה. "כתוב לי בסגנון של הדוגמה הזו..." עוזר ל-AI להבין בדיוק מה אתם רוצים.</p>
+                            </div>
+                        </div>
+
+                        <div class="guideline-item">
+                            <span class="guideline-number">5</span>
+                            <div>
+                                <h4>הגדירו תפקיד</h4>
+                                <p>בקשו מה-AI לשחק תפקיד מסוים: "התנהג כמו מורה לפיזיקה", "דמיין שאתה עורך דין", "ענה כמו מומחה שיווק" - זה משנה את הגישה והעומק.</p>
+                            </div>
+                        </div>
+
+                        <div class="guideline-item">
+                            <span class="guideline-number">6</span>
+                            <div>
+                                <h4>הגבילו את התשובה</h4>
+                                <p>ציינו אורך רצוי, מספר נקודות, או היקף: "ב-3 משפטים", "עד 500 מילים", "5 רעיונות בלבד".</p>
+                            </div>
+                        </div>
+
+                        <div class="guideline-item">
+                            <span class="guideline-number">7</span>
+                            <div>
+                                <h4>חזרו ושפרו</h4>
+                                <p>אל תסתפקו בתשובה הראשונה. בקשו "תרחיב על הנקודה השנייה", "תן דוגמה נוספת", או "תנסח את זה בצורה פשוטה יותר".</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="טכניקות-מתקדמות">🔧 טכניקות מתקדמות</h2>
+
+                    <h3 id="chain-of-thought">1. Chain of Thought - חשיבה צעד אחר צעד</h3>
+                    <p>
+                        בקשו מה-AI להסביר את תהליך החשיבה שלו. זה משפר משמעותית את הדיוק בבעיות מורכבות.
+                    </p>
+                    <div class="example-box">
+                        <h4>דוגמה:</h4>
+                        <p>"פתור את הבעיה הבאה צעד אחר צעד, והסבר את הלוגיקה בכל שלב: אם לדני יש 3 תפוחים ולרונית יש פי 2, ונתנו חצי לאמא..."</p>
+                    </div>
+
+                    <h3 id="few-shot-learning">2. Few-Shot Learning - למידה מדוגמאות</h3>
+                    <p>
+                        תנו 2-3 דוגמאות של מה שאתם רוצים, ואז בקשו עוד בסגנון דומה.
+                    </p>
+                    <div class="example-box">
+                        <h4>דוגמה:</h4>
+                        <p>
+                            "הנה כמה כותרות שאני אוהב:<br>
+                            1. '5 טעויות שכל מתחיל עושה בבישול'<br>
+                            2. 'למה הרגל הזו שינתה לי את החיים'<br>
+                            3. 'המדריך השלם לחיסכון בסופר'<br>
+                            <br>
+                            כתוב לי 5 כותרות בסגנון דומה על נושא כושר וספורט."
+                        </p>
+                    </div>
+
+                    <h3 id="role-playing">3. Role Playing - משחק תפקידים</h3>
+                    <p>
+                        בקשו מה-AI לאמץ פרסונה מסוימת לאורך כל השיחה.
+                    </p>
+                    <div class="example-box">
+                        <h4>דוגמה:</h4>
+                        <p>"מעכשיו אתה מאמן כושר אישי עם 20 שנות ניסיון. אני מתחיל שרוצה לרדת במשקל. תשאל אותי שאלות ותבנה לי תוכנית אימונים מותאמת."</p>
+                    </div>
+
+                    <h3 id="constraints">4. Constraints - הגבלות ותנאים</h3>
+                    <p>
+                        הגדירו מה כן ומה לא.
+                    </p>
+                    <div class="example-box">
+                        <h4>דוגמה:</h4>
+                        <p>"כתוב פוסט לאינסטגרם על חשיבות השינה. התנאים: מקסימום 150 מילים, כולל 3 אימוג'ים, טון קליל ועידודי, בלי להזכיר מוצרים או מותגים."</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="מבנה-ההנחייה-המושלמת">📝 מבנה ההנחייה המושלמת – CRAFT בתבנית</h2>
+                    <p>
+                        הנה תבנית שמארגנת את כל מרכיבי CRAFT לסדר ברור. אפשר להשתמש בה כמצע לפרומפט כמעט בכל נושא:
+                    </p>
+
+                    <div class="code-example">
+[תפקיד – Role] - אתה [מומחה/תפקיד]
+
+[הקשר – Context] - אני [מי אני/מה המצב]
+
+[משימה – Action] - אני צריך ש[מה בדיוק צריך לעשות]
+
+[פורמט – Format] - תציג את זה בצורת [רשימה/טבלה/פסקאות]
+
+[טון והגבלות – Tone] - חשוב ש[סגנון, תנאים, מה להימנע]
+                    </div>
+
+                    <div class="example-box">
+                        <h4>דוגמה מעשית (CRAFT בתבנית):</h4>
+                        <p>
+                            "<strong>תפקיד:</strong> אתה יועץ קריירה מנוסה.<br><br>
+                            <strong>הקשר:</strong> אני מהנדס תוכנה עם 3 שנות ניסיון ששוקל לעבור לתחום ניהול מוצר.<br><br>
+                            <strong>משימה:</strong> אני צריך שתעזור לי להבין מה הצעדים שעלי לעשות כדי לעשות את המעבר.<br><br>
+                            <strong>פורמט:</strong> תציג את זה כרשימה ממוספרת עם הסבר קצר לכל צעד.<br><br>
+                            <strong>טון והגבלות:</strong> חשוב שהעצות יהיו מעשיות ולא כלליות מדי, ושיתאימו לשוק העבודה הישראלי."
+                        </p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="טעויות-נפוצות-להימנע-מהן">❌ טעויות נפוצות להימנע מהן</h2>
+
+                    <div class="example-box">
+                        <h4>1. הנחייה קצרה מדי</h4>
+                        <p>❌ "כתוב מייל"</p>
+                        <p>✅ "כתוב מייל מקצועי להזמנת ספק לפגישה, בטון ידידותי אך עסקי, כולל 2-3 תאריכים אפשריים"</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>2. הנחה שה-AI יודע את ההקשר</h4>
+                        <p>❌ "מה דעתך על הרעיון שלי?"</p>
+                        <p>✅ "הרעיון שלי הוא לפתוח חנות אונליין למכירת עוגיות ביתיות. מה היתרונות והחסרונות?"</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>3. שאלות סגורות כשרוצים תשובות מפורטות</h4>
+                        <p>❌ "האם Python שפה טובה?"</p>
+                        <p>✅ "מהם היתרונות והחסרונות של Python בהשוואה ל-JavaScript לפיתוח backend?"</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>4. לא לבקש תיקונים</h4>
+                        <p>❌ לקבל תשובה לא מדויקת ולוותר</p>
+                        <p>✅ "זה לא בדיוק מה שהתכוונתי. אני מחפש משהו יותר [מה חסר]. תוכל לנסות שוב?"</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>5. לשאול הכל בבת אחת</h4>
+                        <p>❌ "תסביר לי על AI, למידת מכונה, רשתות נוירונים, ואיך לבנות צ'אטבוט"</p>
+                        <p>✅ להתחיל בנושא אחד ולהעמיק בהדרגה</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="דוגמאות-מעשיות-לפי-תחום">💬 דוגמאות מעשיות לפי תחום</h2>
+
+                    <h3 id="כתיבת-מיילים">📧 כתיבת מיילים</h3>
+                    <div class="example-box">
+                        <p>"כתוב מייל מקצועי ללקוח שמתלונן על עיכוב במשלוח. הטון צריך להיות אמפתי ומתנצל, אבל גם להרגיע ולהציע פתרון. אורך: 100-150 מילים. כלול: התנצלות, הסבר קצר, פתרון מוצע, והצעה לפיצוי."</p>
+                    </div>
+
+                    <h3 id="לימודים-והסברים">📚 לימודים והסברים</h3>
+                    <div class="example-box">
+                        <p>"הסבר לי את תורת היחסות של איינשטיין כאילו אני בן 12. השתמש באנלוגיות מחיי היומיום. התחל מהרעיון הבסיסי ביותר והתקדם בהדרגה. אורך: 3 פסקאות."</p>
+                    </div>
+
+                    <h3 id="עבודה-ופרודוקטיביות">💼 עבודה ופרודוקטיביות</h3>
+                    <div class="example-box">
+                        <p>"אני צריך להציג פרויקט למנהלים בכירים. תעזור לי ליצור מבנה למצגת של 10 דקות על השקת מוצר חדש. כלול: פתיחה מרתקת, 3-4 נקודות עיקריות, וסיום עם קריאה לפעולה."</p>
+                    </div>
+
+                    <h3 id="יצירתיות">🎨 יצירתיות</h3>
+                    <div class="example-box">
+                        <p>"כתוב סיפור קצר (300 מילים) על ילד שמגלה דלת סודית בבית הספר. הסגנון: מסתורי אך מתאים לילדים בגילאי 8-10. כלול אלמנט של הומור והפתעה בסוף."</p>
+                    </div>
+
+                    <h3 id="תכנות">💻 תכנות</h3>
+                    <div class="example-box">
+                        <p>"כתוב פונקציה ב-Python שמקבלת רשימה של מספרים ומחזירה את כל הזוגיים. כלול: קוד מתועד, דוגמת שימוש, והסבר קצר על הלוגיקה."</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="השיחה-היא-תהליך">🔄 השיחה היא תהליך</h2>
+                    <p>
+                        זכרו: שיחה עם AI היא לא שאלה אחת ותשובה אחת.
+                        זה <strong>דיאלוג</strong> שאפשר לשפר ולכוון.
+                    </p>
+
+                    <div class="example-box">
+                        <h4>תהליך עבודה מומלץ:</h4>
+                        <ol>
+                            <li><strong>התחילו עם בקשה ראשונית</strong> - מנוסחת כמה שיותר טוב</li>
+                            <li><strong>העריכו את התשובה</strong> - מה טוב? מה חסר?</li>
+                            <li><strong>בקשו שיפורים ספציפיים</strong> - "תרחיב על...", "תקצר את...", "תוסיף דוגמה ל..."</li>
+                            <li><strong>כוונו את הכיוון</strong> - "זה טוב, אבל בוא ננסה גישה אחרת..."</li>
+                            <li><strong>סכמו ואשרו</strong> - "בדיוק! עכשיו תעזור לי עם השלב הבא..."</li>
+                        </ol>
+                    </div>
+
+                    <div class="info-card tip">
+                        <strong>💡 טיפ חשוב:</strong>
+                        <p>
+                            אם התשובה לא טובה – זו בדרך כלל לא "אשמת" ה-AI.
+                            נסו לנסח מחדש את הבקשה עם יותר פרטים או הקשר, או לעבור על CRAFT: האם נתתם הקשר (C), תפקיד (R), משימה ברורה (A), פורמט (F) וטון (T)?
+                        </p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 id="מה-לזכור-תמיד">⚠️ מה לזכור תמיד</h2>
+
+                    <div class="info-card warning">
+                        <strong>אזהרות חשובות:</strong>
+                        <ul>
+                            <li><strong>בדקו עובדות:</strong> AI יכול לטעות או להמציא מידע. תמיד אמתו מידע חשוב ממקור נוסף.</li>
+                            <li><strong>אל תשתפו מידע רגיש:</strong> סיסמאות, מספרי זהות, מידע פיננסי - לעולם לא.</li>
+                            <li><strong>השתמשו בשיקול דעת:</strong> AI הוא כלי עזר, לא תחליף לחשיבה עצמאית.</li>
+                            <li><strong>הכירו במגבלות:</strong> יש דברים ש-AI לא יודע או לא יכול לעשות טוב.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="summary-box">
+                    <h2 id="סיכום">סיכום 📝</h2>
+                    <ul>
+                        <li><strong>מודל CRAFT:</strong> הקשר (C), תפקיד (R), פעולה/בקשה (A), פורמט (F), טון (T) – מסגרת לזכור לפני כל הנחייה</li>
+                        <li><strong>תכננו מראש:</strong> חשבו מה אתם רוצים לפני שאתם כותבים</li>
+                        <li><strong>היו ספציפיים:</strong> ככל שתדייקו יותר, התוצאה תהיה טובה יותר</li>
+                        <li><strong>ספקו הקשר:</strong> רקע, תפקיד, קהל יעד</li>
+                        <li><strong>הגדירו פורמט:</strong> אורך, מבנה, סגנון</li>
+                        <li><strong>תנו דוגמאות:</strong> כשאפשר, הראו מה אתם מחפשים</li>
+                        <li><strong>חזרו ושפרו:</strong> השיחה היא תהליך, לא פעולה חד-פעמית</li>
+                        <li><strong>בדקו את התוצאה:</strong> AI עוזר, אבל אתם אחראים</li>
+                    </ul>
+                </section>
+
+                <!-- Quiz Section -->
+                <section id="quiz-section" class="quiz-section">
+                    <h2 id="בחן-את-עצמך">📝 בחן את עצמך</h2>
+                    <p class="quiz-intro">ענו על 11 שאלות כדי לבדוק את ההבנה שלכם בנושא הנדסת הנחייה ומודל CRAFT.</p>
+
+                    <form id="quiz-form">
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">1</span> מהי הנדסת הנחייה (Prompt Engineering)?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q1" value="a"><span>בניית רובוטים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q1" value="b"><span>אומנות ניסוח בקשות ל-AI בצורה שתניב תוצאות טובות</span></label>
+                                <label class="quiz-option"><input type="radio" name="q1" value="c"><span>תכנות מחשבים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q1" value="d"><span>עיצוב אתרים</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="c">
+                            <h4><span class="question-number">2</span> מה הבעיה בהנחייה "ספר לי על פייתון"?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q2" value="a"><span>היא ארוכה מדי</span></label>
+                                <label class="quiz-option"><input type="radio" name="q2" value="b"><span>היא בעברית</span></label>
+                                <label class="quiz-option"><input type="radio" name="q2" value="c"><span>היא מעורפלת - לא ברור מה בדיוק רוצים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q2" value="d"><span>אין בעיה, זו הנחייה מצוינת</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="a">
+                            <h4><span class="question-number">3</span> מה חשוב לכלול בהנחייה טובה?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q3" value="a"><span>הקשר, פורמט רצוי, ומידת הפירוט הנדרשת</span></label>
+                                <label class="quiz-option"><input type="radio" name="q3" value="b"><span>רק את השאלה, כי AI חכם מספיק</span></label>
+                                <label class="quiz-option"><input type="radio" name="q3" value="c"><span>המון אימוג'ים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q3" value="d"><span>לכתוב באנגלית בלבד</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">4</span> מה מודל CRAFT מספק?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q4" value="a"><span>שם של תוכנת AI</span></label>
+                                <label class="quiz-option"><input type="radio" name="q4" value="b"><span>מסגרת של חמש מרכיבים: הקשר, תפקיד, פעולה, פורמט וטון לבניית הנחייה טובה</span></label>
+                                <label class="quiz-option"><input type="radio" name="q4" value="c"><span>רשימת כלים לכתיבת פרומפטים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q4" value="d"><span>טכניקה לחשיבה יצירתית</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="d">
+                            <h4><span class="question-number">5</span> מה זה "Chain of Thought"?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q5" value="a"><span>שרשרת של מחשבים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q5" value="b"><span>רשימת משימות</span></label>
+                                <label class="quiz-option"><input type="radio" name="q5" value="c"><span>סוג של תוכנה</span></label>
+                                <label class="quiz-option"><input type="radio" name="q5" value="d"><span>בקשה מה-AI להסביר את תהליך החשיבה צעד אחר צעד</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">6</span> למה כדאי לתת דוגמאות להנחייה?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q6" value="a"><span>כי AI לא מבין בלי דוגמאות</span></label>
+                                <label class="quiz-option"><input type="radio" name="q6" value="b"><span>כדי שה-AI יבין בדיוק את הסגנון והפורמט הרצויים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q6" value="c"><span>זה לא באמת עוזר</span></label>
+                                <label class="quiz-option"><input type="radio" name="q6" value="d"><span>כי זה הכרחי בכל הנחייה</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="c">
+                            <h4><span class="question-number">7</span> מה הטעות בלשאול "האם Python שפה טובה?"?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q7" value="a"><span>השאלה ארוכה מדי</span></label>
+                                <label class="quiz-option"><input type="radio" name="q7" value="b"><span>Python היא לא שפה</span></label>
+                                <label class="quiz-option"><input type="radio" name="q7" value="c"><span>שאלה סגורה שתיתן תשובה קצרה במקום ניתוח מפורט</span></label>
+                                <label class="quiz-option"><input type="radio" name="q7" value="d"><span>אין טעות, זו שאלה מצוינת</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="a">
+                            <h4><span class="question-number">8</span> מה הכוונה ב"הגדירו תפקיד" להנחייה?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q8" value="a"><span>לבקש מה-AI להתנהג כמו מומחה מסוים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q8" value="b"><span>לתת לAI משרה</span></label>
+                                <label class="quiz-option"><input type="radio" name="q8" value="c"><span>להגדיר את התפקיד שלכם</span></label>
+                                <label class="quiz-option"><input type="radio" name="q8" value="d"><span>לשחק משחק תפקידים</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="d">
+                            <h4><span class="question-number">9</span> מה לעשות אם התשובה של AI לא מדויקת?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q9" value="a"><span>לוותר ולחפש במקום אחר</span></label>
+                                <label class="quiz-option"><input type="radio" name="q9" value="b"><span>לקבל את התשובה כמו שהיא</span></label>
+                                <label class="quiz-option"><input type="radio" name="q9" value="c"><span>לכעוס על ה-AI</span></label>
+                                <label class="quiz-option"><input type="radio" name="q9" value="d"><span>לבקש תיקון ספציפי או לנסח מחדש את הבקשה</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="b">
+                            <h4><span class="question-number">10</span> מה לא כדאי לשתף עם AI?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q10" value="a"><span>שאלות על בישול</span></label>
+                                <label class="quiz-option"><input type="radio" name="q10" value="b"><span>סיסמאות, מספרי זהות ומידע פיננסי</span></label>
+                                <label class="quiz-option"><input type="radio" name="q10" value="c"><span>רעיונות יצירתיים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q10" value="d"><span>שאלות לימודיות</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" data-correct="c">
+                            <h4><span class="question-number">11</span> מה העיקרון החשוב ביותר בהנדסת הנחייה?</h4>
+                            <div class="quiz-options">
+                                <label class="quiz-option"><input type="radio" name="q11" value="a"><span>לכתוב הנחיות קצרות ככל האפשר</span></label>
+                                <label class="quiz-option"><input type="radio" name="q11" value="b"><span>להשתמש רק באנגלית</span></label>
+                                <label class="quiz-option"><input type="radio" name="q11" value="c"><span>דיוק ותכנון מוקדם - לדעת מה רוצים לפני שכותבים</span></label>
+                                <label class="quiz-option"><input type="radio" name="q11" value="d"><span>לכתוב כמה שיותר טקסט</span></label>
+                            </div>
+                        </div>
+                    </form>
+
+                    <button id="quiz-submit">בדוק תשובות</button>
+
+                    <div id="quiz-results" class="quiz-results">
+                        <h3 id="התוצאות-שלך">התוצאות שלך</h3>
+                        <div class="score-display">
+                            <div class="score-item">
+                                <span id="quiz-score" class="score-number">0/11</span>
+                                <span class="score-label">תשובות נכונות</span>
+                            </div>
+                            <div class="score-item">
+                                <span id="quiz-percent" class="score-number">0%</span>
+                                <span class="score-label">אחוז הצלחה</span>
+                            </div>
+                        </div>
+                        <p id="quiz-message" class="quiz-message"></p>
+                        <button id="quiz-retry">נסה שוב</button>
+                    </div>
+                </section>
+
+                <div class="article-nav">
+                    <a href="ai-tools.html" class="btn">→ 5. כלים מעשיים</a>
+                    <a href="ai-ethics.html" class="btn btn-primary">7. אתיקה ב-AI – המשך ←</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 אתר ללימוד בינה מלאכותית AI - כל הזכויות שמורות לשמוליק שחר יועץ לימודי המנגיש לימודי בינה מלאכותית לכל אדם</p>
+            <p class="footer-contact">טלפון: <a href="tel:+972522603831">+972522603831</a> | אימייל: <a href="mailto:shaharprod@gmail.com">shaharprod@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
