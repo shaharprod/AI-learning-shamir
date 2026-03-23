@@ -2,7 +2,9 @@
 
 אתר סטטי ללימוד בינה מלאכותית בעברית, בהנגשה פשוטה וברורה.
 
-**🌐 אתר חי:** [https://shaharprod.github.io/AI-learning/](https://shaharprod.github.io/AI-learning/)
+**ריפו:** [github.com/shaharprod/AI-learning-shamir](https://github.com/shaharprod/AI-learning-shamir)
+
+**🌐 אתר חי (גרסה זו):** [https://shaharprod.github.io/AI-learning-shamir/](https://shaharprod.github.io/AI-learning-shamir/)
 
 ---
 
