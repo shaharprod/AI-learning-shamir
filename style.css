@@ -123,7 +123,7 @@ a:hover {
     gap: 0.5rem;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary);
+    color: #000000;
     min-width: 0;
 }
 
@@ -132,6 +132,11 @@ a:hover {
     align-items: center;
     gap: 0.5rem;
     min-width: 0;
+    color: #000000;
+}
+
+.logo a:hover {
+    color: #000000;
 }
 
 .logo-icon {
@@ -145,6 +150,7 @@ a:hover {
 .logo-text {
     overflow-wrap: break-word;
     word-break: break-word;
+    color: #000000;
 }
 
 .logo-stack {
@@ -164,10 +170,19 @@ a:hover {
     max-width: 14rem;
 }
 
-/* English (LTR): keep byline under logo text, readable Latin size */
+/* English (LTR): black logo title like Hebrew; readable byline size */
+html[dir="ltr"] .logo,
+html[dir="ltr"] .logo a,
+html[dir="ltr"] .logo a:hover,
+html[dir="ltr"] .logo-text {
+    color: #000000;
+}
+
 html[dir="ltr"] .logo-byline {
     font-size: 0.6rem;
     max-width: 16rem;
+    color: #000000;
+    opacity: 0.85;
 }
 
 .nav-links {
@@ -530,6 +545,8 @@ html[dir="ltr"] .logo-byline {
     html[dir="ltr"] .logo-byline {
         font-size: 0.52rem;
         max-width: min(14rem, 70vw);
+        color: #000000;
+        opacity: 0.85;
     }
 
     .logo-icon {
