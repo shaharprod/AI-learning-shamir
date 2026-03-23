@@ -164,6 +164,12 @@ a:hover {
     max-width: 14rem;
 }
 
+/* English (LTR): keep byline under logo text, readable Latin size */
+html[dir="ltr"] .logo-byline {
+    font-size: 0.6rem;
+    max-width: 16rem;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -519,6 +525,11 @@ a:hover {
     .logo-byline {
         font-size: 0.5rem;
         max-width: min(12rem, 55vw);
+    }
+
+    html[dir="ltr"] .logo-byline {
+        font-size: 0.52rem;
+        max-width: min(14rem, 70vw);
     }
 
     .logo-icon {
