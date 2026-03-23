@@ -172,7 +172,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.2rem;
+    gap: 0.25rem;
     min-width: 0;
     text-align: right;
 }
@@ -183,12 +183,12 @@ html[dir="ltr"] .logo-stack {
 }
 
 .logo-byline {
-    font-size: clamp(0.68rem, 1.6vw, 0.88rem);
+    font-size: inherit;
     font-weight: 500;
-    line-height: 1.35;
+    line-height: 1.25;
     color: #2b6df2;
     opacity: 1;
-    max-width: 18rem;
+    max-width: min(22rem, 92vw);
 }
 
 /* English (LTR): אותו עיצוב כותרת כמו בעברית — כותרת שחורה, משנה כחולה, פס גרדיאנט מותאם LTR */
@@ -223,12 +223,12 @@ html[dir="ltr"] .logo-text {
 }
 
 html[dir="ltr"] .logo-byline {
-    font-size: clamp(0.68rem, 1.6vw, 0.88rem);
-    max-width: 18rem;
+    font-size: inherit;
+    max-width: min(22rem, 92vw);
     color: #2b6df2;
     opacity: 1;
     font-weight: 500;
-    line-height: 1.35;
+    line-height: 1.25;
 }
 
 .nav-links {
@@ -589,14 +589,14 @@ html[dir="ltr"] .logo-byline {
     }
 
     .logo-byline {
-        font-size: clamp(0.58rem, 2.8vw, 0.72rem);
-        max-width: min(15rem, 58vw);
+        font-size: inherit;
+        max-width: min(20rem, 90vw);
         color: #2b6df2;
     }
 
     html[dir="ltr"] .logo-byline {
-        font-size: clamp(0.58rem, 2.8vw, 0.72rem);
-        max-width: min(16rem, 72vw);
+        font-size: inherit;
+        max-width: min(20rem, 92vw);
         color: #2b6df2;
         opacity: 1;
     }
